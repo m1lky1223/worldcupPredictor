@@ -1,0 +1,20 @@
+{
+  "name": "@worldcup/worker",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@worldcup/data-providers": "workspace:*",
+    "@worldcup/domain": "workspace:*",
+    "@worldcup/prediction-engine": "workspace:*",
+    "bullmq": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "ioredis": "^5.3.2"
+  }
+}

@@ -30,7 +30,7 @@ This repository uses a structured documentation layout for humans and AI systems
 
 ## Tech Stack
 
-*   **Monorepo Manager:** npm workspaces
+*   **Monorepo Manager:** pnpm workspaces
 *   **Frontend:** [Modern.js](https://modernjs.dev/) (React + TypeScript) styled natively with [Material UI (MUI)](https://mui.com/material-ui/)
 *   **API Gateway:** Apollo GraphQL Server (Node.js + TypeScript)
 *   **Background Processing:** BullMQ + Redis job runner
@@ -64,31 +64,82 @@ worldcupPredictor/
 
 ## Local Development Setup
 
-### 1. Spin up Services
+### Prerequisites
 
-Start the database, queue manager, and services via Docker Compose:
+- **Node.js** (v18.x or higher, v20/v22 recommended)
+- **pnpm** (v10.x or higher)
+- **Docker** and **Docker Compose**
 
+### Step-by-Step Startup
+
+Follow these steps to configure and start the entire application stack:
+
+#### 1. Install Dependencies
+Run from the root directory to bootstrap the pnpm workspaces:
 ```bash
-docker compose up
+pnpm install
 ```
 
-This launches the local stack:
-*   **Web Frontend & Web MCP:** [http://localhost:3000](http://localhost:3000) (MCP endpoint at `/api/mcp`)
+#### 2. Set Up Environment Variables
+Create your local `.env` configuration file from the template:
+```bash
+cp .env.example .env
+```
+
+#### 3. Spin Up Local Databases
+Launch the local PostgreSQL and Redis instances in the background:
+```bash
+docker compose up -d postgres redis
+```
+
+#### 4. Apply Migrations and Seed Data
+Run the database migrations and seed canonical national team roster and fixture records:
+```bash
+pnpm seed
+```
+
+#### 5. Run the Application Stack
+You can start the applications either directly on your local machine or fully dockerized:
+
+##### Option A: Local Development Server (Recommended for Frontend/API editing)
+Run typescript compilation and launch dev servers for the web frontend, api, and worker:
+```bash
+# Compile TypeScript workspaces
+npx tsc --build
+
+# Run all dev servers in parallel
+pnpm dev
+```
+
+##### Option B: Full Dockerized Stack (Simulates Staging/Production)
+Build and run the entire stack (including web app, api, and background worker containers):
+```bash
+docker compose up --build -d
+```
+
+---
+
+## Service Endpoints
+
+Once running, the services respond at the following local ports:
+*   **Web Frontend & Web MCP:** [http://localhost:3000](http://localhost:3000) (MCP server endpoint at `/api/mcp`)
 *   **GraphQL Playground:** [http://localhost:4000/graphql](http://localhost:4000/graphql)
 *   **Postgres DB:** `localhost:5432`
 *   **Redis:** `localhost:6379`
 
-### 2. Development Commands
+---
 
-Run package scripts from the root directory:
+## Workspace Commands
+
+Run these scripts from the root directory to manage the workspace:
 
 ```bash
-npm run dev               # Start dev servers locally (web only)
-npm run build             # Run production bundle build
-npm run seed              # Seed database with canonical teams & fixtures
-npm run predict           # Trigger manual recalculation of predictions
-npm run sync              # Force sync fixtures and odds from API providers
-npm run test              # Execute test suites via Vitest
+pnpm dev               # Launch development servers in parallel
+pnpm build             # Compile all TypeScript workspaces and build the web bundle
+pnpm seed              # Re-run migrations and load canonical teams & fixtures
+pnpm lint              # Run global code lint checks via ESLint
+pnpm typecheck         # Verify type safety across the monorepo
+pnpm test              # Run the test suite via Vitest
 ```
 
 ---

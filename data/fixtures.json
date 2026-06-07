@@ -1,0 +1,8 @@
+[
+  { "matchNumber": 1, "homeTeamId": "MEX", "awayTeamId": "USA", "stage": "Group", "kickoffTime": "2026-06-11T17:00:00Z" },
+  { "matchNumber": 2, "homeTeamId": "CAN", "awayTeamId": "PAN", "stage": "Group", "kickoffTime": "2026-06-11T20:00:00Z" },
+  { "matchNumber": 3, "homeTeamId": "ARG", "awayTeamId": "BRA", "stage": "Group", "kickoffTime": "2026-06-12T17:00:00Z" },
+  { "matchNumber": 4, "homeTeamId": "URU", "awayTeamId": "COL", "stage": "Group", "kickoffTime": "2026-06-12T20:00:00Z" },
+  { "matchNumber": 5, "homeTeamId": "FRA", "awayTeamId": "ENG", "stage": "Group", "kickoffTime": "2026-06-13T17:00:00Z" },
+  { "matchNumber": 6, "homeTeamId": "GER", "awayTeamId": "ESP", "stage": "Group", "kickoffTime": "2026-06-13T20:00:00Z" }
+]

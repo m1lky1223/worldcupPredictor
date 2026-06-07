@@ -1,0 +1,13 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+
+allowBuilds:
+  "@apollo/protobufjs": true
+  "@swc/core": true
+  "core-js-pure": true
+  "core-js": true
+  "es5-ext": true
+  "esbuild": true
+  "msgpackr-extract": true
+  "@parcel/watcher": true
