@@ -102,10 +102,10 @@ Give football fans clear, explainable predictions for every World Cup match — 
 | Postgres over SQLite | Relational domain, audit snapshots, historical predictions | Decided |
 | Remote MCP (Streamable HTTP) | Agent/CLI access post-deployment via standard protocol | Decided |
 | Google OAuth only | No password auth in MVP | Decided |
-| Odds display-only (no model input) | Avoids gambling-product optics; open to revisit post-MVP | Tentative — open question |
-| Prisma vs Drizzle | — | Open question |
-| Primary fixture/player provider | — | Open question |
-| Primary odds provider | The Odds API (free tier confirmed) | Tentative |
+| Should odds feed into the prediction model or display only? | Start display-only to avoid gambling-product optics; revisit post-MVP | **Display-only** |
+| Prisma vs Drizzle for ORM? | Drizzle — lighter, SQL-first, better TS inference | **Drizzle** |
+| Primary fixture/player provider | TheStatsAPI (thestatsapi.com) — covers fixtures, squads, player stats | **TheStatsAPI** |
+| Primary odds provider | The Odds API (free tier confirmed) | **The Odds API** |
 
 ## Success Criteria
 

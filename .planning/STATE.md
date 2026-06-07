@@ -20,11 +20,7 @@ Initialized. Planning complete. Ready to begin Phase 1 execution via `/gsd-plan-
 
 ## Active Blockers
 
-| ID | Blocker | Impact |
-|----|---------|--------|
-| OQ-02 | Prisma vs Drizzle decision | Phase 1 (P1.4) |
-| OQ-01 | Primary fixture/player provider | Phase 2 (P2.3) |
-| OQ-03 | Odds as model input or display-only | Phase 5 (P5.3) |
+(None — all open questions resolved. Ready for Phase 1.)
 
 ## Notes
 
