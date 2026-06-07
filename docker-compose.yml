@@ -145,6 +145,25 @@ services:
       timeout: 5s
       retries: 5
 
+  test:
+    build:
+      context: .
+      dockerfile: infra/docker/test.Dockerfile
+    container_name: worldcup-test
+    environment:
+      DATABASE_URL: postgres://postgres:password@postgres:5432/worldcup
+      IS_DOCKER: "true"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    depends_on:
+      api:
+        condition: service_healthy
+      web:
+        condition: service_healthy
+      mcp:
+        condition: service_healthy
+
 volumes:
   postgres_data:
   redis_data:
