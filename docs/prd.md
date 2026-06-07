@@ -246,7 +246,22 @@ Open product decision:
 
 - Decide whether market odds influence the model or are displayed only as comparison.
 
-## 11. Data Expectations
+## 11. Authentication
+
+If the product includes accounts, saved picks, private groups, or admin-only screens, user login should use Google login.
+
+Product authentication requirements:
+
+- Do not offer password-based login in MVP.
+- Keep login optional unless a user opens an account-only feature.
+- Make public tournament browsing available without login if possible.
+- Use Google login for user identity, saved preferences, saved picks, and admin access.
+
+Open product decision:
+
+- Decide whether v1 includes account-only features such as saved picks, private groups, or leaderboards.
+
+## 12. Data Expectations
 
 The product needs data for:
 
@@ -277,7 +292,7 @@ Known possible sources to evaluate:
 
 The product should tolerate missing player-level data by falling back to team-level predictions.
 
-## 12. UX Principles
+## 13. UX Principles
 
 - The first screen should be useful immediately.
 - Prioritize live tournament utility over marketing copy.
@@ -288,7 +303,7 @@ The product should tolerate missing player-level data by falling back to team-le
 - Make mobile views first-class.
 - Avoid presenting predictions as certainty.
 
-## 13. Success Metrics
+## 14. Success Metrics
 
 Product usage:
 
@@ -321,7 +336,7 @@ Model performance:
 - Calibration quality.
 - Performance compared with market probabilities.
 
-## 14. Risks
+## 15. Risks
 
 - Data providers may have incomplete or delayed player-level stats.
 - Final squad, injury, and lineup data may vary across providers.
@@ -330,10 +345,10 @@ Model performance:
 - Users may misinterpret predictions as certainty.
 - If the model overreacts to one match, prediction quality may suffer.
 - If odds are included too prominently, the product may feel betting-first rather than football-first.
+- Login can add friction if account-only features are introduced too early.
 
-## 15. Open Product Decisions
+## 16. Open Product Decisions
 
-- Should the product include user accounts in v1?
 - Should users be able to save picks?
 - Should users be able to create private groups or leaderboards?
 - Should market odds be used in the prediction model or shown only as comparison?
@@ -343,7 +358,7 @@ Model performance:
 - Should the product show detailed model metrics to all users or only in a dedicated advanced section?
 - What is the minimum acceptable player data coverage for launch?
 
-## 16. Launch Criteria
+## 17. Launch Criteria
 
 The MVP is launch-ready when:
 
