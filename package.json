@@ -8,7 +8,7 @@
     "build": "pnpm -r build",
     "seed": "tsx scripts/seed.ts",
     "sync": "pnpm --filter @worldcup/worker sync",
-    "test": "vitest run --workspaces",
+    "test": "vitest run --passWithNoTests",
     "lint": "eslint \"{apps,packages}/**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
     "codegen": "graphql-codegen",
