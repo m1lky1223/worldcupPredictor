@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "worldcupPredictor",
+  "project_id": "05762fcc-465a-4fb1-a999-4c08ed2367ef"
+}
