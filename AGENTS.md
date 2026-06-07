@@ -11,14 +11,14 @@ A web application that predicts 2026 FIFA World Cup match outcomes and updates p
 ### Tech Stack
 
 - **Frontend:** Modern.js + React + TypeScript
-- **Styling:** Vanilla CSS with CSS custom properties (design tokens). No Tailwind.
+- **Styling:** Material UI (MUI) components and engine. Custom theme configured in the UI package. No Tailwind.
 - **API:** Apollo GraphQL (Node.js + TypeScript)
 - **Worker:** BullMQ + Redis (job queue, polling, post-match processing)
 - **Database:** Postgres + Drizzle ORM
 - **Prediction Engine:** TypeScript module (`packages/prediction-engine`) using Elo-based ratings
 - **Data Provider:** TheStatsAPI (fixtures, squads, players, match stats, lineups, xG)
-- **Odds Data:** TheStatsAPI odds endpoints — display only, does not feed into the model
-- **Agent Interface:** Remote MCP server (Streamable HTTP at `:4001/mcp`)
+- **Odds Data:** The Odds API — display only, does not feed into the model
+- **Agent Interface:** Remote MCP server (Streamable HTTP hosted in web app at `/api/mcp` on port 3000) with AI-renderable UI widgets
 - **Auth:** Google OAuth (production) + dev-mode seeded identity (local Docker)
 - **Deployment:** Vercel (target)
 
@@ -31,9 +31,8 @@ worldcupPredictor/
 │   ├── prd.md                 # Product requirements
 │   └── rfc-0001-architecture.md
 ├── apps/
-│   ├── web/                   # Modern.js UI (port 3000)
+│   ├── web/                   # Modern.js UI + Web MCP Server (port 3000)
 │   ├── api/                   # Apollo GraphQL API (port 4000)
-│   ├── mcp/                   # Remote MCP server (port 4001)
 │   └── worker/                # BullMQ worker service
 ├── packages/
 │   ├── domain/                # Shared domain types and constants
@@ -71,6 +70,7 @@ worldcupPredictor/
 - Co-locate component CSS in `src/styles/components/` using BEM-style class naming.
 - Server Components by default. Add `'use client'` only when the component needs interactivity, hooks, or browser APIs.
 - Keep components small. Extract sub-components when a file exceeds ~150 lines.
+- AI-renderable MCP widgets should be compact, self-contained UI surfaces that reuse the same design tokens and never query the database directly.
 
 ### Data & Types
 
@@ -85,13 +85,14 @@ worldcupPredictor/
 - Every prediction must be stored with its timestamp so historical comparisons work.
 - Explanations must be human-readable strings, not technical jargon.
 
-### Styling
+### Styling & UI Components
 
-- Use CSS custom properties defined in `tokens.css` for all colors, spacing, typography, shadows, and radii.
-- Dark mode is the default theme. Support light mode via `prefers-color-scheme`.
-- Mobile-first responsive design. Breakpoints: `640px` (sm), `768px` (md), `1024px` (lg), `1280px` (xl).
-- Use `clamp()` for fluid typography.
-- Animations: prefer `transform` and `opacity` for performance. Use `prefers-reduced-motion` to disable non-essential animations.
+- Use [Material UI](https://mui.com/material-ui/) components for all user interface layouts, typography, input fields, and custom controls.
+- Configure all design tokens (colors, typography, spacing, shadows, border-radii) using a custom Material UI Theme (`createTheme`).
+- Maintain a default dark mode theme and support light mode via MUI's theme toggling or `prefers-color-scheme`.
+- Avoid custom CSS or stylesheets unless absolutely necessary. Leverage the Material UI design system properly by customizing the custom theme configuration, using themed component overrides, or utilizing MUI's native `sx` prop and `styled()` helper for layout adjustments.
+- Implement mobile-first responsive layouts using MUI layout components (e.g., `Grid`, `Stack`, `Container`, `Box`) with responsive array/object values.
+- Animations: Prefer MUI transition components (`Fade`, `Collapse`, `Grow`) or CSS transitions using transform and opacity. Respect user preferences for reduced motion.
 
 ### API & Data Fetching
 
@@ -121,6 +122,7 @@ worldcupPredictor/
 4. **Graceful degradation**: If player data is missing, fall back to team-level predictions. If odds data is unavailable, hide that section — don't show errors.
 5. **Freshness target**: Update predictions within 5 minutes of a match being marked final.
 6. **Historical preservation**: Never overwrite old predictions. Append new ones with timestamps.
+7. **AI-renderable UI**: Key MCP tools should be able to return structured data plus renderable UI widgets for compatible AI hosts.
 
 ## Environment Variables
 
@@ -140,7 +142,6 @@ AUTH_MODE=                # google | dev
 
 # Services
 GRAPHQL_PORT=4000
-MCP_PORT=4001
 WEB_PORT=3000
 PROVIDER_MODE=            # mock | real | hybrid
 
@@ -217,5 +218,3 @@ This protocol applies when ending a Beads implementation workflow. It is subordi
 - Do not commit or push without clear authority from the active profile or the current user request.
 - If a required sync or push is blocked, stop and report the exact command and error.
 <!-- END BEADS INTEGRATION -->
-
-

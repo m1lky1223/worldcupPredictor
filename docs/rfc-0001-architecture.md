@@ -8,7 +8,7 @@ Draft
 
 We are building a 2026 World Cup predictor product. The PRD defines the user-facing product scope: match predictions, tournament dashboard, team/player tracking, post-match updates, odds comparison, and model performance tracking.
 
-This RFC proposes the initial technical architecture needed to support that product. The system must ingest tournament data, update after completed matches, preserve historical predictions, and serve a responsive web UI.
+This RFC proposes the initial technical architecture needed to support that product. The system must ingest tournament data, update after completed matches, preserve historical predictions, serve a responsive web UI, and expose agent-accessible MCP tools/resources with renderable UI widgets.
 
 ## Goals
 
@@ -18,6 +18,7 @@ This RFC proposes the initial technical architecture needed to support that prod
 - Preserve prediction and rating history for auditability.
 - Keep prediction logic reusable across API and worker processes.
 - Expose a remote MCP interface so agent clients and CLIs can query the deployed system.
+- Expose AI-renderable UI widgets through the MCP interface for compatible AI tools.
 - Ensure the full system can run locally inside Docker.
 - Allow future growth into Module Federation without requiring it for MVP.
 
@@ -39,7 +40,6 @@ Local Docker should include:
 ```text
 web
 api
-mcp
 worker
 postgres
 redis
@@ -57,7 +57,7 @@ The local environment should support:
 
 - Running the Modern.js UI.
 - Running the Apollo GraphQL API.
-- Running the remote MCP server over Streamable HTTP.
+- Running the Web MCP server over Streamable HTTP from the web app.
 - Running the worker service.
 - Running Postgres and Redis.
 - Applying database migrations.
@@ -70,8 +70,8 @@ Expected local endpoints:
 
 ```text
 http://localhost:3000          web
+http://localhost:3000/api/mcp  MCP Streamable HTTP endpoint
 http://localhost:4000/graphql  GraphQL API
-http://localhost:4001/mcp      MCP Streamable HTTP endpoint
 localhost:5432                 Postgres
 localhost:6379                 Redis
 ```
@@ -86,16 +86,14 @@ Local Docker should be treated as the primary onboarding path for engineering wo
 Modern.js Web App
   -> Apollo Client
   -> user-facing UI
+  -> Web MCP Streamable HTTP endpoint at /api/mcp
+  -> AI-renderable MCP/App UI widgets
+  -> all data access goes through GraphQL
 
 Apollo GraphQL API
   -> read/query layer
   -> product mutations if needed
   -> Google-authenticated sessions for protected user/admin actions if needed
-
-Remote MCP Server
-  -> agent/CLI access
-  -> tools for tournament queries
-  -> resources for matches, teams, players, predictions, and model metrics
 
 Worker Service
   -> provider polling
@@ -158,8 +156,9 @@ Rationale:
 
 ### Agent Interface
 
-- Remote MCP server.
+- Web MCP server hosted inside the Modern.js web app.
 - Streamable HTTP transport for deployed access.
+- Renderable UI resources/widgets for compatible AI tools.
 - Optional stdio bridge for local CLI clients that do not support remote MCP directly.
 - TypeScript MCP SDK or compatible implementation.
 
@@ -168,6 +167,7 @@ Rationale:
 - The product should be accessible to agent workflows after deployment, not only to the web UI.
 - MCP provides a standard tool/resource interface for AI clients.
 - Streamable HTTP is the appropriate transport for a remote, multi-client MCP server.
+- UI resources let compatible AI tools render focused product surfaces rather than plain text only.
 - A stdio bridge can preserve compatibility with CLIs that only launch local MCP subprocesses.
 
 ### Worker
@@ -186,7 +186,7 @@ Rationale:
 ### Database
 
 - Postgres.
-- Prisma or Drizzle.
+- Drizzle.
 
 Rationale:
 
@@ -199,7 +199,6 @@ Rationale:
 apps/
   web/                 Modern.js UI
   api/                 Apollo GraphQL API
-  mcp/                 remote MCP server for agents and CLI clients
   worker/              polling and rating updates
 
 packages/
@@ -215,11 +214,11 @@ infra/
   seed/                local seed data and fixture snapshots
 ```
 
-## MCP Interface
+## MCP and AI-Renderable UI Interface
 
-The deployed system should include a remote MCP server so external agent clients and CLI-based agents can query tournament context through a standard protocol.
+The deployed system should include a Web MCP server inside the Modern.js web app so external agent clients and CLI-based agents can query tournament context through a standard protocol.
 
-The MCP server should not replace the GraphQL API. It should be an agent-oriented facade over the same domain services used by the API and worker.
+The MCP server should not replace the GraphQL API. It should be an agent-oriented facade over GraphQL. The web app, including MCP tools/resources/widgets, must not perform direct database reads.
 
 ### Transport
 
@@ -238,7 +237,7 @@ stdio bridge/proxy
 The remote MCP endpoint can be exposed at a stable URL such as:
 
 ```text
-https://api.example.com/mcp
+https://app.example.com/api/mcp
 ```
 
 The stdio bridge can be a small local package or command that forwards JSON-RPC messages between a local CLI and the remote Streamable HTTP MCP endpoint.
@@ -246,7 +245,7 @@ The stdio bridge can be a small local package or command that forwards JSON-RPC 
 For local Docker, the MCP endpoint should be reachable at:
 
 ```text
-http://localhost:4001/mcp
+http://localhost:3000/api/mcp
 ```
 
 Agent CLIs running on the host machine should be able to connect to this local endpoint. Agent CLIs running inside another container should connect through the Docker Compose service name.
@@ -270,6 +269,43 @@ worldcup://providers/freshness
 
 Resource payloads should be concise and agent-friendly. They should include timestamps and data freshness where relevant.
 
+### Renderable UI Resources
+
+Compatible AI tools should be able to render focused product UI from MCP tool calls.
+
+Initial UI resources:
+
+```text
+ui://worldcup/dashboard-summary
+ui://worldcup/match-card
+ui://worldcup/match-detail
+ui://worldcup/team-profile
+ui://worldcup/player-profile
+ui://worldcup/group-table
+ui://worldcup/bracket-preview
+ui://worldcup/model-metrics
+```
+
+The UI resources should be self-contained HTML/CSS/JavaScript widgets that render in a sandboxed iframe in compatible hosts.
+
+Tool descriptors should attach renderable UI metadata where supported:
+
+```text
+_meta.ui.resourceUri              MCP Apps-style UI resource link
+_meta["openai/outputTemplate"]    OpenAI Apps SDK compatibility link
+```
+
+The server should prefer static templates plus structured tool output:
+
+- The MCP resource defines the visual template.
+- The MCP tool returns `structuredContent` for model-visible data and widget input.
+- Widget-only metadata may be returned in `_meta` when supported by the host.
+- Widgets should use the same visual language as the Modern.js app.
+- Widgets must not fetch directly from Postgres or external providers.
+- Widgets should rely on the MCP tool result or GraphQL-backed MCP calls.
+
+Renderable widgets are not a replacement for the full web app. They are compact surfaces for AI-hosted workflows, such as a match prediction card, team form summary, group table, or model performance panel.
+
 ### MCP Tools
 
 Initial tools:
@@ -285,6 +321,19 @@ get_match_prediction
 compare_prediction_to_market
 get_model_metrics
 get_data_freshness
+```
+
+Tools that should return renderable UI when the host supports it:
+
+```text
+get_matches                    ui://worldcup/dashboard-summary
+get_match_detail               ui://worldcup/match-detail
+get_match_prediction           ui://worldcup/match-card
+get_team                       ui://worldcup/team-profile
+get_player                     ui://worldcup/player-profile
+get_group_table                ui://worldcup/group-table
+get_bracket_projection         ui://worldcup/bracket-preview
+get_model_metrics              ui://worldcup/model-metrics
 ```
 
 Potential admin tools, protected separately:
@@ -491,16 +540,19 @@ query Dashboard {
 
 The system should use provider adapters that normalize external data into internal domain models.
 
-Candidate data providers:
+Selected providers:
 
 - FIFA official schedule and squad data as canonical reference.
+- TheStatsAPI for fixtures, squads, lineups, match stats, player stats, and xG.
+- The Odds API for odds display and market comparison.
+- FIFA rankings or national-team Elo ratings for baseline team strength.
+
+Fallback candidates:
+
 - BALLDONTLIE FIFA API.
 - API-Football / API-SPORTS.
 - Sportmonks.
-- FIFA rankings or national-team Elo ratings.
-- The Odds API.
-- TheStatsAPI.
-- Betfair Exchange API.
+- Betfair Exchange API, if exchange-specific market data becomes necessary.
 
 Provider adapters should:
 
@@ -563,17 +615,18 @@ Initial model inputs:
 - Expected or confirmed lineups.
 - Tournament form.
 - Player availability.
-- Market odds, if product decision allows odds as input.
+- Market odds are not an input in MVP.
 
 Initial weighting proposal:
 
 ```text
-35% baseline team strength
+40% baseline team strength
 30% player quality
-15% current tournament form
+20% current tournament form
 10% player availability
-10% market signal
 ```
+
+Odds are display-only in MVP. They are used for comparison, benchmarking, and calibration analysis, but not for v1 prediction generation.
 
 Historical predictions must store:
 
@@ -669,7 +722,6 @@ docker-compose.override.yml, if useful for local-only overrides
 .env.example
 apps/web/Dockerfile
 apps/api/Dockerfile
-apps/mcp/Dockerfile
 apps/worker/Dockerfile
 ```
 
@@ -680,7 +732,7 @@ The Docker setup should support:
 - Database creation.
 - Database migrations.
 - Seed data loading.
-- Hot reload for web, API, MCP, and worker services where feasible.
+- Hot reload for web, API, and worker services where feasible.
 - Running tests inside containers.
 - Switching between mock provider mode and real provider mode.
 
@@ -690,15 +742,14 @@ Required environment categories:
 DATABASE_URL
 REDIS_URL
 GRAPHQL_PORT
-MCP_PORT
 WEB_PORT
 PROVIDER_MODE
 AUTH_MODE
 GOOGLE_CLIENT_ID
 GOOGLE_CLIENT_SECRET
 SESSION_SECRET
-provider API keys, optional for local mock mode
-odds API keys, optional for local mock mode
+THESTATSAPI_KEY, optional for local mock mode
+THE_ODDS_API_KEY, optional for local mock mode
 ```
 
 Provider mode options:
@@ -775,10 +826,6 @@ Operational dashboards should answer:
 
 ## Open Questions
 
-- Which provider should be the primary fixture/player source?
-- Which provider should be the primary odds source?
-- Should odds influence predictions or be comparison-only?
-- Should Prisma or Drizzle be used?
 - Should the first model be fully heuristic or calibrated against historical tournaments?
 - How much raw provider data can be stored under provider terms?
 - What is the minimum acceptable data freshness during live match windows?

@@ -1,0 +1,132 @@
+{
+  ".beads/backup/backup_state.json": {
+    "mtime": 1780830623.7975545,
+    "ast_hash": "58ca5d019df92e83d3ea8ff28fe89f38",
+    "semantic_hash": ""
+  },
+  ".beads/hooks/post-checkout": {
+    "mtime": 1780830617.699753,
+    "ast_hash": "ec9f973effebba888ad292cab6dcc2d0",
+    "semantic_hash": ""
+  },
+  ".beads/hooks/post-merge": {
+    "mtime": 1780830617.6996627,
+    "ast_hash": "47d05d345c7d6c602d32524f65fc2a86",
+    "semantic_hash": ""
+  },
+  ".beads/hooks/pre-commit": {
+    "mtime": 1780830617.6996055,
+    "ast_hash": "4b31cb204e7954d42a9ecb9020ff52f7",
+    "semantic_hash": ""
+  },
+  ".beads/hooks/pre-push": {
+    "mtime": 1780830617.6997082,
+    "ast_hash": "83bea7ceffad7369d390fcf3a6347d63",
+    "semantic_hash": ""
+  },
+  ".beads/hooks/prepare-commit-msg": {
+    "mtime": 1780830617.6999168,
+    "ast_hash": "f9acf190971bc9e990db2f67c5270599",
+    "semantic_hash": ""
+  },
+  ".beads/metadata.json": {
+    "mtime": 1780830617.5456984,
+    "ast_hash": "9fe6dcb9f4b7d671f04106a65542dd12",
+    "semantic_hash": ""
+  },
+  ".claude/settings.json": {
+    "mtime": 1780830617.7125447,
+    "ast_hash": "408623853c987db7ac558792eeaec276",
+    "semantic_hash": ""
+  },
+  ".codex/hooks.json": {
+    "mtime": 1780830617.7136211,
+    "ast_hash": "6ab111cb0ebd91918bed9fa0805d8a31",
+    "semantic_hash": ""
+  },
+  ".planning/config.json": {
+    "mtime": 1780829328.5686955,
+    "ast_hash": "6cdc4a20ed0dd74f0a5b055a9e51acc8",
+    "semantic_hash": ""
+  },
+  "mcp.json": {
+    "mtime": 1780832126.6136715,
+    "ast_hash": "756baeae4ddd48921a34b6908c54049b",
+    "semantic_hash": ""
+  },
+  ".agents/rules/graphify.md": {
+    "mtime": 1780832419.6930838,
+    "ast_hash": "f1e53ecc9194573d3c28fc116c743a2e",
+    "semantic_hash": ""
+  },
+  ".agents/skills/beads/SKILL.md": {
+    "mtime": 1780830617.7128935,
+    "ast_hash": "4eba59bd27c18667fbbed3d5942b40ef",
+    "semantic_hash": ""
+  },
+  ".agents/skills/beads/agents/openai.yaml": {
+    "mtime": 1780830617.713,
+    "ast_hash": "075f32133b20f796e271f03cd50cd03e",
+    "semantic_hash": ""
+  },
+  ".agents/workflows/graphify.md": {
+    "mtime": 1780832419.6932118,
+    "ast_hash": "0bc020d491fca99550c1ea3de0a5f862",
+    "semantic_hash": ""
+  },
+  ".beads/README.md": {
+    "mtime": 1780830617.5781605,
+    "ast_hash": "7b562344dfbbf12388c3032ba0aa4d4e",
+    "semantic_hash": ""
+  },
+  ".beads/config.yaml": {
+    "mtime": 1780830617.5780869,
+    "ast_hash": "d96e26fb053d7c60b79dd2dc6959075b",
+    "semantic_hash": ""
+  },
+  ".planning/PROJECT.md": {
+    "mtime": 1780832049.0355778,
+    "ast_hash": "55c27661f5400a18ca6782f7801d9ffe",
+    "semantic_hash": ""
+  },
+  ".planning/REQUIREMENTS.md": {
+    "mtime": 1780829384.4924865,
+    "ast_hash": "f3b52fc73a24e503b43300355c363502",
+    "semantic_hash": ""
+  },
+  ".planning/ROADMAP.md": {
+    "mtime": 1780829438.2743127,
+    "ast_hash": "fabf4bb3f3b226c543514d848d35f1cd",
+    "semantic_hash": ""
+  },
+  ".planning/STATE.md": {
+    "mtime": 1780830005.1113281,
+    "ast_hash": "6ef7a12fd94d4f507340e2232574aef7",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1780832112.6514335,
+    "ast_hash": "ce0bd39be1484d07c35e83246d3e5e5a",
+    "semantic_hash": ""
+  },
+  "AI_NOTES.md": {
+    "mtime": 1780832136.322576,
+    "ast_hash": "46c6f6d81c2c7119e6d53a9b82bfa111",
+    "semantic_hash": ""
+  },
+  "ARCHITECTURE.md": {
+    "mtime": 1780832024.597083,
+    "ast_hash": "aa467851e4593a3eb8745e12d6e79fb1",
+    "semantic_hash": ""
+  },
+  "docs/prd.md": {
+    "mtime": 1780828713.9721134,
+    "ast_hash": "08029ab4eab5df627cd7a795182202fe",
+    "semantic_hash": ""
+  },
+  "docs/rfc-0001-architecture.md": {
+    "mtime": 1780831803.0537195,
+    "ast_hash": "459870bfd5c4f68507e11d213c3ddf9c",
+    "semantic_hash": ""
+  }
+}

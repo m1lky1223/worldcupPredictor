@@ -1,0 +1,4395 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "backup_state.json",
+      "file_type": "code",
+      "source_file": ".beads/backup/backup_state.json",
+      "source_location": "L1",
+      "id": "backup_backup_state",
+      "community": 19,
+      "norm_label": "backup_state.json"
+    },
+    {
+      "label": "last_dolt_commit",
+      "file_type": "code",
+      "source_file": ".beads/backup/backup_state.json",
+      "source_location": "L2",
+      "id": "backup_backup_state_last_dolt_commit",
+      "community": 19,
+      "norm_label": "last_dolt_commit"
+    },
+    {
+      "label": "timestamp",
+      "file_type": "code",
+      "source_file": ".beads/backup/backup_state.json",
+      "source_location": "L3",
+      "id": "backup_backup_state_timestamp",
+      "community": 19,
+      "norm_label": "timestamp"
+    },
+    {
+      "label": "metadata.json",
+      "file_type": "code",
+      "source_file": ".beads/metadata.json",
+      "source_location": "L1",
+      "id": "beads_metadata",
+      "community": 15,
+      "norm_label": "metadata.json"
+    },
+    {
+      "label": "database",
+      "file_type": "code",
+      "source_file": ".beads/metadata.json",
+      "source_location": "L2",
+      "id": "beads_metadata_database",
+      "community": 15,
+      "norm_label": "database"
+    },
+    {
+      "label": "backend",
+      "file_type": "code",
+      "source_file": ".beads/metadata.json",
+      "source_location": "L3",
+      "id": "beads_metadata_backend",
+      "community": 15,
+      "norm_label": "backend"
+    },
+    {
+      "label": "dolt_mode",
+      "file_type": "code",
+      "source_file": ".beads/metadata.json",
+      "source_location": "L4",
+      "id": "beads_metadata_dolt_mode",
+      "community": 15,
+      "norm_label": "dolt_mode"
+    },
+    {
+      "label": "dolt_database",
+      "file_type": "code",
+      "source_file": ".beads/metadata.json",
+      "source_location": "L5",
+      "id": "beads_metadata_dolt_database",
+      "community": 15,
+      "norm_label": "dolt_database"
+    },
+    {
+      "label": "project_id",
+      "file_type": "code",
+      "source_file": ".beads/metadata.json",
+      "source_location": "L6",
+      "id": "beads_metadata_project_id",
+      "community": 15,
+      "norm_label": "project_id"
+    },
+    {
+      "label": "settings.json",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L1",
+      "id": "claude_settings",
+      "community": 20,
+      "norm_label": "settings.json"
+    },
+    {
+      "label": "hooks",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L2",
+      "id": "claude_settings_hooks",
+      "community": 20,
+      "norm_label": "hooks"
+    },
+    {
+      "label": "SessionStart",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L3",
+      "id": "claude_settings_hooks_sessionstart",
+      "community": 20,
+      "norm_label": "sessionstart"
+    },
+    {
+      "label": "hooks.json",
+      "file_type": "code",
+      "source_file": ".codex/hooks.json",
+      "source_location": "L1",
+      "id": "codex_hooks",
+      "community": 16,
+      "norm_label": "hooks.json"
+    },
+    {
+      "label": "hooks",
+      "file_type": "code",
+      "source_file": ".codex/hooks.json",
+      "source_location": "L2",
+      "id": "codex_hooks_hooks",
+      "community": 16,
+      "norm_label": "hooks"
+    },
+    {
+      "label": "PostCompact",
+      "file_type": "code",
+      "source_file": ".codex/hooks.json",
+      "source_location": "L3",
+      "id": "codex_hooks_hooks_postcompact",
+      "community": 16,
+      "norm_label": "postcompact"
+    },
+    {
+      "label": "PreCompact",
+      "file_type": "code",
+      "source_file": ".codex/hooks.json",
+      "source_location": "L15",
+      "id": "codex_hooks_hooks_precompact",
+      "community": 16,
+      "norm_label": "precompact"
+    },
+    {
+      "label": "SessionStart",
+      "file_type": "code",
+      "source_file": ".codex/hooks.json",
+      "source_location": "L27",
+      "id": "codex_hooks_hooks_sessionstart",
+      "community": 16,
+      "norm_label": "sessionstart"
+    },
+    {
+      "label": "UserPromptSubmit",
+      "file_type": "code",
+      "source_file": ".codex/hooks.json",
+      "source_location": "L39",
+      "id": "codex_hooks_hooks_userpromptsubmit",
+      "community": 16,
+      "norm_label": "userpromptsubmit"
+    },
+    {
+      "label": "config.json",
+      "file_type": "code",
+      "source_file": ".planning/config.json",
+      "source_location": "L1",
+      "id": "planning_config",
+      "community": 4,
+      "norm_label": "config.json"
+    },
+    {
+      "label": "mode",
+      "file_type": "code",
+      "source_file": ".planning/config.json",
+      "source_location": "L2",
+      "id": "planning_config_mode",
+      "community": 4,
+      "norm_label": "mode"
+    },
+    {
+      "label": "granularity",
+      "file_type": "code",
+      "source_file": ".planning/config.json",
+      "source_location": "L3",
+      "id": "planning_config_granularity",
+      "community": 4,
+      "norm_label": "granularity"
+    },
+    {
+      "label": "parallelization",
+      "file_type": "code",
+      "source_file": ".planning/config.json",
+      "source_location": "L4",
+      "id": "planning_config_parallelization",
+      "community": 4,
+      "norm_label": "parallelization"
+    },
+    {
+      "label": "commit_docs",
+      "file_type": "code",
+      "source_file": ".planning/config.json",
+      "source_location": "L5",
+      "id": "planning_config_commit_docs",
+      "community": 4,
+      "norm_label": "commit_docs"
+    },
+    {
+      "label": "model_profile",
+      "file_type": "code",
+      "source_file": ".planning/config.json",
+      "source_location": "L6",
+      "id": "planning_config_model_profile",
+      "community": 4,
+      "norm_label": "model_profile"
+    },
+    {
+      "label": "workflow",
+      "file_type": "code",
+      "source_file": ".planning/config.json",
+      "source_location": "L7",
+      "id": "planning_config_workflow",
+      "community": 4,
+      "norm_label": "workflow"
+    },
+    {
+      "label": "research",
+      "file_type": "code",
+      "source_file": ".planning/config.json",
+      "source_location": "L8",
+      "id": "planning_config_workflow_research",
+      "community": 4,
+      "norm_label": "research"
+    },
+    {
+      "label": "plan_check",
+      "file_type": "code",
+      "source_file": ".planning/config.json",
+      "source_location": "L9",
+      "id": "planning_config_workflow_plan_check",
+      "community": 4,
+      "norm_label": "plan_check"
+    },
+    {
+      "label": "verifier",
+      "file_type": "code",
+      "source_file": ".planning/config.json",
+      "source_location": "L10",
+      "id": "planning_config_workflow_verifier",
+      "community": 4,
+      "norm_label": "verifier"
+    },
+    {
+      "label": "nyquist_validation",
+      "file_type": "code",
+      "source_file": ".planning/config.json",
+      "source_location": "L11",
+      "id": "planning_config_workflow_nyquist_validation",
+      "community": 4,
+      "norm_label": "nyquist_validation"
+    },
+    {
+      "label": "auto_advance",
+      "file_type": "code",
+      "source_file": ".planning/config.json",
+      "source_location": "L12",
+      "id": "planning_config_workflow_auto_advance",
+      "community": 4,
+      "norm_label": "auto_advance"
+    },
+    {
+      "label": "plan_review",
+      "file_type": "code",
+      "source_file": ".planning/config.json",
+      "source_location": "L14",
+      "id": "planning_config_plan_review",
+      "community": 4,
+      "norm_label": "plan_review"
+    },
+    {
+      "label": "source_grounding",
+      "file_type": "code",
+      "source_file": ".planning/config.json",
+      "source_location": "L15",
+      "id": "planning_config_plan_review_source_grounding",
+      "community": 4,
+      "norm_label": "source_grounding"
+    },
+    {
+      "label": "ship",
+      "file_type": "code",
+      "source_file": ".planning/config.json",
+      "source_location": "L17",
+      "id": "planning_config_ship",
+      "community": 4,
+      "norm_label": "ship"
+    },
+    {
+      "label": "pr_body_sections",
+      "file_type": "code",
+      "source_file": ".planning/config.json",
+      "source_location": "L18",
+      "id": "planning_config_ship_pr_body_sections",
+      "community": 4,
+      "norm_label": "pr_body_sections"
+    },
+    {
+      "label": "mcp.json",
+      "file_type": "code",
+      "source_file": "mcp.json",
+      "source_location": "L1",
+      "metadata": {
+        "mcp_kind": "mcp_config_file"
+      },
+      "id": "mcp",
+      "community": 18,
+      "norm_label": "mcp.json"
+    },
+    {
+      "label": "mui-mcp",
+      "file_type": "code",
+      "source_file": "mcp.json",
+      "source_location": "L1",
+      "metadata": {
+        "mcp_kind": "mcp_server"
+      },
+      "id": "mcp_mcp_server_mui_mcp",
+      "community": 18,
+      "norm_label": "mui-mcp"
+    },
+    {
+      "label": "npx",
+      "file_type": "code",
+      "source_file": "mcp.json",
+      "source_location": "L1",
+      "metadata": {
+        "mcp_kind": "mcp_command"
+      },
+      "id": "mcp_command_npx",
+      "community": 18,
+      "norm_label": "npx"
+    },
+    {
+      "label": "@mui/mcp",
+      "file_type": "code",
+      "source_file": "mcp.json",
+      "source_location": "L1",
+      "metadata": {
+        "mcp_kind": "mcp_package"
+      },
+      "id": "mcp_package_mui_mcp",
+      "community": 18,
+      "norm_label": "@mui/mcp"
+    },
+    {
+      "label": "graphify.md",
+      "file_type": "document",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L1",
+      "id": "rules_graphify",
+      "community": 21,
+      "norm_label": "graphify.md"
+    },
+    {
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L6",
+      "id": "rules_graphify_graphify",
+      "community": 21,
+      "norm_label": "graphify"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/beads/SKILL.md",
+      "source_location": "L1",
+      "id": "beads_skill",
+      "community": 13,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Beads",
+      "file_type": "document",
+      "source_file": ".agents/skills/beads/SKILL.md",
+      "source_location": "L6",
+      "id": "beads_skill_beads",
+      "community": 13,
+      "norm_label": "beads"
+    },
+    {
+      "label": "First Step",
+      "file_type": "document",
+      "source_file": ".agents/skills/beads/SKILL.md",
+      "source_location": "L10",
+      "id": "beads_skill_first_step",
+      "community": 13,
+      "norm_label": "first step"
+    },
+    {
+      "label": "Preferred Route",
+      "file_type": "document",
+      "source_file": ".agents/skills/beads/SKILL.md",
+      "source_location": "L24",
+      "id": "beads_skill_preferred_route",
+      "community": 13,
+      "norm_label": "preferred route"
+    },
+    {
+      "label": "Core CLI Workflow",
+      "file_type": "document",
+      "source_file": ".agents/skills/beads/SKILL.md",
+      "source_location": "L28",
+      "id": "beads_skill_core_cli_workflow",
+      "community": 13,
+      "norm_label": "core cli workflow"
+    },
+    {
+      "label": "What Belongs In Beads",
+      "file_type": "document",
+      "source_file": ".agents/skills/beads/SKILL.md",
+      "source_location": "L62",
+      "id": "beads_skill_what_belongs_in_beads",
+      "community": 13,
+      "norm_label": "what belongs in beads"
+    },
+    {
+      "label": "Rules",
+      "file_type": "document",
+      "source_file": ".agents/skills/beads/SKILL.md",
+      "source_location": "L74",
+      "id": "beads_skill_rules",
+      "community": 13,
+      "norm_label": "rules"
+    },
+    {
+      "label": "graphify.md",
+      "file_type": "document",
+      "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L1",
+      "id": "workflows_graphify",
+      "community": 22,
+      "norm_label": "graphify.md"
+    },
+    {
+      "label": "Workflow: graphify",
+      "file_type": "document",
+      "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L6",
+      "id": "workflows_graphify_workflow_graphify",
+      "community": 22,
+      "norm_label": "workflow: graphify"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": ".beads/README.md",
+      "source_location": "L1",
+      "id": "beads_readme",
+      "community": 10,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Beads - AI-Native Issue Tracking",
+      "file_type": "document",
+      "source_file": ".beads/README.md",
+      "source_location": "L1",
+      "id": "beads_readme_beads_ai_native_issue_tracking",
+      "community": 10,
+      "norm_label": "beads - ai-native issue tracking"
+    },
+    {
+      "label": "What is Beads?",
+      "file_type": "document",
+      "source_file": ".beads/README.md",
+      "source_location": "L5",
+      "id": "beads_readme_what_is_beads",
+      "community": 10,
+      "norm_label": "what is beads?"
+    },
+    {
+      "label": "Quick Start",
+      "file_type": "document",
+      "source_file": ".beads/README.md",
+      "source_location": "L11",
+      "id": "beads_readme_quick_start",
+      "community": 10,
+      "norm_label": "quick start"
+    },
+    {
+      "label": "Essential Commands",
+      "file_type": "document",
+      "source_file": ".beads/README.md",
+      "source_location": "L13",
+      "id": "beads_readme_essential_commands",
+      "community": 10,
+      "norm_label": "essential commands"
+    },
+    {
+      "label": "Working with Issues",
+      "file_type": "document",
+      "source_file": ".beads/README.md",
+      "source_location": "L33",
+      "id": "beads_readme_working_with_issues",
+      "community": 10,
+      "norm_label": "working with issues"
+    },
+    {
+      "label": "Why Beads?",
+      "file_type": "document",
+      "source_file": ".beads/README.md",
+      "source_location": "L41",
+      "id": "beads_readme_why_beads",
+      "community": 10,
+      "norm_label": "why beads?"
+    },
+    {
+      "label": "Get Started with Beads",
+      "file_type": "document",
+      "source_file": ".beads/README.md",
+      "source_location": "L58",
+      "id": "beads_readme_get_started_with_beads",
+      "community": 10,
+      "norm_label": "get started with beads"
+    },
+    {
+      "label": "Learn More",
+      "file_type": "document",
+      "source_file": ".beads/README.md",
+      "source_location": "L73",
+      "id": "beads_readme_learn_more",
+      "community": 10,
+      "norm_label": "learn more"
+    },
+    {
+      "label": "PROJECT.md",
+      "file_type": "document",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L1",
+      "id": "planning_project",
+      "community": 7,
+      "norm_label": "project.md"
+    },
+    {
+      "label": "PROJECT.md \u2014 2026 World Cup Predictor",
+      "file_type": "document",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L1",
+      "id": "planning_project_project_md_2026_world_cup_predictor",
+      "community": 7,
+      "norm_label": "project.md \u2014 2026 world cup predictor"
+    },
+    {
+      "label": "What This Is",
+      "file_type": "document",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L3",
+      "id": "planning_project_what_this_is",
+      "community": 7,
+      "norm_label": "what this is"
+    },
+    {
+      "label": "Core Value",
+      "file_type": "document",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L9",
+      "id": "planning_project_core_value",
+      "community": 7,
+      "norm_label": "core value"
+    },
+    {
+      "label": "Context",
+      "file_type": "document",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L13",
+      "id": "planning_project_context",
+      "community": 7,
+      "norm_label": "context"
+    },
+    {
+      "label": "Requirements",
+      "file_type": "document",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L22",
+      "id": "planning_project_requirements",
+      "community": 7,
+      "norm_label": "requirements"
+    },
+    {
+      "label": "Validated",
+      "file_type": "document",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L24",
+      "id": "planning_project_validated",
+      "community": 7,
+      "norm_label": "validated"
+    },
+    {
+      "label": "Active",
+      "file_type": "document",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L28",
+      "id": "planning_project_active",
+      "community": 7,
+      "norm_label": "active"
+    },
+    {
+      "label": "Out of Scope (MVP)",
+      "file_type": "document",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L85",
+      "id": "planning_project_out_of_scope_mvp",
+      "community": 7,
+      "norm_label": "out of scope (mvp)"
+    },
+    {
+      "label": "Key Decisions",
+      "file_type": "document",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L96",
+      "id": "planning_project_key_decisions",
+      "community": 7,
+      "norm_label": "key decisions"
+    },
+    {
+      "label": "Success Criteria",
+      "file_type": "document",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L114",
+      "id": "planning_project_success_criteria",
+      "community": 7,
+      "norm_label": "success criteria"
+    },
+    {
+      "label": "Evolution",
+      "file_type": "document",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L123",
+      "id": "planning_project_evolution",
+      "community": 7,
+      "norm_label": "evolution"
+    },
+    {
+      "label": "REQUIREMENTS.md",
+      "file_type": "document",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L1",
+      "id": "planning_requirements",
+      "community": 5,
+      "norm_label": "requirements.md"
+    },
+    {
+      "label": "REQUIREMENTS.md \u2014 2026 World Cup Predictor",
+      "file_type": "document",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L1",
+      "id": "planning_requirements_requirements_md_2026_world_cup_predictor",
+      "community": 5,
+      "norm_label": "requirements.md \u2014 2026 world cup predictor"
+    },
+    {
+      "label": "Table Stakes (Must Ship for MVP)",
+      "file_type": "document",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L3",
+      "id": "planning_requirements_table_stakes_must_ship_for_mvp",
+      "community": 5,
+      "norm_label": "table stakes (must ship for mvp)"
+    },
+    {
+      "label": "Functional Requirements",
+      "file_type": "document",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L18",
+      "id": "planning_requirements_functional_requirements",
+      "community": 5,
+      "norm_label": "functional requirements"
+    },
+    {
+      "label": "F1 \u2014 Monorepo & Infrastructure",
+      "file_type": "document",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L20",
+      "id": "planning_requirements_f1_monorepo_infrastructure",
+      "community": 5,
+      "norm_label": "f1 \u2014 monorepo & infrastructure"
+    },
+    {
+      "label": "F2 \u2014 Database Schema",
+      "file_type": "document",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L33",
+      "id": "planning_requirements_f2_database_schema",
+      "community": 5,
+      "norm_label": "f2 \u2014 database schema"
+    },
+    {
+      "label": "F3 \u2014 Data Ingestion",
+      "file_type": "document",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L45",
+      "id": "planning_requirements_f3_data_ingestion",
+      "community": 5,
+      "norm_label": "f3 \u2014 data ingestion"
+    },
+    {
+      "label": "F4 \u2014 Worker Jobs",
+      "file_type": "document",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L57",
+      "id": "planning_requirements_f4_worker_jobs",
+      "community": 5,
+      "norm_label": "f4 \u2014 worker jobs"
+    },
+    {
+      "label": "F5 \u2014 Prediction Engine",
+      "file_type": "document",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L74",
+      "id": "planning_requirements_f5_prediction_engine",
+      "community": 5,
+      "norm_label": "f5 \u2014 prediction engine"
+    },
+    {
+      "label": "F6 \u2014 GraphQL API",
+      "file_type": "document",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L87",
+      "id": "planning_requirements_f6_graphql_api",
+      "community": 5,
+      "norm_label": "f6 \u2014 graphql api"
+    },
+    {
+      "label": "F7 \u2014 Web UI",
+      "file_type": "document",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L105",
+      "id": "planning_requirements_f7_web_ui",
+      "community": 5,
+      "norm_label": "f7 \u2014 web ui"
+    },
+    {
+      "label": "F8 \u2014 Remote MCP Server",
+      "file_type": "document",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L124",
+      "id": "planning_requirements_f8_remote_mcp_server",
+      "community": 5,
+      "norm_label": "f8 \u2014 remote mcp server"
+    },
+    {
+      "label": "F9 \u2014 Authentication & Authorization",
+      "file_type": "document",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L137",
+      "id": "planning_requirements_f9_authentication_authorization",
+      "community": 5,
+      "norm_label": "f9 \u2014 authentication & authorization"
+    },
+    {
+      "label": "Non-Functional Requirements",
+      "file_type": "document",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L146",
+      "id": "planning_requirements_non_functional_requirements",
+      "community": 5,
+      "norm_label": "non-functional requirements"
+    },
+    {
+      "label": "Open Questions (Blocking Decisions)",
+      "file_type": "document",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L159",
+      "id": "planning_requirements_open_questions_blocking_decisions",
+      "community": 5,
+      "norm_label": "open questions (blocking decisions)"
+    },
+    {
+      "label": "ROADMAP.md",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L1",
+      "id": "planning_roadmap",
+      "community": 0,
+      "norm_label": "roadmap.md"
+    },
+    {
+      "label": "ROADMAP.md \u2014 2026 World Cup Predictor",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L1",
+      "id": "planning_roadmap_roadmap_md_2026_world_cup_predictor",
+      "community": 0,
+      "norm_label": "roadmap.md \u2014 2026 world cup predictor"
+    },
+    {
+      "label": "Phasing Strategy",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L3",
+      "id": "planning_roadmap_phasing_strategy",
+      "community": 0,
+      "norm_label": "phasing strategy"
+    },
+    {
+      "label": "Phase 1 \u2014 Monorepo & Local Infrastructure",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L9",
+      "id": "planning_roadmap_phase_1_monorepo_local_infrastructure",
+      "community": 0,
+      "norm_label": "phase 1 \u2014 monorepo & local infrastructure"
+    },
+    {
+      "label": "Plans",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L12",
+      "id": "planning_roadmap_plans",
+      "community": 0,
+      "norm_label": "plans"
+    },
+    {
+      "label": "Phase 2 \u2014 Domain Schema & Provider Adapters",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L23",
+      "id": "planning_roadmap_phase_2_domain_schema_provider_adapters",
+      "community": 0,
+      "norm_label": "phase 2 \u2014 domain schema & provider adapters"
+    },
+    {
+      "label": "Plans",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L26",
+      "id": "planning_roadmap_plans_26",
+      "community": 0,
+      "norm_label": "plans"
+    },
+    {
+      "label": "Phase 3 \u2014 GraphQL API Core",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L37",
+      "id": "planning_roadmap_phase_3_graphql_api_core",
+      "community": 0,
+      "norm_label": "phase 3 \u2014 graphql api core"
+    },
+    {
+      "label": "Plans",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L40",
+      "id": "planning_roadmap_plans_40",
+      "community": 0,
+      "norm_label": "plans"
+    },
+    {
+      "label": "Phase 4 \u2014 Web UI Foundation",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L52",
+      "id": "planning_roadmap_phase_4_web_ui_foundation",
+      "community": 0,
+      "norm_label": "phase 4 \u2014 web ui foundation"
+    },
+    {
+      "label": "Plans",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L55",
+      "id": "planning_roadmap_plans_55",
+      "community": 0,
+      "norm_label": "plans"
+    },
+    {
+      "label": "Phase 5 \u2014 Prediction Engine",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L69",
+      "id": "planning_roadmap_phase_5_prediction_engine",
+      "community": 0,
+      "norm_label": "phase 5 \u2014 prediction engine"
+    },
+    {
+      "label": "Plans",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L72",
+      "id": "planning_roadmap_plans_72",
+      "community": 0,
+      "norm_label": "plans"
+    },
+    {
+      "label": "Phase 6 \u2014 Worker: Polling, Finalization & Rating Updates",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L85",
+      "id": "planning_roadmap_phase_6_worker_polling_finalization_rating_updates",
+      "community": 0,
+      "norm_label": "phase 6 \u2014 worker: polling, finalization & rating updates"
+    },
+    {
+      "label": "Plans",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L88",
+      "id": "planning_roadmap_plans_88",
+      "community": 0,
+      "norm_label": "plans"
+    },
+    {
+      "label": "Phase 7 \u2014 Odds Integration",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L103",
+      "id": "planning_roadmap_phase_7_odds_integration",
+      "community": 0,
+      "norm_label": "phase 7 \u2014 odds integration"
+    },
+    {
+      "label": "Plans",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L106",
+      "id": "planning_roadmap_plans_106",
+      "community": 0,
+      "norm_label": "plans"
+    },
+    {
+      "label": "Phase 8 \u2014 Authentication & Authorization",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L118",
+      "id": "planning_roadmap_phase_8_authentication_authorization",
+      "community": 0,
+      "norm_label": "phase 8 \u2014 authentication & authorization"
+    },
+    {
+      "label": "Plans",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L121",
+      "id": "planning_roadmap_plans_121",
+      "community": 0,
+      "norm_label": "plans"
+    },
+    {
+      "label": "Phase 9 \u2014 Remote MCP Server",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L132",
+      "id": "planning_roadmap_phase_9_remote_mcp_server",
+      "community": 0,
+      "norm_label": "phase 9 \u2014 remote mcp server"
+    },
+    {
+      "label": "Plans",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L135",
+      "id": "planning_roadmap_plans_135",
+      "community": 0,
+      "norm_label": "plans"
+    },
+    {
+      "label": "Phase 10 \u2014 Observability & Operational Hardening",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L148",
+      "id": "planning_roadmap_phase_10_observability_operational_hardening",
+      "community": 0,
+      "norm_label": "phase 10 \u2014 observability & operational hardening"
+    },
+    {
+      "label": "Plans",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L151",
+      "id": "planning_roadmap_plans_151",
+      "community": 0,
+      "norm_label": "plans"
+    },
+    {
+      "label": "Phase 11 \u2014 Pre-Launch QA & Data Seeding",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L163",
+      "id": "planning_roadmap_phase_11_pre_launch_qa_data_seeding",
+      "community": 0,
+      "norm_label": "phase 11 \u2014 pre-launch qa & data seeding"
+    },
+    {
+      "label": "Plans",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L166",
+      "id": "planning_roadmap_plans_166",
+      "community": 0,
+      "norm_label": "plans"
+    },
+    {
+      "label": "Phase Dependencies",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L180",
+      "id": "planning_roadmap_phase_dependencies",
+      "community": 0,
+      "norm_label": "phase dependencies"
+    },
+    {
+      "label": "Post-MVP Backlog",
+      "file_type": "document",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L198",
+      "id": "planning_roadmap_post_mvp_backlog",
+      "community": 0,
+      "norm_label": "post-mvp backlog"
+    },
+    {
+      "label": "STATE.md",
+      "file_type": "document",
+      "source_file": ".planning/STATE.md",
+      "source_location": "L1",
+      "id": "planning_state",
+      "community": 12,
+      "norm_label": "state.md"
+    },
+    {
+      "label": "STATE.md \u2014 2026 World Cup Predictor",
+      "file_type": "document",
+      "source_file": ".planning/STATE.md",
+      "source_location": "L1",
+      "id": "planning_state_state_md_2026_world_cup_predictor",
+      "community": 12,
+      "norm_label": "state.md \u2014 2026 world cup predictor"
+    },
+    {
+      "label": "Current Phase",
+      "file_type": "document",
+      "source_file": ".planning/STATE.md",
+      "source_location": "L3",
+      "id": "planning_state_current_phase",
+      "community": 12,
+      "norm_label": "current phase"
+    },
+    {
+      "label": "Status",
+      "file_type": "document",
+      "source_file": ".planning/STATE.md",
+      "source_location": "L7",
+      "id": "planning_state_status",
+      "community": 12,
+      "norm_label": "status"
+    },
+    {
+      "label": "Last Action",
+      "file_type": "document",
+      "source_file": ".planning/STATE.md",
+      "source_location": "L11",
+      "id": "planning_state_last_action",
+      "community": 12,
+      "norm_label": "last action"
+    },
+    {
+      "label": "Phase History",
+      "file_type": "document",
+      "source_file": ".planning/STATE.md",
+      "source_location": "L15",
+      "id": "planning_state_phase_history",
+      "community": 12,
+      "norm_label": "phase history"
+    },
+    {
+      "label": "Active Blockers",
+      "file_type": "document",
+      "source_file": ".planning/STATE.md",
+      "source_location": "L21",
+      "id": "planning_state_active_blockers",
+      "community": 12,
+      "norm_label": "active blockers"
+    },
+    {
+      "label": "Notes",
+      "file_type": "document",
+      "source_file": ".planning/STATE.md",
+      "source_location": "L25",
+      "id": "planning_state_notes",
+      "community": 12,
+      "norm_label": "notes"
+    },
+    {
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "id": "agents",
+      "community": 6,
+      "norm_label": "agents.md"
+    },
+    {
+      "label": "AGENTS.md \u2014 2026 World Cup Predictor",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "id": "agents_agents_md_2026_world_cup_predictor",
+      "community": 6,
+      "norm_label": "agents.md \u2014 2026 world cup predictor"
+    },
+    {
+      "label": "Project Overview",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L5",
+      "id": "agents_project_overview",
+      "community": 6,
+      "norm_label": "project overview"
+    },
+    {
+      "label": "Architecture",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L9",
+      "id": "agents_architecture",
+      "community": 6,
+      "norm_label": "architecture"
+    },
+    {
+      "label": "Tech Stack",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L11",
+      "id": "agents_tech_stack",
+      "community": 6,
+      "norm_label": "tech stack"
+    },
+    {
+      "label": "Directory Structure",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L25",
+      "id": "agents_directory_structure",
+      "community": 6,
+      "norm_label": "directory structure"
+    },
+    {
+      "label": "Coding Conventions",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L58",
+      "id": "agents_coding_conventions",
+      "community": 9,
+      "norm_label": "coding conventions"
+    },
+    {
+      "label": "General",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L60",
+      "id": "agents_general",
+      "community": 9,
+      "norm_label": "general"
+    },
+    {
+      "label": "Components",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L67",
+      "id": "agents_components",
+      "community": 9,
+      "norm_label": "components"
+    },
+    {
+      "label": "Data & Types",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L75",
+      "id": "agents_data_types",
+      "community": 9,
+      "norm_label": "data & types"
+    },
+    {
+      "label": "Prediction Engine",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L81",
+      "id": "agents_prediction_engine",
+      "community": 9,
+      "norm_label": "prediction engine"
+    },
+    {
+      "label": "Styling & UI Components",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L88",
+      "id": "agents_styling_ui_components",
+      "community": 9,
+      "norm_label": "styling & ui components"
+    },
+    {
+      "label": "API & Data Fetching",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L97",
+      "id": "agents_api_data_fetching",
+      "community": 9,
+      "norm_label": "api & data fetching"
+    },
+    {
+      "label": "Testing",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L104",
+      "id": "agents_testing",
+      "community": 9,
+      "norm_label": "testing"
+    },
+    {
+      "label": "Git",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L111",
+      "id": "agents_git",
+      "community": 9,
+      "norm_label": "git"
+    },
+    {
+      "label": "Key Product Rules",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L117",
+      "id": "agents_key_product_rules",
+      "community": 6,
+      "norm_label": "key product rules"
+    },
+    {
+      "label": "Environment Variables",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L127",
+      "id": "agents_environment_variables",
+      "community": 6,
+      "norm_label": "environment variables"
+    },
+    {
+      "label": "Useful Commands",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L152",
+      "id": "agents_useful_commands",
+      "community": 6,
+      "norm_label": "useful commands"
+    },
+    {
+      "label": "Beads Issue Tracker",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L167",
+      "id": "agents_beads_issue_tracker",
+      "community": 6,
+      "norm_label": "beads issue tracker"
+    },
+    {
+      "label": "Quick Reference",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L171",
+      "id": "agents_quick_reference",
+      "community": 6,
+      "norm_label": "quick reference"
+    },
+    {
+      "label": "Rules",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L180",
+      "id": "agents_rules",
+      "community": 6,
+      "norm_label": "rules"
+    },
+    {
+      "label": "Agent Context Profiles",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L188",
+      "id": "agents_agent_context_profiles",
+      "community": 6,
+      "norm_label": "agent context profiles"
+    },
+    {
+      "label": "Session Completion",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L196",
+      "id": "agents_session_completion",
+      "community": 6,
+      "norm_label": "session completion"
+    },
+    {
+      "label": "AI_NOTES.md",
+      "file_type": "document",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L1",
+      "id": "ai_notes",
+      "community": 8,
+      "norm_label": "ai_notes.md"
+    },
+    {
+      "label": "AI Notes \u2014 2026 World Cup Predictor",
+      "file_type": "document",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L1",
+      "id": "ai_notes_ai_notes_2026_world_cup_predictor",
+      "community": 8,
+      "norm_label": "ai notes \u2014 2026 world cup predictor"
+    },
+    {
+      "label": "1. Single Source of Truth: `AGENTS.md`",
+      "file_type": "document",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L7",
+      "id": "ai_notes_1_single_source_of_truth_agents_md",
+      "community": 8,
+      "norm_label": "1. single source of truth: `agents.md`"
+    },
+    {
+      "label": "Key Ground Rules to Keep in Mind:",
+      "file_type": "document",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L11",
+      "id": "ai_notes_key_ground_rules_to_keep_in_mind",
+      "community": 8,
+      "norm_label": "key ground rules to keep in mind:"
+    },
+    {
+      "label": "2. Task Tracking with Beads (`bd`)",
+      "file_type": "document",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L22",
+      "id": "ai_notes_2_task_tracking_with_beads_bd",
+      "community": 8,
+      "norm_label": "2. task tracking with beads (`bd`)"
+    },
+    {
+      "label": "Common Beads Commands:",
+      "file_type": "document",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L29",
+      "id": "ai_notes_common_beads_commands",
+      "community": 8,
+      "norm_label": "common beads commands:"
+    },
+    {
+      "label": "3. GSD (Getting Stuff Done) Planning",
+      "file_type": "document",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L41",
+      "id": "ai_notes_3_gsd_getting_stuff_done_planning",
+      "community": 8,
+      "norm_label": "3. gsd (getting stuff done) planning"
+    },
+    {
+      "label": "4. Local Development Stack & Endpoints",
+      "file_type": "document",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L52",
+      "id": "ai_notes_4_local_development_stack_endpoints",
+      "community": 8,
+      "norm_label": "4. local development stack & endpoints"
+    },
+    {
+      "label": "Active Ports:",
+      "file_type": "document",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L60",
+      "id": "ai_notes_active_ports",
+      "community": 8,
+      "norm_label": "active ports:"
+    },
+    {
+      "label": "Local MCP Configuration:",
+      "file_type": "document",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L66",
+      "id": "ai_notes_local_mcp_configuration",
+      "community": 8,
+      "norm_label": "local mcp configuration:"
+    },
+    {
+      "label": "5. Agent Best Practices",
+      "file_type": "document",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L71",
+      "id": "ai_notes_5_agent_best_practices",
+      "community": 8,
+      "norm_label": "5. agent best practices"
+    },
+    {
+      "label": "ARCHITECTURE.md",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L1",
+      "id": "architecture",
+      "community": 1,
+      "norm_label": "architecture.md"
+    },
+    {
+      "label": "Application Architecture \u2014 2026 World Cup Predictor",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L1",
+      "id": "architecture_application_architecture_2026_world_cup_predictor",
+      "community": 1,
+      "norm_label": "application architecture \u2014 2026 world cup predictor"
+    },
+    {
+      "label": "Architecture Overview",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L9",
+      "id": "architecture_architecture_overview",
+      "community": 1,
+      "norm_label": "architecture overview"
+    },
+    {
+      "label": "System Layer Architecture",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L47",
+      "id": "architecture_system_layer_architecture",
+      "community": 1,
+      "norm_label": "system layer architecture"
+    },
+    {
+      "label": "Layer Responsibilities",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L98",
+      "id": "architecture_layer_responsibilities",
+      "community": 1,
+      "norm_label": "layer responsibilities"
+    },
+    {
+      "label": "Monorepo Layout",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L123",
+      "id": "architecture_monorepo_layout",
+      "community": 1,
+      "norm_label": "monorepo layout"
+    },
+    {
+      "label": "Tech Stack & Core Choices",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L147",
+      "id": "architecture_tech_stack_core_choices",
+      "community": 1,
+      "norm_label": "tech stack & core choices"
+    },
+    {
+      "label": "Service Components",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L160",
+      "id": "architecture_service_components",
+      "community": 1,
+      "norm_label": "service components"
+    },
+    {
+      "label": "1. Modern.js Web App (`apps/web`)",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L162",
+      "id": "architecture_1_modern_js_web_app_apps_web",
+      "community": 1,
+      "norm_label": "1. modern.js web app (`apps/web`)"
+    },
+    {
+      "label": "2. Apollo GraphQL API (`apps/api`)",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L168",
+      "id": "architecture_2_apollo_graphql_api_apps_api",
+      "community": 1,
+      "norm_label": "2. apollo graphql api (`apps/api`)"
+    },
+    {
+      "label": "3. Background Worker (`apps/worker`)",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L173",
+      "id": "architecture_3_background_worker_apps_worker",
+      "community": 1,
+      "norm_label": "3. background worker (`apps/worker`)"
+    },
+    {
+      "label": "Core Data Flows",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L182",
+      "id": "architecture_core_data_flows",
+      "community": 1,
+      "norm_label": "core data flows"
+    },
+    {
+      "label": "Match Update & Prediction Pipeline",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L184",
+      "id": "architecture_match_update_prediction_pipeline",
+      "community": 1,
+      "norm_label": "match update & prediction pipeline"
+    },
+    {
+      "label": "Odds Synchronization",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L208",
+      "id": "architecture_odds_synchronization",
+      "community": 1,
+      "norm_label": "odds synchronization"
+    },
+    {
+      "label": "Domain-Driven Design (DDD) Architecture",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L215",
+      "id": "architecture_domain_driven_design_ddd_architecture",
+      "community": 1,
+      "norm_label": "domain-driven design (ddd) architecture"
+    },
+    {
+      "label": "1. Bounded Contexts",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L253",
+      "id": "architecture_1_bounded_contexts",
+      "community": 1,
+      "norm_label": "1. bounded contexts"
+    },
+    {
+      "label": "2. Domain Objects (Aggregates, Entities, and Value Objects)",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L260",
+      "id": "architecture_2_domain_objects_aggregates_entities_and_value_objects",
+      "community": 1,
+      "norm_label": "2. domain objects (aggregates, entities, and value objects)"
+    },
+    {
+      "label": "A. Tournament Context",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L262",
+      "id": "architecture_a_tournament_context",
+      "community": 1,
+      "norm_label": "a. tournament context"
+    },
+    {
+      "label": "B. Prediction Context",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L267",
+      "id": "architecture_b_prediction_context",
+      "community": 1,
+      "norm_label": "b. prediction context"
+    },
+    {
+      "label": "C. Odds Context",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L273",
+      "id": "architecture_c_odds_context",
+      "community": 1,
+      "norm_label": "c. odds context"
+    },
+    {
+      "label": "3. Domain Services",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L276",
+      "id": "architecture_3_domain_services",
+      "community": 1,
+      "norm_label": "3. domain services"
+    },
+    {
+      "label": "4. Anti-Corruption Layer (ACL)",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L279",
+      "id": "architecture_4_anti_corruption_layer_acl",
+      "community": 1,
+      "norm_label": "4. anti-corruption layer (acl)"
+    },
+    {
+      "label": "Relational Database Schema Mapping (Postgres + Drizzle)",
+      "file_type": "document",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L284",
+      "id": "architecture_relational_database_schema_mapping_postgres_drizzle",
+      "community": 1,
+      "norm_label": "relational database schema mapping (postgres + drizzle)"
+    },
+    {
+      "label": "prd.md",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L1",
+      "id": "docs_prd",
+      "community": 3,
+      "norm_label": "prd.md"
+    },
+    {
+      "label": "2026 World Cup Predictor - Product Requirements",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L1",
+      "id": "docs_prd_2026_world_cup_predictor_product_requirements",
+      "community": 3,
+      "norm_label": "2026 world cup predictor - product requirements"
+    },
+    {
+      "label": "1. Overview",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L3",
+      "id": "docs_prd_1_overview",
+      "community": 3,
+      "norm_label": "1. overview"
+    },
+    {
+      "label": "2. Product Goals",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L22",
+      "id": "docs_prd_2_product_goals",
+      "community": 3,
+      "norm_label": "2. product goals"
+    },
+    {
+      "label": "3. Non-Goals",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L32",
+      "id": "docs_prd_3_non_goals",
+      "community": 3,
+      "norm_label": "3. non-goals"
+    },
+    {
+      "label": "4. Target Users",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L41",
+      "id": "docs_prd_4_target_users",
+      "community": 3,
+      "norm_label": "4. target users"
+    },
+    {
+      "label": "5. User Needs",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L49",
+      "id": "docs_prd_5_user_needs",
+      "community": 3,
+      "norm_label": "5. user needs"
+    },
+    {
+      "label": "6. Core Product Experience",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L61",
+      "id": "docs_prd_6_core_product_experience",
+      "community": 3,
+      "norm_label": "6. core product experience"
+    },
+    {
+      "label": "7. MVP Scope",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L82",
+      "id": "docs_prd_7_mvp_scope",
+      "community": 11,
+      "norm_label": "7. mvp scope"
+    },
+    {
+      "label": "7.1 Dashboard",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L84",
+      "id": "docs_prd_7_1_dashboard",
+      "community": 11,
+      "norm_label": "7.1 dashboard"
+    },
+    {
+      "label": "7.2 Matches",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L97",
+      "id": "docs_prd_7_2_matches",
+      "community": 11,
+      "norm_label": "7.2 matches"
+    },
+    {
+      "label": "7.3 Match Detail",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L111",
+      "id": "docs_prd_7_3_match_detail",
+      "community": 11,
+      "norm_label": "7.3 match detail"
+    },
+    {
+      "label": "7.4 Teams",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L125",
+      "id": "docs_prd_7_4_teams",
+      "community": 11,
+      "norm_label": "7.4 teams"
+    },
+    {
+      "label": "7.5 Players",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L137",
+      "id": "docs_prd_7_5_players",
+      "community": 11,
+      "norm_label": "7.5 players"
+    },
+    {
+      "label": "7.6 Groups",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L152",
+      "id": "docs_prd_7_6_groups",
+      "community": 11,
+      "norm_label": "7.6 groups"
+    },
+    {
+      "label": "7.7 Bracket",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L164",
+      "id": "docs_prd_7_7_bracket",
+      "community": 11,
+      "norm_label": "7.7 bracket"
+    },
+    {
+      "label": "7.8 Model Tracker",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L173",
+      "id": "docs_prd_7_8_model_tracker",
+      "community": 11,
+      "norm_label": "7.8 model tracker"
+    },
+    {
+      "label": "8. Prediction Product Requirements",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L183",
+      "id": "docs_prd_8_prediction_product_requirements",
+      "community": 3,
+      "norm_label": "8. prediction product requirements"
+    },
+    {
+      "label": "9. Post-Match Update Requirements",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L205",
+      "id": "docs_prd_9_post_match_update_requirements",
+      "community": 3,
+      "norm_label": "9. post-match update requirements"
+    },
+    {
+      "label": "10. Odds and Market Comparison",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L231",
+      "id": "docs_prd_10_odds_and_market_comparison",
+      "community": 3,
+      "norm_label": "10. odds and market comparison"
+    },
+    {
+      "label": "11. Authentication",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L249",
+      "id": "docs_prd_11_authentication",
+      "community": 3,
+      "norm_label": "11. authentication"
+    },
+    {
+      "label": "12. Data Expectations",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L264",
+      "id": "docs_prd_12_data_expectations",
+      "community": 3,
+      "norm_label": "12. data expectations"
+    },
+    {
+      "label": "13. UX Principles",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L295",
+      "id": "docs_prd_13_ux_principles",
+      "community": 3,
+      "norm_label": "13. ux principles"
+    },
+    {
+      "label": "14. Success Metrics",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L306",
+      "id": "docs_prd_14_success_metrics",
+      "community": 3,
+      "norm_label": "14. success metrics"
+    },
+    {
+      "label": "15. Risks",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L339",
+      "id": "docs_prd_15_risks",
+      "community": 3,
+      "norm_label": "15. risks"
+    },
+    {
+      "label": "16. Open Product Decisions",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L350",
+      "id": "docs_prd_16_open_product_decisions",
+      "community": 3,
+      "norm_label": "16. open product decisions"
+    },
+    {
+      "label": "17. Launch Criteria",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": "L361",
+      "id": "docs_prd_17_launch_criteria",
+      "community": 3,
+      "norm_label": "17. launch criteria"
+    },
+    {
+      "label": "rfc-0001-architecture.md",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L1",
+      "id": "docs_rfc_0001_architecture",
+      "community": 2,
+      "norm_label": "rfc-0001-architecture.md"
+    },
+    {
+      "label": "RFC 0001: Application Architecture",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L1",
+      "id": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "community": 2,
+      "norm_label": "rfc 0001: application architecture"
+    },
+    {
+      "label": "Status",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L3",
+      "id": "docs_rfc_0001_architecture_status",
+      "community": 2,
+      "norm_label": "status"
+    },
+    {
+      "label": "Context",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L7",
+      "id": "docs_rfc_0001_architecture_context",
+      "community": 2,
+      "norm_label": "context"
+    },
+    {
+      "label": "Goals",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L13",
+      "id": "docs_rfc_0001_architecture_goals",
+      "community": 2,
+      "norm_label": "goals"
+    },
+    {
+      "label": "Non-Goals",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L25",
+      "id": "docs_rfc_0001_architecture_non_goals",
+      "community": 2,
+      "norm_label": "non-goals"
+    },
+    {
+      "label": "Local Development Requirement",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L34",
+      "id": "docs_rfc_0001_architecture_local_development_requirement",
+      "community": 2,
+      "norm_label": "local development requirement"
+    },
+    {
+      "label": "Proposed Architecture",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L83",
+      "id": "docs_rfc_0001_architecture_proposed_architecture",
+      "community": 2,
+      "norm_label": "proposed architecture"
+    },
+    {
+      "label": "Technology Choices",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L128",
+      "id": "docs_rfc_0001_architecture_technology_choices",
+      "community": 17,
+      "norm_label": "technology choices"
+    },
+    {
+      "label": "Frontend",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L130",
+      "id": "docs_rfc_0001_architecture_frontend",
+      "community": 17,
+      "norm_label": "frontend"
+    },
+    {
+      "label": "API",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L144",
+      "id": "docs_rfc_0001_architecture_api",
+      "community": 17,
+      "norm_label": "api"
+    },
+    {
+      "label": "Agent Interface",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L157",
+      "id": "docs_rfc_0001_architecture_agent_interface",
+      "community": 17,
+      "norm_label": "agent interface"
+    },
+    {
+      "label": "Worker",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L173",
+      "id": "docs_rfc_0001_architecture_worker",
+      "community": 17,
+      "norm_label": "worker"
+    },
+    {
+      "label": "Database",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L186",
+      "id": "docs_rfc_0001_architecture_database",
+      "community": 17,
+      "norm_label": "database"
+    },
+    {
+      "label": "Suggested Monorepo Layout",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L196",
+      "id": "docs_rfc_0001_architecture_suggested_monorepo_layout",
+      "community": 2,
+      "norm_label": "suggested monorepo layout"
+    },
+    {
+      "label": "MCP and AI-Renderable UI Interface",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L217",
+      "id": "docs_rfc_0001_architecture_mcp_and_ai_renderable_ui_interface",
+      "community": 14,
+      "norm_label": "mcp and ai-renderable ui interface"
+    },
+    {
+      "label": "Transport",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L223",
+      "id": "docs_rfc_0001_architecture_transport",
+      "community": 14,
+      "norm_label": "transport"
+    },
+    {
+      "label": "MCP Resources",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L253",
+      "id": "docs_rfc_0001_architecture_mcp_resources",
+      "community": 14,
+      "norm_label": "mcp resources"
+    },
+    {
+      "label": "Renderable UI Resources",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L272",
+      "id": "docs_rfc_0001_architecture_renderable_ui_resources",
+      "community": 14,
+      "norm_label": "renderable ui resources"
+    },
+    {
+      "label": "MCP Tools",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L309",
+      "id": "docs_rfc_0001_architecture_mcp_tools",
+      "community": 14,
+      "norm_label": "mcp tools"
+    },
+    {
+      "label": "MCP Prompts",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L349",
+      "id": "docs_rfc_0001_architecture_mcp_prompts",
+      "community": 14,
+      "norm_label": "mcp prompts"
+    },
+    {
+      "label": "Access Control",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L363",
+      "id": "docs_rfc_0001_architecture_access_control",
+      "community": 14,
+      "norm_label": "access control"
+    },
+    {
+      "label": "Authentication and Authorization",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L374",
+      "id": "docs_rfc_0001_architecture_authentication_and_authorization",
+      "community": 2,
+      "norm_label": "authentication and authorization"
+    },
+    {
+      "label": "GraphQL API Shape",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L429",
+      "id": "docs_rfc_0001_architecture_graphql_api_shape",
+      "community": 2,
+      "norm_label": "graphql api shape"
+    },
+    {
+      "label": "Data Ingestion",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L539",
+      "id": "docs_rfc_0001_architecture_data_ingestion",
+      "community": 2,
+      "norm_label": "data ingestion"
+    },
+    {
+      "label": "Worker Jobs",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L565",
+      "id": "docs_rfc_0001_architecture_worker_jobs",
+      "community": 2,
+      "norm_label": "worker jobs"
+    },
+    {
+      "label": "Prediction Engine",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L607",
+      "id": "docs_rfc_0001_architecture_prediction_engine",
+      "community": 2,
+      "norm_label": "prediction engine"
+    },
+    {
+      "label": "Persistence Principles",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L643",
+      "id": "docs_rfc_0001_architecture_persistence_principles",
+      "community": 2,
+      "norm_label": "persistence principles"
+    },
+    {
+      "label": "Module Federation Strategy",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L674",
+      "id": "docs_rfc_0001_architecture_module_federation_strategy",
+      "community": 2,
+      "norm_label": "module federation strategy"
+    },
+    {
+      "label": "Security and Compliance",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L701",
+      "id": "docs_rfc_0001_architecture_security_and_compliance",
+      "community": 2,
+      "norm_label": "security and compliance"
+    },
+    {
+      "label": "Docker and Environment Configuration",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L713",
+      "id": "docs_rfc_0001_architecture_docker_and_environment_configuration",
+      "community": 2,
+      "norm_label": "docker and environment configuration"
+    },
+    {
+      "label": "Observability",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L769",
+      "id": "docs_rfc_0001_architecture_observability",
+      "community": 2,
+      "norm_label": "observability"
+    },
+    {
+      "label": "Rollout Plan",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L796",
+      "id": "docs_rfc_0001_architecture_rollout_plan",
+      "community": 2,
+      "norm_label": "rollout plan"
+    },
+    {
+      "label": "Risks",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L813",
+      "id": "docs_rfc_0001_architecture_risks",
+      "community": 2,
+      "norm_label": "risks"
+    },
+    {
+      "label": "Open Questions",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L827",
+      "id": "docs_rfc_0001_architecture_open_questions",
+      "community": 2,
+      "norm_label": "open questions"
+    },
+    {
+      "label": "References",
+      "file_type": "document",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L840",
+      "id": "docs_rfc_0001_architecture_references",
+      "community": 2,
+      "norm_label": "references"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".beads/backup/backup_state.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "backup_backup_state",
+      "target": "backup_backup_state_last_dolt_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".beads/backup/backup_state.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "backup_backup_state",
+      "target": "backup_backup_state_timestamp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".beads/metadata.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "beads_metadata",
+      "target": "beads_metadata_backend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".beads/metadata.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "beads_metadata",
+      "target": "beads_metadata_database",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".beads/metadata.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "beads_metadata",
+      "target": "beads_metadata_dolt_database",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".beads/metadata.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "beads_metadata",
+      "target": "beads_metadata_dolt_mode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".beads/metadata.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "beads_metadata",
+      "target": "beads_metadata_project_id",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "claude_settings",
+      "target": "claude_settings_hooks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "claude_settings_hooks",
+      "target": "claude_settings_hooks_sessionstart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".codex/hooks.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "codex_hooks",
+      "target": "codex_hooks_hooks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".codex/hooks.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "codex_hooks_hooks",
+      "target": "codex_hooks_hooks_postcompact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".codex/hooks.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "codex_hooks_hooks",
+      "target": "codex_hooks_hooks_precompact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".codex/hooks.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "codex_hooks_hooks",
+      "target": "codex_hooks_hooks_sessionstart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".codex/hooks.json",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "codex_hooks_hooks",
+      "target": "codex_hooks_hooks_userpromptsubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/config.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "planning_config",
+      "target": "planning_config_commit_docs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/config.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "planning_config",
+      "target": "planning_config_granularity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/config.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "planning_config",
+      "target": "planning_config_mode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/config.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "planning_config",
+      "target": "planning_config_model_profile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/config.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "planning_config",
+      "target": "planning_config_parallelization",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/config.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "planning_config",
+      "target": "planning_config_plan_review",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/config.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "planning_config",
+      "target": "planning_config_ship",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/config.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "planning_config",
+      "target": "planning_config_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/config.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "planning_config_workflow",
+      "target": "planning_config_workflow_auto_advance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/config.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "planning_config_workflow",
+      "target": "planning_config_workflow_nyquist_validation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/config.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "planning_config_workflow",
+      "target": "planning_config_workflow_plan_check",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/config.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "planning_config_workflow",
+      "target": "planning_config_workflow_research",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/config.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "planning_config_workflow",
+      "target": "planning_config_workflow_verifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/config.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "planning_config_plan_review",
+      "target": "planning_config_plan_review_source_grounding",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/config.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "planning_config_ship",
+      "target": "planning_config_ship_pr_body_sections",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mcp.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "mcp",
+      "target": "mcp_mcp_server_mui_mcp"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mcp.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "context": "command",
+      "source": "mcp_mcp_server_mui_mcp",
+      "target": "mcp_command_npx"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mcp.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "context": "package",
+      "source": "mcp_mcp_server_mui_mcp",
+      "target": "mcp_package_mui_mcp"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "rules_graphify",
+      "target": "rules_graphify_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/beads/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "beads_skill",
+      "target": "beads_skill_beads",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/beads/SKILL.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "beads_skill_beads",
+      "target": "beads_skill_core_cli_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/beads/SKILL.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "beads_skill_beads",
+      "target": "beads_skill_first_step",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/beads/SKILL.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "beads_skill_beads",
+      "target": "beads_skill_preferred_route",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/beads/SKILL.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "beads_skill_beads",
+      "target": "beads_skill_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/beads/SKILL.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "beads_skill_beads",
+      "target": "beads_skill_what_belongs_in_beads",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "workflows_graphify",
+      "target": "workflows_graphify_workflow_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".beads/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "beads_readme",
+      "target": "beads_readme_beads_ai_native_issue_tracking",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".beads/README.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "beads_readme_beads_ai_native_issue_tracking",
+      "target": "beads_readme_get_started_with_beads",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".beads/README.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "beads_readme_beads_ai_native_issue_tracking",
+      "target": "beads_readme_learn_more",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".beads/README.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "beads_readme_beads_ai_native_issue_tracking",
+      "target": "beads_readme_quick_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".beads/README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "beads_readme_beads_ai_native_issue_tracking",
+      "target": "beads_readme_what_is_beads",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".beads/README.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "beads_readme_beads_ai_native_issue_tracking",
+      "target": "beads_readme_why_beads",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".beads/README.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "beads_readme_quick_start",
+      "target": "beads_readme_essential_commands",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".beads/README.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "beads_readme_quick_start",
+      "target": "beads_readme_working_with_issues",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "planning_project",
+      "target": "planning_project_project_md_2026_world_cup_predictor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "planning_project_project_md_2026_world_cup_predictor",
+      "target": "planning_project_context",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "planning_project_project_md_2026_world_cup_predictor",
+      "target": "planning_project_core_value",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "planning_project_project_md_2026_world_cup_predictor",
+      "target": "planning_project_evolution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "planning_project_project_md_2026_world_cup_predictor",
+      "target": "planning_project_key_decisions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "planning_project_project_md_2026_world_cup_predictor",
+      "target": "planning_project_requirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "planning_project_project_md_2026_world_cup_predictor",
+      "target": "planning_project_success_criteria",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "planning_project_project_md_2026_world_cup_predictor",
+      "target": "planning_project_what_this_is",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "planning_project_requirements",
+      "target": "planning_project_active",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "planning_project_requirements",
+      "target": "planning_project_out_of_scope_mvp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/PROJECT.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "planning_project_requirements",
+      "target": "planning_project_validated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "planning_requirements",
+      "target": "planning_requirements_requirements_md_2026_world_cup_predictor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "planning_requirements_requirements_md_2026_world_cup_predictor",
+      "target": "planning_requirements_functional_requirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "planning_requirements_requirements_md_2026_world_cup_predictor",
+      "target": "planning_requirements_non_functional_requirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L159",
+      "weight": 1.0,
+      "source": "planning_requirements_requirements_md_2026_world_cup_predictor",
+      "target": "planning_requirements_open_questions_blocking_decisions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "planning_requirements_requirements_md_2026_world_cup_predictor",
+      "target": "planning_requirements_table_stakes_must_ship_for_mvp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "planning_requirements_functional_requirements",
+      "target": "planning_requirements_f1_monorepo_infrastructure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "planning_requirements_functional_requirements",
+      "target": "planning_requirements_f2_database_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "planning_requirements_functional_requirements",
+      "target": "planning_requirements_f3_data_ingestion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "planning_requirements_functional_requirements",
+      "target": "planning_requirements_f4_worker_jobs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "planning_requirements_functional_requirements",
+      "target": "planning_requirements_f5_prediction_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "planning_requirements_functional_requirements",
+      "target": "planning_requirements_f6_graphql_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "planning_requirements_functional_requirements",
+      "target": "planning_requirements_f7_web_ui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "planning_requirements_functional_requirements",
+      "target": "planning_requirements_f8_remote_mcp_server",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/REQUIREMENTS.md",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "planning_requirements_functional_requirements",
+      "target": "planning_requirements_f9_authentication_authorization",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "planning_roadmap",
+      "target": "planning_roadmap_roadmap_md_2026_world_cup_predictor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "planning_roadmap_roadmap_md_2026_world_cup_predictor",
+      "target": "planning_roadmap_phase_10_observability_operational_hardening",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "planning_roadmap_roadmap_md_2026_world_cup_predictor",
+      "target": "planning_roadmap_phase_11_pre_launch_qa_data_seeding",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "planning_roadmap_roadmap_md_2026_world_cup_predictor",
+      "target": "planning_roadmap_phase_1_monorepo_local_infrastructure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "planning_roadmap_roadmap_md_2026_world_cup_predictor",
+      "target": "planning_roadmap_phase_2_domain_schema_provider_adapters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "planning_roadmap_roadmap_md_2026_world_cup_predictor",
+      "target": "planning_roadmap_phase_3_graphql_api_core",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "planning_roadmap_roadmap_md_2026_world_cup_predictor",
+      "target": "planning_roadmap_phase_4_web_ui_foundation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "planning_roadmap_roadmap_md_2026_world_cup_predictor",
+      "target": "planning_roadmap_phase_5_prediction_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "planning_roadmap_roadmap_md_2026_world_cup_predictor",
+      "target": "planning_roadmap_phase_6_worker_polling_finalization_rating_updates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "planning_roadmap_roadmap_md_2026_world_cup_predictor",
+      "target": "planning_roadmap_phase_7_odds_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "planning_roadmap_roadmap_md_2026_world_cup_predictor",
+      "target": "planning_roadmap_phase_8_authentication_authorization",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "planning_roadmap_roadmap_md_2026_world_cup_predictor",
+      "target": "planning_roadmap_phase_9_remote_mcp_server",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "planning_roadmap_roadmap_md_2026_world_cup_predictor",
+      "target": "planning_roadmap_phase_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "planning_roadmap_roadmap_md_2026_world_cup_predictor",
+      "target": "planning_roadmap_phasing_strategy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L198",
+      "weight": 1.0,
+      "source": "planning_roadmap_roadmap_md_2026_world_cup_predictor",
+      "target": "planning_roadmap_post_mvp_backlog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "planning_roadmap_phase_1_monorepo_local_infrastructure",
+      "target": "planning_roadmap_plans",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "planning_roadmap_phase_2_domain_schema_provider_adapters",
+      "target": "planning_roadmap_plans_26",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "planning_roadmap_phase_3_graphql_api_core",
+      "target": "planning_roadmap_plans_40",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "planning_roadmap_phase_4_web_ui_foundation",
+      "target": "planning_roadmap_plans_55",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "planning_roadmap_phase_5_prediction_engine",
+      "target": "planning_roadmap_plans_72",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "planning_roadmap_phase_6_worker_polling_finalization_rating_updates",
+      "target": "planning_roadmap_plans_88",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "planning_roadmap_phase_7_odds_integration",
+      "target": "planning_roadmap_plans_106",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "planning_roadmap_phase_8_authentication_authorization",
+      "target": "planning_roadmap_plans_121",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "planning_roadmap_phase_9_remote_mcp_server",
+      "target": "planning_roadmap_plans_135",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "planning_roadmap_phase_10_observability_operational_hardening",
+      "target": "planning_roadmap_plans_151",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/ROADMAP.md",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "planning_roadmap_phase_11_pre_launch_qa_data_seeding",
+      "target": "planning_roadmap_plans_166",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/STATE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "planning_state",
+      "target": "planning_state_state_md_2026_world_cup_predictor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/STATE.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "planning_state_state_md_2026_world_cup_predictor",
+      "target": "planning_state_active_blockers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/STATE.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "planning_state_state_md_2026_world_cup_predictor",
+      "target": "planning_state_current_phase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/STATE.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "planning_state_state_md_2026_world_cup_predictor",
+      "target": "planning_state_last_action",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/STATE.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "planning_state_state_md_2026_world_cup_predictor",
+      "target": "planning_state_notes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/STATE.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "planning_state_state_md_2026_world_cup_predictor",
+      "target": "planning_state_phase_history",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/STATE.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "planning_state_state_md_2026_world_cup_predictor",
+      "target": "planning_state_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "agents",
+      "target": "agents_agents_md_2026_world_cup_predictor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L188",
+      "weight": 1.0,
+      "source": "agents_agents_md_2026_world_cup_predictor",
+      "target": "agents_agent_context_profiles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "agents_agents_md_2026_world_cup_predictor",
+      "target": "agents_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "agents_agents_md_2026_world_cup_predictor",
+      "target": "agents_beads_issue_tracker",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "agents_agents_md_2026_world_cup_predictor",
+      "target": "agents_coding_conventions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "agents_agents_md_2026_world_cup_predictor",
+      "target": "agents_environment_variables",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "agents_agents_md_2026_world_cup_predictor",
+      "target": "agents_key_product_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "agents_agents_md_2026_world_cup_predictor",
+      "target": "agents_project_overview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L196",
+      "weight": 1.0,
+      "source": "agents_agents_md_2026_world_cup_predictor",
+      "target": "agents_session_completion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L152",
+      "weight": 1.0,
+      "source": "agents_agents_md_2026_world_cup_predictor",
+      "target": "agents_useful_commands",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "agents_architecture",
+      "target": "agents_directory_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "agents_architecture",
+      "target": "agents_tech_stack",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "agents_coding_conventions",
+      "target": "agents_api_data_fetching",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "agents_coding_conventions",
+      "target": "agents_components",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "agents_coding_conventions",
+      "target": "agents_data_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "agents_coding_conventions",
+      "target": "agents_general",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "agents_coding_conventions",
+      "target": "agents_git",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "agents_coding_conventions",
+      "target": "agents_prediction_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "agents_coding_conventions",
+      "target": "agents_styling_ui_components",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "agents_coding_conventions",
+      "target": "agents_testing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L171",
+      "weight": 1.0,
+      "source": "agents_beads_issue_tracker",
+      "target": "agents_quick_reference",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "agents_beads_issue_tracker",
+      "target": "agents_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "ai_notes",
+      "target": "ai_notes_ai_notes_2026_world_cup_predictor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "ai_notes_ai_notes_2026_world_cup_predictor",
+      "target": "ai_notes_1_single_source_of_truth_agents_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "ai_notes_ai_notes_2026_world_cup_predictor",
+      "target": "ai_notes_2_task_tracking_with_beads_bd",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "ai_notes_ai_notes_2026_world_cup_predictor",
+      "target": "ai_notes_3_gsd_getting_stuff_done_planning",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "ai_notes_ai_notes_2026_world_cup_predictor",
+      "target": "ai_notes_4_local_development_stack_endpoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "ai_notes_ai_notes_2026_world_cup_predictor",
+      "target": "ai_notes_5_agent_best_practices",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "ai_notes_1_single_source_of_truth_agents_md",
+      "target": "ai_notes_key_ground_rules_to_keep_in_mind",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "ai_notes_2_task_tracking_with_beads_bd",
+      "target": "ai_notes_common_beads_commands",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "ai_notes_4_local_development_stack_endpoints",
+      "target": "ai_notes_active_ports",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AI_NOTES.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "ai_notes_4_local_development_stack_endpoints",
+      "target": "ai_notes_local_mcp_configuration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "architecture",
+      "target": "architecture_application_architecture_2026_world_cup_predictor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "architecture_application_architecture_2026_world_cup_predictor",
+      "target": "architecture_architecture_overview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L182",
+      "weight": 1.0,
+      "source": "architecture_application_architecture_2026_world_cup_predictor",
+      "target": "architecture_core_data_flows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L215",
+      "weight": 1.0,
+      "source": "architecture_application_architecture_2026_world_cup_predictor",
+      "target": "architecture_domain_driven_design_ddd_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "architecture_application_architecture_2026_world_cup_predictor",
+      "target": "architecture_monorepo_layout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L284",
+      "weight": 1.0,
+      "source": "architecture_application_architecture_2026_world_cup_predictor",
+      "target": "architecture_relational_database_schema_mapping_postgres_drizzle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "architecture_application_architecture_2026_world_cup_predictor",
+      "target": "architecture_service_components",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "architecture_application_architecture_2026_world_cup_predictor",
+      "target": "architecture_system_layer_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "architecture_application_architecture_2026_world_cup_predictor",
+      "target": "architecture_tech_stack_core_choices",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "architecture_system_layer_architecture",
+      "target": "architecture_layer_responsibilities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "architecture_service_components",
+      "target": "architecture_1_modern_js_web_app_apps_web",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L168",
+      "weight": 1.0,
+      "source": "architecture_service_components",
+      "target": "architecture_2_apollo_graphql_api_apps_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L173",
+      "weight": 1.0,
+      "source": "architecture_service_components",
+      "target": "architecture_3_background_worker_apps_worker",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L184",
+      "weight": 1.0,
+      "source": "architecture_core_data_flows",
+      "target": "architecture_match_update_prediction_pipeline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L208",
+      "weight": 1.0,
+      "source": "architecture_core_data_flows",
+      "target": "architecture_odds_synchronization",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L253",
+      "weight": 1.0,
+      "source": "architecture_domain_driven_design_ddd_architecture",
+      "target": "architecture_1_bounded_contexts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L260",
+      "weight": 1.0,
+      "source": "architecture_domain_driven_design_ddd_architecture",
+      "target": "architecture_2_domain_objects_aggregates_entities_and_value_objects",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L276",
+      "weight": 1.0,
+      "source": "architecture_domain_driven_design_ddd_architecture",
+      "target": "architecture_3_domain_services",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L279",
+      "weight": 1.0,
+      "source": "architecture_domain_driven_design_ddd_architecture",
+      "target": "architecture_4_anti_corruption_layer_acl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L262",
+      "weight": 1.0,
+      "source": "architecture_2_domain_objects_aggregates_entities_and_value_objects",
+      "target": "architecture_a_tournament_context",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L267",
+      "weight": 1.0,
+      "source": "architecture_2_domain_objects_aggregates_entities_and_value_objects",
+      "target": "architecture_b_prediction_context",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ARCHITECTURE.md",
+      "source_location": "L273",
+      "weight": 1.0,
+      "source": "architecture_2_domain_objects_aggregates_entities_and_value_objects",
+      "target": "architecture_c_odds_context",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_prd",
+      "target": "docs_prd_2026_world_cup_predictor_product_requirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L231",
+      "weight": 1.0,
+      "source": "docs_prd_2026_world_cup_predictor_product_requirements",
+      "target": "docs_prd_10_odds_and_market_comparison",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L249",
+      "weight": 1.0,
+      "source": "docs_prd_2026_world_cup_predictor_product_requirements",
+      "target": "docs_prd_11_authentication",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L264",
+      "weight": 1.0,
+      "source": "docs_prd_2026_world_cup_predictor_product_requirements",
+      "target": "docs_prd_12_data_expectations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L295",
+      "weight": 1.0,
+      "source": "docs_prd_2026_world_cup_predictor_product_requirements",
+      "target": "docs_prd_13_ux_principles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L306",
+      "weight": 1.0,
+      "source": "docs_prd_2026_world_cup_predictor_product_requirements",
+      "target": "docs_prd_14_success_metrics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L339",
+      "weight": 1.0,
+      "source": "docs_prd_2026_world_cup_predictor_product_requirements",
+      "target": "docs_prd_15_risks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L350",
+      "weight": 1.0,
+      "source": "docs_prd_2026_world_cup_predictor_product_requirements",
+      "target": "docs_prd_16_open_product_decisions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L361",
+      "weight": 1.0,
+      "source": "docs_prd_2026_world_cup_predictor_product_requirements",
+      "target": "docs_prd_17_launch_criteria",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_prd_2026_world_cup_predictor_product_requirements",
+      "target": "docs_prd_1_overview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "docs_prd_2026_world_cup_predictor_product_requirements",
+      "target": "docs_prd_2_product_goals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "docs_prd_2026_world_cup_predictor_product_requirements",
+      "target": "docs_prd_3_non_goals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "docs_prd_2026_world_cup_predictor_product_requirements",
+      "target": "docs_prd_4_target_users",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "docs_prd_2026_world_cup_predictor_product_requirements",
+      "target": "docs_prd_5_user_needs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "docs_prd_2026_world_cup_predictor_product_requirements",
+      "target": "docs_prd_6_core_product_experience",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "docs_prd_2026_world_cup_predictor_product_requirements",
+      "target": "docs_prd_7_mvp_scope",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L183",
+      "weight": 1.0,
+      "source": "docs_prd_2026_world_cup_predictor_product_requirements",
+      "target": "docs_prd_8_prediction_product_requirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L205",
+      "weight": 1.0,
+      "source": "docs_prd_2026_world_cup_predictor_product_requirements",
+      "target": "docs_prd_9_post_match_update_requirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "docs_prd_7_mvp_scope",
+      "target": "docs_prd_7_1_dashboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "docs_prd_7_mvp_scope",
+      "target": "docs_prd_7_2_matches",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "docs_prd_7_mvp_scope",
+      "target": "docs_prd_7_3_match_detail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "docs_prd_7_mvp_scope",
+      "target": "docs_prd_7_4_teams",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "docs_prd_7_mvp_scope",
+      "target": "docs_prd_7_5_players",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L152",
+      "weight": 1.0,
+      "source": "docs_prd_7_mvp_scope",
+      "target": "docs_prd_7_6_groups",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L164",
+      "weight": 1.0,
+      "source": "docs_prd_7_mvp_scope",
+      "target": "docs_prd_7_7_bracket",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/prd.md",
+      "source_location": "L173",
+      "weight": 1.0,
+      "source": "docs_prd_7_mvp_scope",
+      "target": "docs_prd_7_8_model_tracker",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture",
+      "target": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L374",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_authentication_and_authorization",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_context",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L539",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_data_ingestion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L713",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_docker_and_environment_configuration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_goals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L429",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_graphql_api_shape",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_local_development_requirement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L217",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_mcp_and_ai_renderable_ui_interface",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L674",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_module_federation_strategy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_non_goals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L769",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_observability",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L827",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_open_questions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L643",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_persistence_principles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L607",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_prediction_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_proposed_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L840",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_references",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L813",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_risks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L796",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_rollout_plan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L701",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_security_and_compliance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L196",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_suggested_monorepo_layout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_technology_choices",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L565",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_rfc_0001_application_architecture",
+      "target": "docs_rfc_0001_architecture_worker_jobs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_technology_choices",
+      "target": "docs_rfc_0001_architecture_agent_interface",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L144",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_technology_choices",
+      "target": "docs_rfc_0001_architecture_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L186",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_technology_choices",
+      "target": "docs_rfc_0001_architecture_database",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L130",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_technology_choices",
+      "target": "docs_rfc_0001_architecture_frontend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L173",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_technology_choices",
+      "target": "docs_rfc_0001_architecture_worker",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L363",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_mcp_and_ai_renderable_ui_interface",
+      "target": "docs_rfc_0001_architecture_access_control",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L349",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_mcp_and_ai_renderable_ui_interface",
+      "target": "docs_rfc_0001_architecture_mcp_prompts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L253",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_mcp_and_ai_renderable_ui_interface",
+      "target": "docs_rfc_0001_architecture_mcp_resources",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L309",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_mcp_and_ai_renderable_ui_interface",
+      "target": "docs_rfc_0001_architecture_mcp_tools",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L272",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_mcp_and_ai_renderable_ui_interface",
+      "target": "docs_rfc_0001_architecture_renderable_ui_resources",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/rfc-0001-architecture.md",
+      "source_location": "L223",
+      "weight": 1.0,
+      "source": "docs_rfc_0001_architecture_mcp_and_ai_renderable_ui_interface",
+      "target": "docs_rfc_0001_architecture_transport",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "345d15ac87b9796a890e4d772866508dc0c5dcc9"
+}

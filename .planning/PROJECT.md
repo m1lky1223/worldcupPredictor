@@ -13,9 +13,9 @@ Give football fans clear, explainable predictions for every World Cup match — 
 ## Context
 
 - **Source docs:** `docs/prd.md` (product), `docs/rfc-0001-architecture.md` (architecture)
-- **Stack:** Modern.js + React + TypeScript (web) · Apollo GraphQL (API) · BullMQ + Redis (worker) · Postgres + Prisma/Drizzle (db) · Remote MCP server (agent access)
-- **Monorepo layout:** `apps/{web,api,mcp,worker}` + `packages/{domain,prediction-engine,data-providers,ui,config}`
-- **Local dev:** Full Docker Compose stack (web · api · mcp · worker · postgres · redis)
+- **Stack:** Modern.js + React + TypeScript (web) · Apollo GraphQL (API) · BullMQ + Redis (worker) · Postgres + Drizzle (db) · Remote MCP server (agent access)
+- **Monorepo layout:** `apps/{web,api,worker}` + `packages/{domain,prediction-engine,data-providers,ui,config}`
+- **Local dev:** Full Docker Compose stack (web · api · worker · postgres · redis)
 - **Auth:** Google OAuth (production) + dev-mode seeded identity (local)
 - **Deployment target:** Vercel or similar (TBD)
 
@@ -29,7 +29,7 @@ Give football fans clear, explainable predictions for every World Cup match — 
 
 **Core Data & Infrastructure**
 - [ ] Monorepo scaffolded with `apps/` and `packages/` structure
-- [ ] Docker Compose runs all services locally (web, api, mcp, worker, postgres, redis)
+- [ ] Docker Compose runs all services locally (web, api, worker, postgres, redis)
 - [ ] Database schema covers all domain entities (Team, Player, Match, Prediction, etc.)
 - [ ] Migrations and seed data run from cold checkout
 - [ ] Mock provider mode for local development without paid API keys
@@ -71,9 +71,10 @@ Give football fans clear, explainable predictions for every World Cup match — 
 - [ ] Dark mode default, mobile-first responsive
 
 **Remote MCP Server**
-- [ ] Streamable HTTP transport at `/mcp`
+- [ ] Streamable HTTP transport at `/api/mcp` inside web app
 - [ ] Resources: matches, match detail, teams, players, groups, bracket, model metrics, data freshness
 - [ ] Tools: get_matches, get_match_detail, get_team, get_player, get_group_table, get_bracket_projection, get_match_prediction, compare_prediction_to_market, get_model_metrics, get_data_freshness
+- [ ] AI-renderable UI widgets for key tools: match card, match detail, team profile, group table, bracket preview, model metrics
 - [ ] Token-protected (read-only public or scoped bearer)
 
 **Auth**
@@ -100,8 +101,11 @@ Give football fans clear, explainable predictions for every World Cup match — 
 | Apollo GraphQL API | Nested UI data needs (match → teams → predictions → odds → players) | Decided |
 | BullMQ + Redis for worker | Sufficient for MVP job orchestration, polling, locking | Decided |
 | Postgres over SQLite | Relational domain, audit snapshots, historical predictions | Decided |
-| Remote MCP (Streamable HTTP) | Agent/CLI access post-deployment via standard protocol | Decided |
+| Remote MCP (Streamable HTTP) | Integrated into web app BFF endpoint (/api/mcp) on port 3000 | Decided |
+| AI-renderable MCP UI | Key MCP tools should return structured data plus renderable widgets for compatible AI hosts | Decided |
+| Data Isolation | Web app (including Web MCP) performs no direct database queries; all data access goes through the Apollo GraphQL API | **Decided** |
 | Google OAuth only | No password auth in MVP | Decided |
+| Material UI (MUI) | Component library and styling engine for a consistent, premium design system; no Tailwind | **Decided** |
 | Should odds feed into the prediction model or display only? | Start display-only to avoid gambling-product optics; revisit post-MVP | **Display-only** |
 | Prisma vs Drizzle for ORM? | Drizzle — lighter, SQL-first, better TS inference | **Drizzle** |
 | Primary fixture/player provider | TheStatsAPI (thestatsapi.com) — covers fixtures, squads, player stats | **TheStatsAPI** |
