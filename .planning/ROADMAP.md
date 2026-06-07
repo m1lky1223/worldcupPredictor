@@ -7,13 +7,16 @@ Fine granularity. 11 phases, each focused and independently shippable. Run plans
 ---
 
 ## Phase 1: Monorepo & Local Infrastructure
+
 **Goal:** Full stack runs locally from `docker compose up`. Every engineer can onboard from a cold clone.
 
 ### Plans
+
 - **01-01-PLAN.md (Wave 1)**: Scaffold `apps/mcp`, setup GraphQL Codegen, baseline Docker Compose services, and configure CI linting/typechecking.
 - **01-02-PLAN.md (Wave 2)**: Database migrations & seeding initialization inside `db-migrate` container, sequencing docker-compose startup, and configuring Cucumber BDD tests inside a test runner container.
 
 **Success Criteria**:
+
 1. `docker compose up` cold starts all services and healthchecks pass.
 2. Programmatic migrations and conditional database seeding run to completion before other services start.
 3. Cucumber BDD integration tests run and pass green inside the docker compose network.
@@ -21,9 +24,11 @@ Fine granularity. 11 phases, each focused and independently shippable. Run plans
 ---
 
 ## Phase 2 — Domain Schema & Provider Adapters
+
 **Goal:** All domain entities modeled, at least one fixture/squad provider integrated in mock mode.
 
 ### Plans
+
 1. `P2.1` Full database schema (all entities from REQUIREMENTS F2)
 2. `P2.2` Provider adapter interface in `packages/data-providers`
 3. `P2.3` Fixture + team sync adapter (chosen provider, mock + real mode)
@@ -35,9 +40,11 @@ Fine granularity. 11 phases, each focused and independently shippable. Run plans
 ---
 
 ## Phase 3 — GraphQL API Core
+
 **Goal:** Apollo GraphQL API serves dashboard, match, team, group, and bracket queries.
 
 ### Plans
+
 1. `P3.1` Apollo server setup at `:4000/graphql` with auth middleware
 2. `P3.2` Dashboard query (todayMatches, teamRankings, modelMetrics skeleton)
 3. `P3.3` Match list + match detail resolvers
@@ -50,9 +57,11 @@ Fine granularity. 11 phases, each focused and independently shippable. Run plans
 ---
 
 ## Phase 4 — Web UI Foundation
+
 **Goal:** Modern.js app renders all 8 pages with real GraphQL data. Mobile-first, dark mode.
 
 ### Plans
+
 1. `P4.1` Modern.js app scaffold with Apollo Client, routing, design tokens
 2. `P4.2` Dashboard page (today's matches, rating changes, group highlights)
 3. `P4.3` Match list page + match detail page
@@ -67,9 +76,11 @@ Fine granularity. 11 phases, each focused and independently shippable. Run plans
 ---
 
 ## Phase 5 — Prediction Engine
+
 **Goal:** Elo-based prediction engine produces and stores versioned predictions for all fixtures.
 
 ### Plans
+
 1. `P5.1` `packages/prediction-engine` — Elo rating computation
 2. `P5.2` Prediction output shape: `{ homeWin, draw, awayWin, confidence, factors[], timestamp, modelVersion }`
 3. `P5.3` Human-readable explanation factors
@@ -83,9 +94,11 @@ Fine granularity. 11 phases, each focused and independently shippable. Run plans
 ---
 
 ## Phase 6 — Worker: Polling, Finalization & Rating Updates
+
 **Goal:** BullMQ worker runs all sync and post-match jobs. Predictions recalculate within 5 min of finalization.
 
 ### Plans
+
 1. `P6.1` BullMQ setup with Redis, job registry, adaptive polling scheduler
 2. `P6.2` `sync-fixtures`, `sync-teams`, `sync-squads` jobs
 3. `P6.3` `sync-match-statuses` + `sync-live-match` polling jobs
@@ -101,9 +114,11 @@ Fine granularity. 11 phases, each focused and independently shippable. Run plans
 ---
 
 ## Phase 7 — Odds Integration
+
 **Goal:** The Odds API integrated. Odds displayed in match detail and model tracker. No gambling language.
 
 ### Plans
+
 1. `P7.1` Odds sync adapter (The Odds API)
 2. `P7.2` `sync-odds` worker job
 3. `P7.3` MarketOddsSnapshot storage
@@ -116,9 +131,11 @@ Fine granularity. 11 phases, each focused and independently shippable. Run plans
 ---
 
 ## Phase 8 — Authentication & Authorization
+
 **Goal:** Google OAuth works in production. Dev-mode identity works locally. MCP tokens scoped.
 
 ### Plans
+
 1. `P8.1` Google OAuth 2.0 / OIDC — browser login, HTTP-only cookie sessions
 2. `P8.2` Dev-mode seeded identity for local Docker (no Google creds needed)
 3. `P8.3` Role system: anonymous, user, admin, service_agent
@@ -130,9 +147,11 @@ Fine granularity. 11 phases, each focused and independently shippable. Run plans
 ---
 
 ## Phase 9 — Remote MCP Server
+
 **Goal:** Remote MCP server accessible at `/mcp` with all read-only tools and resources.
 
 ### Plans
+
 1. `P9.1` MCP server app scaffold at `:4001/mcp` (Streamable HTTP)
 2. `P9.2` All 10 resources (matches, match detail, teams, players, groups, bracket, model metrics, freshness)
 3. `P9.3` All 10 tools (get_matches, get_match_detail, get_team, get_player, get_group_table, get_bracket_projection, get_match_prediction, compare_prediction_to_market, get_model_metrics, get_data_freshness)
@@ -146,9 +165,11 @@ Fine granularity. 11 phases, each focused and independently shippable. Run plans
 ---
 
 ## Phase 10 — Observability & Operational Hardening
+
 **Goal:** Operators can answer: are matches fresh? did finalization succeed? are predictions current?
 
 ### Plans
+
 1. `P10.1` Structured logging across all services
 2. `P10.2` Provider health + freshness dashboards (operational, not user-facing)
 3. `P10.3` Job failure tracking + alerting
@@ -161,9 +182,11 @@ Fine granularity. 11 phases, each focused and independently shippable. Run plans
 ---
 
 ## Phase 11 — Pre-Launch QA & Data Seeding
+
 **Goal:** Tournament data complete, all flows tested, product launched before June 11.
 
 ### Plans
+
 1. `P11.1` Full fixture + squad data loaded for all 48 teams
 2. `P11.2` Baseline Elo ratings seeded for all 48 teams
 3. `P11.3` Initial predictions generated for all group-stage fixtures
