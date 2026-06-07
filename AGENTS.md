@@ -1,5 +1,7 @@
 # AGENTS.md — 2026 World Cup Predictor
 
+> This file is the single source of truth for agent instructions. CLAUDE.md has been merged here.
+
 ## Project Overview
 
 A web application that predicts 2026 FIFA World Cup match outcomes and updates predictions as the tournament unfolds. The tournament starts June 11, 2026 (Mexico time). See [docs/prd.md](docs/prd.md) for full product requirements.
@@ -8,13 +10,16 @@ A web application that predicts 2026 FIFA World Cup match outcomes and updates p
 
 ### Tech Stack
 
-- **Frontend:** Next.js (App Router) with TypeScript
+- **Frontend:** Modern.js + React + TypeScript
 - **Styling:** Vanilla CSS with CSS custom properties (design tokens). No Tailwind.
-- **State Management:** React Server Components + client hooks where needed
-- **Data Layer:** Server actions and API routes for data fetching
-- **Database:** SQLite via better-sqlite3 for local dev; evaluate migration to PostgreSQL/Turso for production
-- **Prediction Engine:** TypeScript module using Elo-based ratings with adjustments for form, player availability, and venue
-- **Odds Data:** The Odds API (free tier) for market comparison — display only, does not feed into the model
+- **API:** Apollo GraphQL (Node.js + TypeScript)
+- **Worker:** BullMQ + Redis (job queue, polling, post-match processing)
+- **Database:** Postgres + Drizzle ORM
+- **Prediction Engine:** TypeScript module (`packages/prediction-engine`) using Elo-based ratings
+- **Data Provider:** TheStatsAPI (fixtures, squads, players, match stats, lineups, xG)
+- **Odds Data:** TheStatsAPI odds endpoints — display only, does not feed into the model
+- **Agent Interface:** Remote MCP server (Streamable HTTP at `:4001/mcp`)
+- **Auth:** Google OAuth (production) + dev-mode seeded identity (local Docker)
 - **Deployment:** Vercel (target)
 
 ### Directory Structure
@@ -24,39 +29,31 @@ worldcupPredictor/
 ├── AGENTS.md                  # This file
 ├── docs/                      # Product and engineering documentation
 │   ├── prd.md                 # Product requirements
-│   └── engineering-prd.md     # Engineering/technical spec (when created)
-├── src/
-│   ├── app/                   # Next.js App Router pages and layouts
-│   │   ├── layout.tsx         # Root layout
-│   │   ├── page.tsx           # Dashboard (home)
-│   │   ├── matches/           # Match list and detail pages
-│   │   ├── teams/             # Team rankings and profiles
-│   │   ├── players/           # Player leaderboard and profiles
-│   │   ├── groups/            # Group tables
-│   │   ├── bracket/           # Knockout bracket
-│   │   └── model/             # Model tracker / accuracy
-│   ├── components/            # Shared React components
-│   │   ├── ui/                # Primitive UI components (cards, badges, charts)
-│   │   └── domain/            # Domain-specific components (match card, team badge, etc.)
-│   ├── lib/                   # Core business logic (non-React)
-│   │   ├── db/                # Database schema, migrations, queries
-│   │   ├── prediction/        # Prediction engine (Elo, adjustments, explanations)
-│   │   ├── data/              # Data ingestion and sync from APIs
-│   │   └── odds/              # Odds fetching and implied probability calc
-│   ├── hooks/                 # Custom React hooks
-│   ├── types/                 # Shared TypeScript types and interfaces
-│   └── styles/                # Global CSS, design tokens, component styles
-│       ├── globals.css        # CSS reset, custom properties, base styles
-│       └── tokens.css         # Design tokens (colors, spacing, typography)
+│   └── rfc-0001-architecture.md
+├── apps/
+│   ├── web/                   # Modern.js UI (port 3000)
+│   ├── api/                   # Apollo GraphQL API (port 4000)
+│   ├── mcp/                   # Remote MCP server (port 4001)
+│   └── worker/                # BullMQ worker service
+├── packages/
+│   ├── domain/                # Shared domain types and constants
+│   ├── prediction-engine/     # Elo ratings and probability logic
+│   ├── data-providers/        # TheStatsAPI adapter and normalization
+│   ├── ui/                    # Shared UI components
+│   └── config/                # Shared tsconfig, eslint, prettier
+├── infra/
+│   ├── docker/                # Dockerfiles for each service
+│   └── compose/               # Docker Compose files
 ├── data/                      # Static seed data (fixtures, teams, squads)
 ├── scripts/                   # CLI scripts for data sync, seeding, predictions
-├── public/                    # Static assets (flags, icons)
-├── tests/                     # Test files mirroring src/ structure
-├── .env.local                 # Local environment variables (not committed)
+├── .planning/                 # GSD planning files (PROJECT.md, ROADMAP.md, etc.)
+├── .beads/                    # Beads issue tracker database
+├── .env.example               # Example env vars (committed)
+├── .env.local                 # Local secrets (not committed)
 ├── .gitignore
-├── package.json
+├── package.json               # npm workspace root
 ├── tsconfig.json
-└── next.config.ts
+└── docker-compose.yml
 ```
 
 ## Coding Conventions
@@ -128,12 +125,24 @@ worldcupPredictor/
 ## Environment Variables
 
 ```
-# Data APIs
-FOOTBALL_API_KEY=         # API-Football or chosen provider
-ODDS_API_KEY=             # The Odds API
+# Data Providers
+THESTATSAPI_KEY=          # TheStatsAPI bearer token
 
 # Database
-DATABASE_URL=             # SQLite path or PostgreSQL connection string
+DATABASE_URL=             # Postgres connection string
+REDIS_URL=                # Redis connection string
+
+# Auth
+GOOGLE_CLIENT_ID=         # Google OAuth client ID
+GOOGLE_CLIENT_SECRET=     # Google OAuth client secret
+SESSION_SECRET=           # HTTP-only cookie session secret
+AUTH_MODE=                # google | dev
+
+# Services
+GRAPHQL_PORT=4000
+MCP_PORT=4001
+WEB_PORT=3000
+PROVIDER_MODE=            # mock | real | hybrid
 
 # App
 NEXT_PUBLIC_APP_URL=      # Public URL for meta tags and sharing
@@ -142,12 +151,15 @@ NEXT_PUBLIC_APP_URL=      # Public URL for meta tags and sharing
 ## Useful Commands
 
 ```bash
-npm run dev               # Start dev server
+docker compose up         # Start full local stack
+npm run dev               # Start dev server (web only)
 npm run build             # Production build
 npm run seed              # Seed database with tournament data
 npm run predict           # Run prediction engine for upcoming matches
-npm run sync              # Sync latest results from data API
+npm run sync              # Sync latest results from TheStatsAPI
 npm run test              # Run tests
+bd ready                  # Find available work (beads)
+bd prime                  # Refresh beads workflow context
 ```
 
 <!-- BEGIN BEADS INTEGRATION v:1 profile:minimal hash:970c3bf2 -->
@@ -206,26 +218,4 @@ This protocol applies when ending a Beads implementation workflow. It is subordi
 - If a required sync or push is blocked, stop and report the exact command and error.
 <!-- END BEADS INTEGRATION -->
 
-<!-- BEGIN BEADS CODEX SETUP: generated by bd setup codex -->
-## Beads Issue Tracker
 
-Use Beads (`bd`) for durable task tracking in repositories that include it. Use the `beads` skill at `.agents/skills/beads/SKILL.md` (project install) or `~/.agents/skills/beads/SKILL.md` (global install) for Beads workflow guidance, then use the `bd` CLI for issue operations.
-
-### Quick Reference
-
-```bash
-bd ready                # Find available work
-bd show <id>            # View issue details
-bd update <id> --claim  # Claim work
-bd close <id>           # Complete work
-bd prime                # Refresh Beads context
-```
-
-### Rules
-
-- Use `bd` for all task tracking; do not create markdown TODO lists.
-- Run `bd prime` when Beads context is missing or stale. Codex 0.129.0+ can load Beads context automatically through native hooks; use `/hooks` to inspect or toggle them.
-- Keep persistent project memory in Beads via `bd remember`; do not create ad hoc memory files.
-
-**Architecture in one line:** issues live in a local Dolt DB; sync uses `refs/dolt/data` on your git remote; `.beads/issues.jsonl` is a passive export. See https://github.com/gastownhall/beads/blob/main/docs/SYNC_CONCEPTS.md for details and anti-patterns.
-<!-- END BEADS CODEX SETUP -->
