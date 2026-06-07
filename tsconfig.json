@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
+    "noEmit": true
+  },
+  "files": [],
+  "references": [
+    { "path": "packages/config" },
+    { "path": "packages/domain" },
+    { "path": "packages/prediction-engine" },
+    { "path": "packages/data-providers" },
+    { "path": "packages/ui" },
+    { "path": "apps/api" },
+    { "path": "apps/web" },
+    { "path": "apps/worker" },
+    { "path": "apps/mcp" }
+  ]
+}
