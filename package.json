@@ -1,0 +1,30 @@
+{
+  "name": "worldcup-predictor",
+  "version": "1.0.0",
+  "description": "2026 FIFA World Cup Match Predictor and Ratings Engine",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "seed": "tsx scripts/seed.ts",
+    "sync": "pnpm --filter @worldcup/worker sync",
+    "test": "vitest run --workspaces",
+    "lint": "eslint \"{apps,packages}/**/*.{ts,tsx}\"",
+    "typecheck": "tsc --noEmit",
+    "codegen": "graphql-codegen",
+    "codegen:watch": "graphql-codegen --watch"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "5.0.2",
+    "@graphql-codegen/typescript": "4.0.9",
+    "@graphql-codegen/typescript-resolvers": "4.2.1",
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  }
+}
