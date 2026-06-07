@@ -2,7 +2,7 @@
 phase: 1
 slug: monorepo-local-infrastructure
 status: draft
-nyquist_compliant: false
+nyquist_compliant: true
 wave_0_complete: false
 created: 2026-06-07
 ---
@@ -27,9 +27,9 @@ created: 2026-06-07
 
 ## Sampling Rate
 
-- **After every task commit:** Run `node --import tsx node_modules/@cucumber/cucumber/bin/cucumber.js tests/bdd/features/`
-- **After every plan wave:** Run `node --import tsx node_modules/@cucumber/cucumber/bin/cucumber.js tests/bdd/features/`
-- **Before `/gsd-verify-work`:** Full suite must be green
+- **Wave 1 Sampling:** Run the task-specific verification commands (e.g., `pnpm build`, `pnpm run codegen`, `docker compose config`) after each task commit/wave.
+- **Wave 2 Sampling:** Run the global BDD suite `node --import tsx node_modules/@cucumber/cucumber/bin/cucumber.js tests/bdd/features/` after each task commit/wave.
+- **Before `/gsd-verify-work`:** Full suite must be green.
 - **Max feedback latency:** 10 seconds
 
 ---
@@ -38,9 +38,12 @@ created: 2026-06-07
 
 | Task ID | Plan | Wave | Requirement | Threat Ref | Secure Behavior | Test Type | Automated Command | File Exists | Status |
 |---------|------|------|-------------|------------|-----------------|-----------|-------------------|-------------|--------|
-| 01-01-01 | 01 | 1 | F1.1, F1.2, F1.3 | — | N/A | unit | `pnpm lint && pnpm typecheck` | ❌ W0 | ⬜ pending |
-| 01-01-02 | 01 | 1 | TS-07, F1.4, F1.5 | — | N/A | integration | `node --import tsx node_modules/@cucumber/cucumber/bin/cucumber.js tests/bdd/features/health.feature` | ❌ W0 | ⬜ pending |
-| 01-02-01 | 01 | 2 | F1.6, F1.7, F1.8 | — | N/A | integration | `node --import tsx node_modules/@cucumber/cucumber/bin/cucumber.js tests/bdd/features/db.feature` | ❌ W0 | ⬜ pending |
+| 01-01-01 | 01 | 1 | F1.1, F1.2 | — | N/A | build | `pnpm --filter @worldcup/mcp... run build` | ❌ W0 | ⬜ pending |
+| 01-01-02 | 01 | 1 | F1.3, D-06 | — | N/A | build | `pnpm run codegen` | ❌ W0 | ⬜ pending |
+| 01-01-03 | 01 | 1 | F1.4, F1.5, F1.10 | — | N/A | config | `docker compose config` | ❌ W0 | ⬜ pending |
+| 01-02-01 | 02 | 2 | F1.6, F1.7, F1.8 | — | N/A | migration | `npx tsx scripts/db-init.ts` | ❌ W0 | ⬜ pending |
+| 01-02-02 | 02 | 2 | D-02 | — | N/A | config | `docker compose config` | ❌ W0 | ⬜ pending |
+| 01-02-03 | 02 | 2 | F1.9, D-05 | — | N/A | integration | `pnpm run test:bdd` | ❌ W0 | ⬜ pending |
 
 *Status: ⬜ pending · ✅ green · ❌ red · ⚠️ flaky*
 

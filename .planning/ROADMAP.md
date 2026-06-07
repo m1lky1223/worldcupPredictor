@@ -6,17 +6,17 @@ Fine granularity. 11 phases, each focused and independently shippable. Run plans
 
 ---
 
-## Phase 1 — Monorepo & Local Infrastructure
+## Phase 1: Monorepo & Local Infrastructure
 **Goal:** Full stack runs locally from `docker compose up`. Every engineer can onboard from a cold clone.
 
 ### Plans
-1. `P1.1` Scaffold monorepo with `apps/` and `packages/` using npm workspaces + TypeScript project references
-2. `P1.2` Docker Compose: web, api, mcp, worker, postgres, redis + `.env.example`
-3. `P1.3` Shared `packages/config` (tsconfig, eslint, prettier)
-4. `P1.4` Database: choose ORM (Prisma or Drizzle), initial migration, seed script
-5. `P1.5` CI baseline: lint + typecheck on PR
+- **01-01-PLAN.md (Wave 1)**: Scaffold `apps/mcp`, setup GraphQL Codegen, baseline Docker Compose services, and configure CI linting/typechecking.
+- **01-02-PLAN.md (Wave 2)**: Database migrations & seeding initialization inside `db-migrate` container, sequencing docker-compose startup, and configuring Cucumber BDD tests inside a test runner container.
 
-**Exit criteria:** `docker compose up` cold starts all services; migrations apply; seed script runs.
+**Success Criteria**:
+1. `docker compose up` cold starts all services and healthchecks pass.
+2. Programmatic migrations and conditional database seeding run to completion before other services start.
+3. Cucumber BDD integration tests run and pass green inside the docker compose network.
 
 ---
 
