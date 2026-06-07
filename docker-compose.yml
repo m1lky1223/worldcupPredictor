@@ -31,6 +31,22 @@ services:
       timeout: 5s
       retries: 5
 
+  db-migrate:
+    build:
+      context: .
+      dockerfile: infra/docker/api.Dockerfile
+    container_name: worldcup-db-migrate
+    environment:
+      DATABASE_URL: postgres://postgres:password@postgres:5432/worldcup
+      IS_DOCKER: "true"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npx tsx scripts/db-init.ts
+    depends_on:
+      postgres:
+        condition: service_healthy
+
   api:
     build:
       context: .
@@ -47,10 +63,15 @@ services:
       - /app/node_modules
     command: npx tsx watch apps/api/src/index.ts
     depends_on:
-      postgres:
-        condition: service_healthy
+      db-migrate:
+        condition: service_completed_successfully
       redis:
         condition: service_healthy
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('net').connect(4000, 'localhost').on('error', () => process.exit(1)).on('connect', () => process.exit(0))"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
   web:
     build:
@@ -69,7 +90,15 @@ services:
       - /app/node_modules
     command: pnpm --filter @worldcup/web dev
     depends_on:
-      - api
+      api:
+        condition: service_healthy
+      db-migrate:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('net').connect(3000, 'localhost').on('error', () => process.exit(1)).on('connect', () => process.exit(0))"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
   worker:
     build:
@@ -85,8 +114,8 @@ services:
       - /app/node_modules
     command: npx tsx watch apps/worker/src/index.ts
     depends_on:
-      postgres:
-        condition: service_healthy
+      db-migrate:
+        condition: service_completed_successfully
       redis:
         condition: service_healthy
 
@@ -106,10 +135,15 @@ services:
       - /app/node_modules
     command: npx tsx watch apps/mcp/src/index.ts
     depends_on:
-      postgres:
-        condition: service_healthy
+      db-migrate:
+        condition: service_completed_successfully
       redis:
         condition: service_healthy
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('net').connect(4001, 'localhost').on('error', () => process.exit(1)).on('connect', () => process.exit(0))"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
 volumes:
   postgres_data:
