@@ -64,13 +64,32 @@ worldcupPredictor/
 - Keep files focused: one component, one hook, one utility per file.
 - Use descriptive names. Avoid abbreviations except well-known ones (e.g., `db`, `api`, `url`).
 
-### Components
+### Architectural Principles
+
+*   **SOLID:**
+    *   *Single Responsibility (SRP):* Keep background processing (workers), API gateway services, Elo rating calculations, and UI presentation separated.
+    *   *Open/Closed (OCP):* Design prediction models to allow extending outcome calculations with new factors without modifying the core simulation loops.
+    *   *Liskov Substitution (LSP):* Third-party data providers must implement standard provider interfaces from `packages/data-providers`.
+    *   *Interface Segregation (ISP):* Keep GraphQL endpoints modular and query-specific rather than deploying bloated schemas.
+    *   *Dependency Inversion (DIP):* Rely on normalized domain types, isolating the core business logic from external API shifts via the Anti-Corruption Layer.
+*   **DRY (Don't Repeat Yourself):** Share types in `packages/domain` and reuse calculation functions. Reuse GraphQL fragments on the frontend instead of repeating identical fields.
+*   **KISS (Keep It Simple, Stupid):** Write straightforward, readable TypeScript math for rating calculations. Avoid complex generic types unless absolutely necessary.
+*   **CQRS (Command Query Responsibility Segregation):**
+    *   Separate write operations (background workers syncing data and recalculating predictions in Postgres) from read operations (GraphQL querying database indices).
+    *   The web application serves read-only queries and triggers jobs asynchronously; it never executes direct database writes.
+
+### Components & React Best Practices
 
 - Use functional components with explicit prop types.
-- Co-locate component CSS in `src/styles/components/` using BEM-style class naming.
-- Server Components by default. Add `'use client'` only when the component needs interactivity, hooks, or browser APIs.
+- Server Components by default. Add `'use client'` only when the component needs interactivity, state hooks, or browser APIs.
+- Separate presentation components (pure, styled with MUI) from smart container components that fetch GraphQL queries.
 - Keep components small. Extract sub-components when a file exceeds ~150 lines.
 - AI-renderable MCP widgets should be compact, self-contained UI surfaces that reuse the same design tokens and never query the database directly.
+
+### Modern.js & Module Federation
+
+- Organize logic into monorepo packages (`packages/`) to keep dependencies isolated and reusable.
+- Structure UI components and layouts to support future **Module Federation** deployments. Ensure component entry points in `packages/ui` use dynamic imports and runtime check safety boundaries.
 
 ### Data & Types
 
@@ -94,12 +113,17 @@ worldcupPredictor/
 - Implement mobile-first responsive layouts using MUI layout components (e.g., `Grid`, `Stack`, `Container`, `Box`) with responsive array/object values.
 - Animations: Prefer MUI transition components (`Fade`, `Collapse`, `Grow`) or CSS transitions using transform and opacity. Respect user preferences for reduced motion.
 
-### API & Data Fetching
+### API & GraphQL Best Practices
 
 - External API calls go through `src/lib/data/` modules, never called directly from components.
 - All external fetches must have error handling, timeouts, and rate-limit awareness.
 - Cache external API responses in the database to reduce API calls and improve reliability.
 - Use environment variables for all API keys and endpoints.
+- **GraphQL Best Practices:**
+  - Design query and mutation schemas based on client view requirements, not database tables.
+  - Colocate GraphQL fragments with the UI components that render the data.
+  - Mitigate N+1 database queries by using DataLoader batching inside resolvers.
+  - Enforce authentication/authorization boundaries in resolvers; do not expose internal database errors to clients.
 
 ### Testing
 

@@ -290,3 +290,29 @@ Although Drizzle maps entities to database tables, the schema maps directly to o
 *   `predictions`: Maps to the `Prediction` Aggregate Root (append-only table).
 *   `ratings_snapshots`: Maps to the `RatingSnapshot` Entity.
 *   `odds_history`: Maps to the `MarketOdds` Value Object history.
+
+---
+
+## Architectural & Software Design Principles
+
+### 1. SOLID Design Mappings
+*   **Single Responsibility (SRP):** Segregated system processes. The background worker (`apps/worker`) handles synchronization and rating updates, the API server (`apps/api`) hosts client schema queries, and the frontend (`apps/web`) handles UI rendering.
+*   **Open/Closed (OCP):** Weighting factors (squad quality, tournament form) are injected into the prediction calculator without modifying the core rating engine logic.
+*   **Liskov Substitution (LSP):** Different data synchronization provider adapters (mock mode client vs real REST client) can be swapped seamlessly, as they all adhere to the unified provider adapter interface.
+*   **Interface Segregation (ISP):** GraphQL components query only the exact fields they require using colocated fragments rather than returning large, unnecessary blobs of data.
+*   **Dependency Inversion (DIP):** Core domain modules depend on interface abstractions, isolated from external API structure changes via the Anti-Corruption Layer (`packages/data-providers`).
+
+### 2. DRY & KISS
+*   **DRY (Don't Repeat Yourself):** Centralized domain declarations, database entities, and validation schemas in `packages/domain` prevent desynchronization between database migrations, API schemas, and frontend types.
+*   **KISS (Keep It Simple, Stupid):** The prediction engine is kept readable and uses straightforward TypeScript mathematical formulas rather than nested generic abstractions.
+
+### 3. Command Query Responsibility Segregation (CQRS)
+To maintain high performance and data consistency, the codebase operates on a CQRS-like division of concerns:
+*   **Command Side (Writes):** Triggered by background worker cron syncs. Writes raw scores, rating snapshots, and forecasts back into Postgres.
+*   **Query Side (Reads):** GraphQL API servers query highly indexed tables and caches. The Web App acts as a pure read viewer, preventing write lock issues and security vulnerabilities.
+
+### 4. Module Federation Ready
+While starting in a standard monorepo workspace structure, the configuration and package separation are structured to support dynamic **Module Federation**:
+*   All UI widgets are exported from `packages/ui` as decoupled, isolated entry points.
+*   Imports use runtime validation boundaries and dynamic code-splitting.
+*   This enables easily federating dashboard elements, match cards, or the bracket projector as remote micro-frontends in future phases.
