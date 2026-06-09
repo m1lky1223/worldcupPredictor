@@ -1,13 +1,15 @@
-export interface SyncProvider {
-  fetchFixtures(): Promise<unknown[]>;
-  fetchTeams(): Promise<unknown[]>;
-}
+import { NormalizedMatch, NormalizedTeam, NormalizedPlayer, NormalizedMatchStats } from "./types.js";
 
-export class MockSyncProvider implements SyncProvider {
-  async fetchFixtures(): Promise<unknown[]> {
-    return [];
-  }
-  async fetchTeams(): Promise<unknown[]> {
-    return [];
-  }
+// Re-export all public types, clients, and providers
+export * from "./types.js";
+export * from "./base-client.js";
+export * from "./mock/mock-provider.js";
+
+// ────────── SyncProvider Interface ──────────
+
+export interface SyncProvider {
+  fetchFixtures(): Promise<NormalizedMatch[]>;
+  fetchTeams(): Promise<NormalizedTeam[]>;
+  fetchSquads(teamId: string, providerTeamId: string): Promise<NormalizedPlayer[]>;
+  fetchMatchStats(matchId: number, providerMatchId: string): Promise<NormalizedMatchStats>;
 }
