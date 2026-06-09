@@ -145,7 +145,8 @@ const MOCK_STATS_RESPONSE = {
 };
 
 describe("FixturesAdapter Integration", () => {
-  let fetchSpy: ReturnType<typeof vi.spyOn>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  let fetchSpy: any;
   let adapter: FixturesAdapter;
 
   beforeEach(() => {
@@ -187,7 +188,8 @@ describe("FixturesAdapter Integration", () => {
 });
 
 describe("TeamsAdapter Integration", () => {
-  let fetchSpy: ReturnType<typeof vi.spyOn>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  let fetchSpy: any;
   let adapter: TeamsAdapter;
 
   beforeEach(() => {
@@ -230,7 +232,8 @@ describe("TeamsAdapter Integration", () => {
 });
 
 describe("TeamsAdapter.fetchSquads Integration", () => {
-  let fetchSpy: ReturnType<typeof vi.spyOn>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  let fetchSpy: any;
   let adapter: TeamsAdapter;
 
   beforeEach(() => {
@@ -270,7 +273,8 @@ describe("TeamsAdapter.fetchSquads Integration", () => {
 });
 
 describe("StatsAdapter Integration", () => {
-  let fetchSpy: ReturnType<typeof vi.spyOn>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  let fetchSpy: any;
   let adapter: StatsAdapter;
 
   beforeEach(() => {

@@ -32,24 +32,6 @@ export function getNestedValue<T = unknown>(obj: Record<string, unknown>, path: 
 }
 
 /**
- * A mapping configuration entry. Can be either:
- * - A **string** dot-path that resolves to a value on the raw payload.
- * - A **function** that receives the raw payload and transforms it.
- */
-export type MappingConfigEntry<TInput, TOutput = unknown> =
-  | string
-  | ((raw: TInput) => TOutput);
-
-/**
- * Describes how to map one entity type from raw provider data to
- * a normalized shape. Each key in the config is the target field
- * name, and each value describes where to get it from.
- */
-export type MappingConfig<TInput, TOutput> = {
-  [K in keyof TOutput]: MappingConfigEntry<TInput, TOutput[K]>;
-};
-
-/**
  * Map a raw provider entity through a declarative mapping config
  * into a normalized output object.
  *
@@ -64,22 +46,22 @@ export type MappingConfig<TInput, TOutput> = {
  * Function-based mappings that throw are caught, logged, and also
  * produce `null`.
  *
- * @param raw        Raw provider entity object
+ * @param raw        Raw provider entity object (widened to Record)
  * @param config     Mapping configuration describing field extractions
  * @param entityName Human-readable name for warning messages
  * @returns          Normalized output object
  */
-export function mapRawEntity<TInput extends Record<string, unknown>, TOutput extends Record<string, unknown>>(
-  raw: TInput,
-  config: MappingConfig<TInput, TOutput>,
+export function mapRawEntity(
+  raw: Record<string, unknown>,
+  config: Record<string, string | ((raw: Record<string, unknown>) => unknown)>,
   entityName: string,
-): TOutput {
+): Record<string, unknown> {
   const result: Record<string, unknown> = {};
 
   for (const [targetKey, entry] of Object.entries(config)) {
     if (typeof entry === "function") {
       try {
-        result[targetKey] = (entry as (raw: TInput) => unknown)(raw);
+        result[targetKey] = (entry as (raw: Record<string, unknown>) => unknown)(raw);
       } catch (err) {
         console.warn(
           `[Mapper] Warning: transformer function failed for "${entityName}.${targetKey}". ` +
@@ -100,122 +82,37 @@ export function mapRawEntity<TInput extends Record<string, unknown>, TOutput ext
     }
   }
 
-  return result as TOutput;
+  return result;
 }
 
 // ────────── TheStatsAPI Mapping Configurations ──────────
 
-/**
- * Expected shape of a fixture (match) from TheStatsAPI.
- * This is the raw provider schema we map FROM.
- */
-interface RawFixture {
-  fixture_id: string;
-  match_no: number;
-  start_time: string;
-  status: string;
-  stage: string;
-  team_home: {
-    iso_code: string;
-    name: string;
-  };
-  team_away: {
-    iso_code: string;
-    name: string;
-  };
-  stadium: {
-    name: string;
-    location: string;
-  };
-}
-
-/**
- * Shape of a normalized match output after mapping.
- */
-interface NormalizedFixtureOutput {
-  providerId: string;
-  matchNumber: number;
-  kickoffTime: Date;
-  status: "Scheduled" | "Live" | "Completed";
-  stage: string;
-  homeTeamId: string;
-  awayTeamId: string;
-  homeTeamName: string;
-  awayTeamName: string;
-  venueName: string | null;
-  venueCity: string | null;
-}
-
-export const fixtureMappingConfig: MappingConfig<RawFixture, NormalizedFixtureOutput> = {
-  providerId: "fixture_id",
-  matchNumber: "match_no",
-  kickoffTime: (raw) => new Date(raw.start_time),
-  status: "status",
-  stage: "stage",
-  homeTeamId: "team_home.iso_code",
-  awayTeamId: "team_away.iso_code",
-  homeTeamName: "team_home.name",
-  awayTeamName: "team_away.name",
-  venueName: "stadium.name",
-  venueCity: "stadium.location",
+export const fixtureMappingConfig = {
+  providerId: "fixture_id" as const,
+  matchNumber: "match_no" as const,
+  kickoffTime: (raw: Record<string, unknown>) => new Date(raw.start_time as string),
+  status: "status" as const,
+  stage: "stage" as const,
+  homeTeamId: "team_home.iso_code" as const,
+  awayTeamId: "team_away.iso_code" as const,
+  homeTeamName: "team_home.name" as const,
+  awayTeamName: "team_away.name" as const,
+  venueName: "stadium.name" as const,
+  venueCity: "stadium.location" as const,
 };
 
-/**
- * Expected shape of a team from TheStatsAPI.
- */
-interface RawTeam {
-  team_id: string;
-  name: string;
-  iso_code: string;
-  group_name: string;
-  flag_url: string;
-}
-
-/**
- * Shape of a normalized team output after mapping.
- */
-interface NormalizedTeamOutput {
-  providerId: string;
-  name: string;
-  id: string;
-  groupName: string;
-  flagUrl: string | null;
-}
-
-export const teamMappingConfig: MappingConfig<RawTeam, NormalizedTeamOutput> = {
-  providerId: "team_id",
-  name: "name",
-  id: "iso_code",
-  groupName: "group_name",
-  flagUrl: "flag_url",
+export const teamMappingConfig = {
+  providerId: "team_id" as const,
+  name: "name" as const,
+  id: "iso_code" as const,
+  groupName: "group_name" as const,
+  flagUrl: "flag_url" as const,
 };
 
-/**
- * Expected shape of a player from TheStatsAPI squad endpoint.
- */
-interface RawPlayer {
-  player_id: string;
-  name: string;
-  position: string;
-  shirt_number: number;
-  team_id: string;
-}
-
-/**
- * Shape of a normalized player output after mapping.
- */
-interface NormalizedPlayerOutput {
-  providerId: string;
-  name: string;
-  position: string;
-  shirtNumber: number;
-  teamId: string;
-}
-
-export const playerMappingConfig: MappingConfig<RawPlayer, NormalizedPlayerOutput> = {
-  providerId: "player_id",
-  name: "name",
-  position: "position",
-  shirtNumber: "shirt_number",
-  teamId: "team_id",
+export const playerMappingConfig = {
+  providerId: "player_id" as const,
+  name: "name" as const,
+  position: "position" as const,
+  shirtNumber: "shirt_number" as const,
+  teamId: "team_id" as const,
 };

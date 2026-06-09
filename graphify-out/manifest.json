@@ -1,7 +1,7 @@
 {
   ".beads/backup/backup_state.json": {
-    "mtime": 1780830623.7975545,
-    "ast_hash": "58ca5d019df92e83d3ea8ff28fe89f38",
+    "mtime": 1780875431.2864711,
+    "ast_hash": "24934a7f7ec67211a2af8a58782d42e6",
     "semantic_hash": ""
   },
   ".beads/hooks/post-checkout": {
@@ -85,8 +85,8 @@
     "semantic_hash": ""
   },
   ".planning/PROJECT.md": {
-    "mtime": 1780832049.0355778,
-    "ast_hash": "55c27661f5400a18ca6782f7801d9ffe",
+    "mtime": 1780999949.7272847,
+    "ast_hash": "636cb02902a59c52a0eacf7f299e6a51",
     "semantic_hash": ""
   },
   ".planning/REQUIREMENTS.md": {
@@ -95,18 +95,18 @@
     "semantic_hash": ""
   },
   ".planning/ROADMAP.md": {
-    "mtime": 1780829438.2743127,
-    "ast_hash": "fabf4bb3f3b226c543514d848d35f1cd",
+    "mtime": 1780874089.5833077,
+    "ast_hash": "f565534bee0e86a38f8c062787df391d",
     "semantic_hash": ""
   },
   ".planning/STATE.md": {
-    "mtime": 1780830005.1113281,
-    "ast_hash": "6ef7a12fd94d4f507340e2232574aef7",
+    "mtime": 1781007026.3548348,
+    "ast_hash": "7217144deb230be9dff840b9c0faec7a",
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1780832775.9790816,
-    "ast_hash": "9137337bd55152bc297cd8223becb461",
+    "mtime": 1781000788.643244,
+    "ast_hash": "6f51342f4882242037d8d3442e4987ce",
     "semantic_hash": ""
   },
   "AI_NOTES.md": {
@@ -140,8 +140,8 @@
     "semantic_hash": ""
   },
   "apps/api/src/index.ts": {
-    "mtime": 1780833100.2456276,
-    "ast_hash": "c0ddc65cd83f157acc1a309e72d37871",
+    "mtime": 1780874018.9166481,
+    "ast_hash": "11d176774bc970d27a3160ea7814898b",
     "semantic_hash": ""
   },
   "apps/api/tsconfig.json": {
@@ -195,8 +195,8 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1780833520.7517774,
-    "ast_hash": "4300ebfb34c3d4e403f9aa1ba32d5840",
+    "mtime": 1780875615.8116126,
+    "ast_hash": "e5c86560300a10224ebba97160ba1562",
     "semantic_hash": ""
   },
   "packages/config/eslint.js": {
@@ -260,8 +260,8 @@
     "semantic_hash": ""
   },
   "packages/domain/package.json": {
-    "mtime": 1780832958.1875603,
-    "ast_hash": "73316ddd9a6a0d8f894c2a0f3ca082b7",
+    "mtime": 1780874018.9182403,
+    "ast_hash": "881a758642a7f2bf2cb898a41ec02793",
     "semantic_hash": ""
   },
   "packages/domain/src/db/index.ts": {
@@ -275,8 +275,8 @@
     "semantic_hash": ""
   },
   "packages/domain/src/index.ts": {
-    "mtime": 1780833066.8817542,
-    "ast_hash": "7c083a253e9a5366ae940ccb135f0385",
+    "mtime": 1780874018.9187527,
+    "ast_hash": "a6597d4b2d54f473d28169dfe2f93b29",
     "semantic_hash": ""
   },
   "packages/domain/tsconfig.json": {
@@ -325,23 +325,1913 @@
     "semantic_hash": ""
   },
   "tsconfig.json": {
-    "mtime": 1780832937.6011643,
-    "ast_hash": "503cc7a66cdf6133e382306dff1f2468",
+    "mtime": 1780874018.9189248,
+    "ast_hash": "4a187be874c78e28d82c2a76c88e70e4",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1780834018.2274196,
+    "mtime": 1780873996.9836826,
     "ast_hash": "637704c2e276800d5bb3191711cad528",
     "semantic_hash": ""
   },
   "docker-compose.yml": {
-    "mtime": 1780833814.492881,
-    "ast_hash": "a8508d3873c0caa7384684ab10c780d8",
+    "mtime": 1780875615.811014,
+    "ast_hash": "630d9db60c9893096476096f8aedce65",
     "semantic_hash": ""
   },
   "pnpm-workspace.yaml": {
     "mtime": 1780833532.279678,
     "ast_hash": "a1cca0aa1a3cfe0699111dd6131455aa",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/bin/shared/config-defaults.manifest.json": {
+    "mtime": 1780834479.1352015,
+    "ast_hash": "73aa62dec69dac948247152d566fe4e8",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/bin/shared/config-schema.manifest.json": {
+    "mtime": 1780834479.135696,
+    "ast_hash": "951829194f0a3ec081999edcebf997dc",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/bin/shared/model-catalog.json": {
+    "mtime": 1780834479.1354625,
+    "ast_hash": "ba101b76b1a48bc5979ad873087c9317",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/bin/shared/runtime-aliases.manifest.json": {
+    "mtime": 1780834479.135929,
+    "ast_hash": "5dc10e421921d4becde3dee26348f5d4",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/config.json": {
+    "mtime": 1780834479.2182817,
+    "ast_hash": "db078262e801aac7b571b40f3c44e626",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/_runtime-launcher.snippet.sh": {
+    "mtime": 1780834479.21163,
+    "ast_hash": "47c3bf784e685d5a28ea64cdda3c78b4",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/discuss-phase/templates/checkpoint.json": {
+    "mtime": 1780834479.2097964,
+    "ast_hash": "eace86e42063a47c3cacf8fdcdb3bd01",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-file-manifest.json": {
+    "mtime": 1780834479.1277514,
+    "ast_hash": "1a96f0b4610fbd882ea1e3e41b753eb9",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-install-state.json": {
+    "mtime": 1780834479.13303,
+    "ast_hash": "b50f5fafad59d0dc8fc8882e7a5c2976",
+    "semantic_hash": ""
+  },
+  ".opencode/hooks/gsd-check-update-worker.js": {
+    "mtime": 1780834479.1323867,
+    "ast_hash": "37945c0d4b37f5ffc4c017fb47c83bc3",
+    "semantic_hash": ""
+  },
+  ".opencode/hooks/gsd-check-update.js": {
+    "mtime": 1780834479.130326,
+    "ast_hash": "31cf71de7df1efb2f02d19d2cd593bc4",
+    "semantic_hash": ""
+  },
+  ".opencode/hooks/gsd-context-monitor.js": {
+    "mtime": 1780834479.1321375,
+    "ast_hash": "781af737a9b5ae253c9ceaf629d7792f",
+    "semantic_hash": ""
+  },
+  ".opencode/hooks/gsd-graphify-update.sh": {
+    "mtime": 1780834479.1299047,
+    "ast_hash": "b2c8b2a195f46ea158d7a6fe457b31cb",
+    "semantic_hash": ""
+  },
+  ".opencode/hooks/gsd-phase-boundary.sh": {
+    "mtime": 1780834479.1313329,
+    "ast_hash": "e391dbdf7592d4938e26fcb5ecea22f4",
+    "semantic_hash": ""
+  },
+  ".opencode/hooks/gsd-prompt-guard.js": {
+    "mtime": 1780834479.1292274,
+    "ast_hash": "4836a653b9747041b71b5a2875c091f0",
+    "semantic_hash": ""
+  },
+  ".opencode/hooks/gsd-read-guard.js": {
+    "mtime": 1780834479.129419,
+    "ast_hash": "a2d9978eca7fc8749040b0d60293ea9a",
+    "semantic_hash": ""
+  },
+  ".opencode/hooks/gsd-read-injection-scanner.js": {
+    "mtime": 1780834479.1326241,
+    "ast_hash": "7e683609efa79f488b6aa3b4443cab90",
+    "semantic_hash": ""
+  },
+  ".opencode/hooks/gsd-session-state.sh": {
+    "mtime": 1780834479.1308734,
+    "ast_hash": "9c5447969312abd31abbab326ab2a1bb",
+    "semantic_hash": ""
+  },
+  ".opencode/hooks/gsd-statusline.js": {
+    "mtime": 1780834479.1306303,
+    "ast_hash": "8944c2c10268595e3deec54e0606868b",
+    "semantic_hash": ""
+  },
+  ".opencode/hooks/gsd-update-banner.js": {
+    "mtime": 1780834479.1311092,
+    "ast_hash": "970b1b034025ddf0ab51232a4c3e617c",
+    "semantic_hash": ""
+  },
+  ".opencode/hooks/gsd-validate-commit.sh": {
+    "mtime": 1780834479.130107,
+    "ast_hash": "9a6e07e6a7752b7637078728ecca84e7",
+    "semantic_hash": ""
+  },
+  ".opencode/hooks/gsd-workflow-guard.js": {
+    "mtime": 1780834479.132867,
+    "ast_hash": "9241e2f26789f5af97b6c1126a80ca00",
+    "semantic_hash": ""
+  },
+  ".opencode/hooks/gsd-worktree-path-guard.js": {
+    "mtime": 1780834479.1296563,
+    "ast_hash": "b23d431f946106c7fb8ab9c897cb6a4e",
+    "semantic_hash": ""
+  },
+  ".opencode/hooks/lib/git-cmd.js": {
+    "mtime": 1780834479.1318717,
+    "ast_hash": "eeb1c420c81ca1f4bd923babbcc7882b",
+    "semantic_hash": ""
+  },
+  ".opencode/hooks/lib/gsd-graphify-rebuild.sh": {
+    "mtime": 1780834479.131621,
+    "ast_hash": "a39acb248d7384c6931c4528d373ade3",
+    "semantic_hash": ""
+  },
+  ".opencode/opencode.json": {
+    "mtime": 1780834554.4562173,
+    "ast_hash": "112e78cf333a89dd121487617d418a11",
+    "semantic_hash": ""
+  },
+  ".opencode/package.json": {
+    "mtime": 1780834479.1285648,
+    "ast_hash": "62fb3b6ac36d06693d8e9db2e98bfe12",
+    "semantic_hash": ""
+  },
+  ".opencode/plugins/graphify.js": {
+    "mtime": 1780834478.0577412,
+    "ast_hash": "64ccd3c03dbfe0980b6095766f5c4e52",
+    "semantic_hash": ""
+  },
+  ".opencode/settings.json": {
+    "mtime": 1780834478.0568373,
+    "ast_hash": "8a80554c91d9fca8acb82f023de02f11",
+    "semantic_hash": ""
+  },
+  "apps/mcp/package.json": {
+    "mtime": 1780874018.9169185,
+    "ast_hash": "2cc9326833679f4d040edd7e639ec498",
+    "semantic_hash": ""
+  },
+  "apps/mcp/src/index.ts": {
+    "mtime": 1780874018.9171982,
+    "ast_hash": "518c2ec22d9eb4655b2955ed70ed7305",
+    "semantic_hash": ""
+  },
+  "apps/mcp/tsconfig.json": {
+    "mtime": 1780874018.9172873,
+    "ast_hash": "105cf71816957cee8974e74a2c6fb489",
+    "semantic_hash": ""
+  },
+  "codegen.ts": {
+    "mtime": 1780874018.9174824,
+    "ast_hash": "d48a41882b3bf443731b8e068fca8b4d",
+    "semantic_hash": ""
+  },
+  "cucumber.js": {
+    "mtime": 1780875615.8106582,
+    "ast_hash": "4cd7af118da3dd6d3dfb86e7a000d949",
+    "semantic_hash": ""
+  },
+  "packages/domain/src/generated/graphql.ts": {
+    "mtime": 1780874018.918495,
+    "ast_hash": "37336d413e643b616ba6dbbd3984b633",
+    "semantic_hash": ""
+  },
+  "scripts/db-init.ts": {
+    "mtime": 1780875615.814891,
+    "ast_hash": "f2fa938cec865c408ff05948abfff791",
+    "semantic_hash": ""
+  },
+  "tests/bdd/cucumber.js": {
+    "mtime": 1780875615.8151362,
+    "ast_hash": "81f0390cbd1fd2c01a7f5cd69f49660e",
+    "semantic_hash": ""
+  },
+  "tests/bdd/steps/db.steps.ts": {
+    "mtime": 1780875615.815763,
+    "ast_hash": "e31c4884ab4c99de63804b638931aeab",
+    "semantic_hash": ""
+  },
+  "tests/bdd/steps/health.steps.ts": {
+    "mtime": 1780875615.8159618,
+    "ast_hash": "b5d92c24ec150142bb3cd20a34371617",
+    "semantic_hash": ""
+  },
+  ".agents/skills/gsd/SKILL.md": {
+    "mtime": 1780834554.4566684,
+    "ast_hash": "39adb34c3397b2715e20375e9dca54c3",
+    "semantic_hash": ""
+  },
+  ".github/workflows/ci.yml": {
+    "mtime": 1780874018.91626,
+    "ast_hash": "24d6ff6ac30e9637f4c8d15d2b350582",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-advisor-researcher.md": {
+    "mtime": 1780834479.1212213,
+    "ast_hash": "887dd09ae46c9e491285d18385c4fdf1",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-ai-researcher.md": {
+    "mtime": 1780834554.4234667,
+    "ast_hash": "b035fd63c54786838ea97c868932edeb",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-assumptions-analyzer.md": {
+    "mtime": 1780834479.1242096,
+    "ast_hash": "c5531dd448b252fa531099a0af101333",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-code-fixer.md": {
+    "mtime": 1780834479.1198924,
+    "ast_hash": "d68258ad02d4f5993e00abbd04a81103",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-code-reviewer.md": {
+    "mtime": 1780834479.1207206,
+    "ast_hash": "fdad777f94dceb811bed17d493f9bd5a",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-codebase-mapper.md": {
+    "mtime": 1780834479.1245158,
+    "ast_hash": "9535638f504d40d43fdc9b2d52ef51aa",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-debug-session-manager.md": {
+    "mtime": 1780834479.125644,
+    "ast_hash": "f0fcec8aa4cec2930903f1962de94cb3",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-debugger.md": {
+    "mtime": 1780834554.4261947,
+    "ast_hash": "6760afa14f7913625a18bd5995ceb3df",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-doc-classifier.md": {
+    "mtime": 1780834479.1189964,
+    "ast_hash": "c2a173fe5e3f7b0dba0cc6ab0b772d48",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-doc-synthesizer.md": {
+    "mtime": 1780834479.1209724,
+    "ast_hash": "a3a1b9ece7804e1c34d0ce119c5169fa",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-doc-verifier.md": {
+    "mtime": 1780834479.123406,
+    "ast_hash": "6c6156da96c278e4b0025cb3c9256937",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-doc-writer.md": {
+    "mtime": 1780834479.121535,
+    "ast_hash": "36ae5aa113f4765209c85a98128a8493",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-domain-researcher.md": {
+    "mtime": 1780834554.4265637,
+    "ast_hash": "ff4951136aa3c1cc10b6287512488e2e",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-eval-auditor.md": {
+    "mtime": 1780834554.4267254,
+    "ast_hash": "424395d9ff7e660cf882e7e88712a458",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-eval-planner.md": {
+    "mtime": 1780834554.427082,
+    "ast_hash": "3af51bdebf2793ba738cb0009ed14042",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-executor.md": {
+    "mtime": 1780834554.4272778,
+    "ast_hash": "7b4308b8fc96289ce4f3798050256590",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-framework-selector.md": {
+    "mtime": 1780834554.4273808,
+    "ast_hash": "9bd44d9794547b3d802ff57fe1faf657",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-integration-checker.md": {
+    "mtime": 1780834479.123141,
+    "ast_hash": "9200becb9ee58294ccc57de8cd96e8cf",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-intel-updater.md": {
+    "mtime": 1780834479.1204302,
+    "ast_hash": "847283841ea1d267d132b46d5352a5cb",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-nyquist-auditor.md": {
+    "mtime": 1780834479.1221168,
+    "ast_hash": "809769e420d203a623ab08cdf29f1140",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-pattern-mapper.md": {
+    "mtime": 1780834479.1192715,
+    "ast_hash": "14bc3f6e2377e92276208d25e389d9c3",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-phase-researcher.md": {
+    "mtime": 1780834554.4277046,
+    "ast_hash": "919af19c3659ce1ae187df396e57e425",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-plan-checker.md": {
+    "mtime": 1780834554.4278834,
+    "ast_hash": "93c4782c85f4bc776d301e14119e3e0a",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-planner.md": {
+    "mtime": 1780834554.4283137,
+    "ast_hash": "1578a822cbc543e771479c5192f7129e",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-project-researcher.md": {
+    "mtime": 1780834479.1184914,
+    "ast_hash": "9a94af39e34d6ea8954a461bdf83ab68",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-research-synthesizer.md": {
+    "mtime": 1780834554.4285498,
+    "ast_hash": "17249de26ec7733fe1653b2f8a6b1af4",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-roadmapper.md": {
+    "mtime": 1780834554.4287004,
+    "ast_hash": "8d5bd4047f6fe1189cd992b1a03eb3a8",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-security-auditor.md": {
+    "mtime": 1780834479.123952,
+    "ast_hash": "f88594a2378c0cff79672a240ab0929b",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-ui-auditor.md": {
+    "mtime": 1780834479.1270728,
+    "ast_hash": "66233a37aa818dd125b9a06d9d1b13f5",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-ui-checker.md": {
+    "mtime": 1780834479.1247792,
+    "ast_hash": "4a7ef1a4cc0ed7e3900887e95ecd4755",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-ui-researcher.md": {
+    "mtime": 1780834554.4289267,
+    "ast_hash": "2ec7db407e8f12393d4fda88d534d9d9",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-user-profiler.md": {
+    "mtime": 1780834554.4290276,
+    "ast_hash": "0dd8547059852a39f8ca2bf9d572f191",
+    "semantic_hash": ""
+  },
+  ".opencode/agents/gsd-verifier.md": {
+    "mtime": 1780834554.4292116,
+    "ast_hash": "05367dde8b4b81decf1d0f15080472f4",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-add-tests.md": {
+    "mtime": 1780834554.4293935,
+    "ast_hash": "f28aedebf0ec94c9767ae33084191391",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-ai-integration-phase.md": {
+    "mtime": 1780834554.4294689,
+    "ast_hash": "98db356f07c9e39ffd756297a9a2b930",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-audit-fix.md": {
+    "mtime": 1780834554.4295518,
+    "ast_hash": "197377f21b3d64789420abf21cff84f2",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-audit-milestone.md": {
+    "mtime": 1780834554.4296224,
+    "ast_hash": "8fd785f8456f6ef5e9db4f518764d18c",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-audit-uat.md": {
+    "mtime": 1780834554.4297063,
+    "ast_hash": "b1c37033f648ce6712863c12203d9d57",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-autonomous.md": {
+    "mtime": 1780834554.4297945,
+    "ast_hash": "19484b559f726d594e96cebf030f1b5d",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-capture.md": {
+    "mtime": 1780834554.4298759,
+    "ast_hash": "17688cb87adbdaa342291ca7d97debd8",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-cleanup.md": {
+    "mtime": 1780834554.4299426,
+    "ast_hash": "b1753859e7c996f81b44a5d1a0a82c21",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-code-review.md": {
+    "mtime": 1780834554.4300153,
+    "ast_hash": "a275ce7a9c96548863421132115f194a",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-complete-milestone.md": {
+    "mtime": 1780834554.430098,
+    "ast_hash": "fc651fd87868efc75c56ce392b915b40",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-config.md": {
+    "mtime": 1780834554.4301834,
+    "ast_hash": "1a4a8406a2e517951eef733fb2f8fb31",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-debug.md": {
+    "mtime": 1780834554.4302573,
+    "ast_hash": "36abc4f818b4544195644b378ef8d9f8",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-discuss-phase.md": {
+    "mtime": 1780834554.4303405,
+    "ast_hash": "c669eafb7e4e6eb6ddf90e2d397a6514",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-docs-update.md": {
+    "mtime": 1780834554.4304404,
+    "ast_hash": "1fd11b58d88b7ad67e173d5e5ed862ec",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-eval-review.md": {
+    "mtime": 1780834554.4305215,
+    "ast_hash": "26f2f621968d77a4aed8ee27ce6fefef",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-execute-phase.md": {
+    "mtime": 1780834554.4305973,
+    "ast_hash": "cb3c98c33c471a8fa7dcb4c6457af8bc",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-explore.md": {
+    "mtime": 1780834554.4306653,
+    "ast_hash": "ea1d662fe073a72f8879d5a078840223",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-extract-learnings.md": {
+    "mtime": 1780834554.4307406,
+    "ast_hash": "c546cd1079d563be8d9897d3c2e6862e",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-fast.md": {
+    "mtime": 1780834554.4308984,
+    "ast_hash": "95b474d7d5d317cccaebdf7db9164248",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-forensics.md": {
+    "mtime": 1780834554.431057,
+    "ast_hash": "a781b8718debb363cc6a226e2cc8ad3b",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-graphify.md": {
+    "mtime": 1780834554.4311619,
+    "ast_hash": "68dcbb3028c1584e4c8a4850070a6629",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-health.md": {
+    "mtime": 1780834554.4312692,
+    "ast_hash": "c78a0b57ed7b9d8fae62b38fc8db492b",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-help.md": {
+    "mtime": 1780834554.4313369,
+    "ast_hash": "a19836686b9d224a2ef158e8db6818af",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-import.md": {
+    "mtime": 1780834554.431426,
+    "ast_hash": "44457e9bb9ecd8e0bfc207967b8e6382",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-inbox.md": {
+    "mtime": 1780834554.4315028,
+    "ast_hash": "beb6376f8159b5cec6f56e0325780dc0",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-ingest-docs.md": {
+    "mtime": 1780834554.4316142,
+    "ast_hash": "9c3852731fb4c598944601b07e9e3d56",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-manager.md": {
+    "mtime": 1780834554.4317465,
+    "ast_hash": "da4e1020fdc3ccd7588e959ee290992e",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-map-codebase.md": {
+    "mtime": 1780834554.431843,
+    "ast_hash": "5d39b673e05a522ace7ff772b0217d11",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-milestone-summary.md": {
+    "mtime": 1780834554.4319193,
+    "ast_hash": "7411dac0c320cb9a4fdc6e9d6ac00859",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-mvp-phase.md": {
+    "mtime": 1780834554.4320831,
+    "ast_hash": "6e2d2b8d00fe079ae5f632851a53e42d",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-new-milestone.md": {
+    "mtime": 1780834554.4322329,
+    "ast_hash": "f9e34d463d0abb8fb299816ace58b836",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-new-project.md": {
+    "mtime": 1780834554.432421,
+    "ast_hash": "b218d341a0134192facdaf0eaf73cb2a",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-ns-context.md": {
+    "mtime": 1780834479.2407815,
+    "ast_hash": "cea27f66bc528ba99e260e19bd29f9e9",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-ns-ideate.md": {
+    "mtime": 1780834479.2294896,
+    "ast_hash": "0236a85140bb6c9e1d64d3334d627e21",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-ns-manage.md": {
+    "mtime": 1780834479.237619,
+    "ast_hash": "f2b9837339108926b9181b86043dfb2f",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-ns-project.md": {
+    "mtime": 1780834479.238761,
+    "ast_hash": "7d7467afd433be24322bfc0226c67ce7",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-ns-review.md": {
+    "mtime": 1780834479.22972,
+    "ast_hash": "7525582f4b7b28abbffe708a2ca1cec4",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-ns-workflow.md": {
+    "mtime": 1780834479.2391825,
+    "ast_hash": "87156146520a765858577c2bd6f3dad5",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-pause-work.md": {
+    "mtime": 1780834554.4327807,
+    "ast_hash": "6b2ece41cb146085e75b226d8f3e1189",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-phase.md": {
+    "mtime": 1780834554.4328985,
+    "ast_hash": "4673e25e0d040b59e09de70ab374bee8",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-plan-phase.md": {
+    "mtime": 1780834554.4329937,
+    "ast_hash": "f7cb6bd2e122ef0602c6697687da972a",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-plan-review-convergence.md": {
+    "mtime": 1780834554.433087,
+    "ast_hash": "2fd0491465b918eb2a2a87eeb2bbba09",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-pr-branch.md": {
+    "mtime": 1780834554.4331634,
+    "ast_hash": "dff19b4fe1819fbf860dfb6d8350896f",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-profile-user.md": {
+    "mtime": 1780834554.4332392,
+    "ast_hash": "1d4e2547f6d886a69697b37bcbdab794",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-progress.md": {
+    "mtime": 1780834554.4333234,
+    "ast_hash": "f4753a070f6463e5f3902762e34c81de",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-quick.md": {
+    "mtime": 1780834554.4334142,
+    "ast_hash": "3ac08ea556179c3405add6a5b0b1b7cc",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-resume-work.md": {
+    "mtime": 1780834554.433505,
+    "ast_hash": "1ea30eabb7761581421188e892844cd8",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-review-backlog.md": {
+    "mtime": 1780834479.2304356,
+    "ast_hash": "e052fe0846d6c7160f8e8924ffef77b4",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-review.md": {
+    "mtime": 1780834554.433609,
+    "ast_hash": "1f6c2cee4aa26af0be5a3b44ca5ec722",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-secure-phase.md": {
+    "mtime": 1780834554.4336889,
+    "ast_hash": "f4f0934d669e6c84c5bf476c8fd754a6",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-settings.md": {
+    "mtime": 1780834554.4337656,
+    "ast_hash": "b2c3a4e6c6022b8641a602cec7efa7f7",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-ship.md": {
+    "mtime": 1780834554.4338422,
+    "ast_hash": "626860bae32ffbf64486a2751049aed6",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-sketch.md": {
+    "mtime": 1780834554.4339392,
+    "ast_hash": "8a1fe5999be46b483bfd3d73fd6ca6e6",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-spec-phase.md": {
+    "mtime": 1780834554.4340286,
+    "ast_hash": "8e809de07a28b041abf17f7253c510e7",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-spike.md": {
+    "mtime": 1780834554.4341204,
+    "ast_hash": "034a88c1f84749d2da22a9e79e59106e",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-stats.md": {
+    "mtime": 1780834554.4341922,
+    "ast_hash": "264e76b09cf8c1cd9917b0fa37cadd87",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-surface.md": {
+    "mtime": 1780834554.43428,
+    "ast_hash": "61061d58635b75bc46d5fb17b9889c09",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-thread.md": {
+    "mtime": 1780834554.4343605,
+    "ast_hash": "c113d0065d728767bc11c87b65743d3a",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-ui-phase.md": {
+    "mtime": 1780834554.4344254,
+    "ast_hash": "fddc9b3bf517ce129aba0cb1b958af44",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-ui-review.md": {
+    "mtime": 1780834554.4344966,
+    "ast_hash": "bdd5729f01c4ae980acee315b5e953a7",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-ultraplan-phase.md": {
+    "mtime": 1780834554.434579,
+    "ast_hash": "18ef8365c18e268ae6e1f1f1c796013b",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-undo.md": {
+    "mtime": 1780834554.4346497,
+    "ast_hash": "39b2b103fff6d59619d4ca92a868b836",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-update.md": {
+    "mtime": 1780834554.4347215,
+    "ast_hash": "1eb34daaafbf48f2d993cee90c88a796",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-validate-phase.md": {
+    "mtime": 1780834554.4347923,
+    "ast_hash": "1b618af518e44fa72653c66b532bcb87",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-verify-work.md": {
+    "mtime": 1780834554.4348783,
+    "ast_hash": "e0c034192e25800541d9a2dd85947afc",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-workspace.md": {
+    "mtime": 1780834554.4349687,
+    "ast_hash": "80d78c38640402989bd3ad3f6bb8d2a1",
+    "semantic_hash": ""
+  },
+  ".opencode/command/gsd-workstreams.md": {
+    "mtime": 1780834479.230676,
+    "ast_hash": "00c489f44a08615a6a911fa21ad6a7a0",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/contexts/dev.md": {
+    "mtime": 1780834479.1337898,
+    "ast_hash": "d397161b51d5d56d8c3cec30cdcb166b",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/contexts/research.md": {
+    "mtime": 1780834479.1339862,
+    "ast_hash": "efe586c459336cd5740264f1ad6d43cf",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/contexts/review.md": {
+    "mtime": 1780834479.1341894,
+    "ast_hash": "4cf4f527fee080b4fc6d2b33615c3919",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/agent-contracts.md": {
+    "mtime": 1780834479.1673112,
+    "ast_hash": "68f457d8a0b4c39f15a6f0b2f6a060da",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/ai-evals.md": {
+    "mtime": 1780834479.179969,
+    "ast_hash": "672e97cab43dc58b1b8db81e884b457d",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/ai-frameworks.md": {
+    "mtime": 1780834479.180227,
+    "ast_hash": "a65f7620a017f08aa6f69af3f048d787",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/artifact-types.md": {
+    "mtime": 1780834554.439614,
+    "ast_hash": "f55226d7e4a2bfd14a2ff283ea73d073",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/autonomous-smart-discuss.md": {
+    "mtime": 1780834479.1713786,
+    "ast_hash": "6e09863e66cc713fc657bfc197c5791f",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/checkpoints.md": {
+    "mtime": 1780834479.1787298,
+    "ast_hash": "f5b46bccf5e3b4aa538f1b571c130612",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/common-bug-patterns.md": {
+    "mtime": 1780834479.179003,
+    "ast_hash": "d7d13c6090aca12176c85acbc967ccb5",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/context-budget.md": {
+    "mtime": 1780834554.439852,
+    "ast_hash": "65a803aa26b3cb5d32ff1a45ac07c752",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/continuation-format.md": {
+    "mtime": 1780834479.1817772,
+    "ast_hash": "eb67c20cc9d493d64ba11d6ab3135370",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/debugger-philosophy.md": {
+    "mtime": 1780834479.1736817,
+    "ast_hash": "b803092e926c965a345bbc4ca77ccdd4",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/decimal-phase-calculation.md": {
+    "mtime": 1780834479.1778457,
+    "ast_hash": "496a9b8d335713f72400e9bd1c58a237",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/doc-conflict-engine.md": {
+    "mtime": 1780834479.1706297,
+    "ast_hash": "f30745f7c8c2b7bffef066278fa432bc",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/domain-probes.md": {
+    "mtime": 1780834479.172784,
+    "ast_hash": "36c5761927ed768e5c61dd35f6d19447",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/execute-mvp-tdd.md": {
+    "mtime": 1780834479.1720667,
+    "ast_hash": "bc070788232c660209b4521d316e9fda",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/executor-examples.md": {
+    "mtime": 1780834479.1694136,
+    "ast_hash": "e2dd4da11171a84a9f86264ceeac6690",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/few-shot-examples/plan-checker.md": {
+    "mtime": 1780834479.18104,
+    "ast_hash": "72c0e172fe2819fc94c9947bfdd05933",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/few-shot-examples/verifier.md": {
+    "mtime": 1780834479.1808329,
+    "ast_hash": "1bf32adfa434fc67013ab1b2b6f59b70",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/gate-prompts.md": {
+    "mtime": 1780834479.1711152,
+    "ast_hash": "b2146beceda5b7ddc0fbd1aecd716f9c",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/gates.md": {
+    "mtime": 1780834479.1775997,
+    "ast_hash": "4e7c0b345be2cae471e799173eeba0d5",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/git-integration.md": {
+    "mtime": 1780834479.1683521,
+    "ast_hash": "5d473a6d566251ce8ed560e3bc17c9f0",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/git-planning-commit.md": {
+    "mtime": 1780834479.1696718,
+    "ast_hash": "ddb34e24754a353350293076bf031998",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/ios-scaffold.md": {
+    "mtime": 1780834479.1753943,
+    "ast_hash": "95a8027b33e64dc00fd95b5ee5a27139",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/mandatory-initial-read.md": {
+    "mtime": 1780834479.1797154,
+    "ast_hash": "270db662005d39161f35283b6315c3f3",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/model-profile-resolution.md": {
+    "mtime": 1780834554.4403715,
+    "ast_hash": "0e4b591ce1f537716879256c6139fa06",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/model-profiles.md": {
+    "mtime": 1780834479.1661448,
+    "ast_hash": "ad38f9cca53cd67480495b6387650822",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/mvp-concepts.md": {
+    "mtime": 1780834479.1739366,
+    "ast_hash": "7d9394982a691c5b46ffffc771ed8139",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/phase-argument-parsing.md": {
+    "mtime": 1780834479.1725273,
+    "ast_hash": "8e042e57ad173de5bc0e2636179adece",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/planner-antipatterns.md": {
+    "mtime": 1780834479.1732583,
+    "ast_hash": "fa38108e248ad632dbb289c20ff272f4",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/planner-chunked.md": {
+    "mtime": 1780834479.1751595,
+    "ast_hash": "25e360eaf1fc5c887691d754add8f440",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/planner-gap-closure.md": {
+    "mtime": 1780834479.1718137,
+    "ast_hash": "795a9c88620b165cb867d44f2dee0168",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/planner-graphify-auto-update.md": {
+    "mtime": 1780834479.1708763,
+    "ast_hash": "35a771051858181a8f4671f7031b4122",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/planner-human-verify-mode.md": {
+    "mtime": 1780834479.16705,
+    "ast_hash": "05e4ab5aa515e136791f20e3d81e423e",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/planner-interface-context.md": {
+    "mtime": 1780834479.1813018,
+    "ast_hash": "c1e419d025791b44427c53a116a8d20b",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/planner-mvp-mode.md": {
+    "mtime": 1780834554.4407334,
+    "ast_hash": "55cd07190ccce1c62f546c7f4db6f3b6",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/planner-reviews.md": {
+    "mtime": 1780834479.1804776,
+    "ast_hash": "c71d7556b75cab8edb7313e689eedb87",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/planner-revision.md": {
+    "mtime": 1780834479.1715703,
+    "ast_hash": "aa332113f44900b3b1fe730231dadd0d",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/planner-source-audit.md": {
+    "mtime": 1780834479.16809,
+    "ast_hash": "b8dfe92a75ebfc7312163b903fa8526c",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/planning-config.md": {
+    "mtime": 1780834479.1766646,
+    "ast_hash": "7fa56875ced3c00003dee7b3627dbf0a",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/project-skills-discovery.md": {
+    "mtime": 1780834479.1667173,
+    "ast_hash": "748360d089da2bce5b353c25e4928618",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/questioning.md": {
+    "mtime": 1780834479.1678197,
+    "ast_hash": "a4efeb5523c02c737df7e541ba6baaa7",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/revision-loop.md": {
+    "mtime": 1780834479.167544,
+    "ast_hash": "42e90a405f0b8e5ac39aadc6375c9cc6",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/scout-codebase.md": {
+    "mtime": 1780834479.1771827,
+    "ast_hash": "3fd5b5d332ddb35733dcb6b976a2d1be",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/skeleton-template.md": {
+    "mtime": 1780834479.1780937,
+    "ast_hash": "54ba40611cb9365d4a7f1a7bb0cbaac1",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/sketch-interactivity.md": {
+    "mtime": 1780834479.1701398,
+    "ast_hash": "58920cccb5fce0ddd6cd45594bd97549",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/sketch-theme-system.md": {
+    "mtime": 1780834479.175864,
+    "ast_hash": "fe368ffd3d47e27781682a54f9eef063",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/sketch-tooling.md": {
+    "mtime": 1780834479.1774096,
+    "ast_hash": "d1e6b0df4918db3e61e972a5614fbc21",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/sketch-variant-patterns.md": {
+    "mtime": 1780834479.1734524,
+    "ast_hash": "1a42d81c8a08a61b1848dd34932a3077",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/spidr-splitting.md": {
+    "mtime": 1780834479.1794903,
+    "ast_hash": "8788d6fe6cbdc70e39efbbc1861a14ab",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/tdd.md": {
+    "mtime": 1780834479.174429,
+    "ast_hash": "ff7640e0bb7b9d3f99e7fdd401ec46c8",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/thinking-models-debug.md": {
+    "mtime": 1780834479.1741772,
+    "ast_hash": "f6b6dd4a3250056669ee01cf4c40ad18",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/thinking-models-execution.md": {
+    "mtime": 1780834479.1756077,
+    "ast_hash": "6b5a09a6a7a40c291a851f691ef9f9ef",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/thinking-models-planning.md": {
+    "mtime": 1780834479.1792543,
+    "ast_hash": "24182fd4a7f4fa9446355d096c38bde4",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/thinking-models-research.md": {
+    "mtime": 1780834479.170386,
+    "ast_hash": "5360cff860b7d0c758ca575679c406f9",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/thinking-models-verification.md": {
+    "mtime": 1780834479.172291,
+    "ast_hash": "7b78061e171a134c12bbadc7a90e8804",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/thinking-partner.md": {
+    "mtime": 1780834479.1663914,
+    "ast_hash": "a3fc8194e79add6042bcabfdea7a1a14",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/ui-brand.md": {
+    "mtime": 1780834479.1685956,
+    "ast_hash": "57ce374cd8a3f0832a99b3e3ed0a0ba5",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/universal-anti-patterns.md": {
+    "mtime": 1780834479.176103,
+    "ast_hash": "dcfd16763b627a49c6b93d1ebb1b937e",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/user-profiling.md": {
+    "mtime": 1780834479.1784034,
+    "ast_hash": "96aba40ec3e87de975a61aa2fec4a16c",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/user-story-template.md": {
+    "mtime": 1780834479.1749275,
+    "ast_hash": "f005df4d5ad02e6225ca99b6f7932355",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/verification-overrides.md": {
+    "mtime": 1780834479.1746845,
+    "ast_hash": "6f6d3897f8663740ea3935db7df08dec",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/verification-patterns.md": {
+    "mtime": 1780834554.4414194,
+    "ast_hash": "681160af48e336f1098bd4174fbc45d7",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/verify-mvp-mode.md": {
+    "mtime": 1780834479.1657648,
+    "ast_hash": "a038c1bd50fd4a2172bf709c953ad93e",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/workstream-flag.md": {
+    "mtime": 1780834479.1815228,
+    "ast_hash": "699ea837b47b0e0202b05165de654c49",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/worktree-branch-check.md": {
+    "mtime": 1780834479.176338,
+    "ast_hash": "4f8f9ac41b7f9b022854033d59ad639f",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/references/worktree-path-safety.md": {
+    "mtime": 1780834479.168906,
+    "ast_hash": "181c2a0e541d211bdd1ca36671bd87b2",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/AI-SPEC.md": {
+    "mtime": 1780834479.215409,
+    "ast_hash": "e4914af5d55892b006995785a6a66079",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/DEBUG.md": {
+    "mtime": 1780834479.215627,
+    "ast_hash": "dfab9ab70247cc53aea55e531b42253f",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/README.md": {
+    "mtime": 1780834479.2205498,
+    "ast_hash": "ac528f2923c30087eeb8a975e59229b2",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/SECURITY.md": {
+    "mtime": 1780834479.2267337,
+    "ast_hash": "7ffb5b1f33a1c5d4f3a330b262064c00",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/UAT.md": {
+    "mtime": 1780834479.2169764,
+    "ast_hash": "63b69a5840cdf649edeb5781dc3f1835",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/UI-SPEC.md": {
+    "mtime": 1780834479.217198,
+    "ast_hash": "440063040bb8eadaa7aa1b6ff2230822",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/VALIDATION.md": {
+    "mtime": 1780834479.2187152,
+    "ast_hash": "4b6752a861c10ce4cdfb5ddca9e8510c",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/claude-md.md": {
+    "mtime": 1780834479.2217522,
+    "ast_hash": "044aaacddbc675114b9c071df77a0356",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/codebase/architecture.md": {
+    "mtime": 1780834479.222571,
+    "ast_hash": "514c389cf3dab629ba0edd7e4da5c190",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/codebase/concerns.md": {
+    "mtime": 1780834479.2237637,
+    "ast_hash": "8cae5a40fe882eea3220bf69e0824e9b",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/codebase/conventions.md": {
+    "mtime": 1780834479.2230413,
+    "ast_hash": "d96a28d987f705543d669491be773915",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/codebase/integrations.md": {
+    "mtime": 1780834479.2232642,
+    "ast_hash": "080c74b99947918e5f790300e0fbc2f3",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/codebase/stack.md": {
+    "mtime": 1780834479.2223477,
+    "ast_hash": "c75effaa928d5c93784a1e136674097b",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/codebase/structure.md": {
+    "mtime": 1780834554.4422016,
+    "ast_hash": "fa3028d735ab63f242e0c28861ce7610",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/codebase/testing.md": {
+    "mtime": 1780834479.2235136,
+    "ast_hash": "8284aecc988d2fca720d60a44806ca10",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/context.md": {
+    "mtime": 1780834479.2174819,
+    "ast_hash": "558fba5fc69f27a483b94d10e1583a36",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/continue-here.md": {
+    "mtime": 1780834479.2196734,
+    "ast_hash": "feb1fe81260fcc133e4fa47a8e8e1b4e",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/copilot-instructions.md": {
+    "mtime": 1780834479.2201364,
+    "ast_hash": "1d7c7f5a2dd613b796b8dc72571d4494",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/debug-subagent-prompt.md": {
+    "mtime": 1780834479.2162774,
+    "ast_hash": "24fa1011c6357f81b659b287c4bd537a",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/dev-preferences.md": {
+    "mtime": 1780834479.2258291,
+    "ast_hash": "a4e5dd7a0c8fa5c27995f4e33d055153",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/discovery.md": {
+    "mtime": 1780834479.2207892,
+    "ast_hash": "edd1dc775c6536444069b5e32f8454b0",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/discussion-log.md": {
+    "mtime": 1780834479.2260668,
+    "ast_hash": "d3bf91fadc52f7c6e09c0a1eea13eac1",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/milestone-archive.md": {
+    "mtime": 1780834479.2185175,
+    "ast_hash": "2ecf0cd7ec0b83a86ecfa26b37807f08",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/milestone.md": {
+    "mtime": 1780834479.220363,
+    "ast_hash": "aa6a849cf855d35da7d761ce2bf63cbd",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/phase-prompt.md": {
+    "mtime": 1780834554.4425752,
+    "ast_hash": "8025b91d21ffdaa3b3a5f00dcf90de59",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/planner-subagent-prompt.md": {
+    "mtime": 1780834479.2215192,
+    "ast_hash": "cb3db0aab4d9fe11628bbdfe657462a1",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/project.md": {
+    "mtime": 1780834479.2192082,
+    "ast_hash": "d5ec3314c65a2db9e4be856458579e6f",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/requirements.md": {
+    "mtime": 1780834479.2159734,
+    "ast_hash": "46b17decdc37a4e17a971819998a92cf",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/research-project/ARCHITECTURE.md": {
+    "mtime": 1780834479.224852,
+    "ast_hash": "1eb7e085f1d0a393ca3b3037ea433bb0",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/research-project/FEATURES.md": {
+    "mtime": 1780834479.2256005,
+    "ast_hash": "1348ef22f4974ee350621fffa0069821",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/research-project/PITFALLS.md": {
+    "mtime": 1780834479.2251005,
+    "ast_hash": "b55a2f0654b8fbfd91f3a40c0c5bf133",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/research-project/STACK.md": {
+    "mtime": 1780834479.22463,
+    "ast_hash": "483099bbfacda6ff148615dde7fe8212",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/research-project/SUMMARY.md": {
+    "mtime": 1780834479.2253497,
+    "ast_hash": "ae9a9e668c8ea0ded20e50a1cc86ed17",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/research.md": {
+    "mtime": 1780834479.2210824,
+    "ast_hash": "fa8abe38244799a2cedd374dc07c8efd",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/retrospective.md": {
+    "mtime": 1780834479.226541,
+    "ast_hash": "77d90126f81ec3d786d46d355e603506",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/roadmap.md": {
+    "mtime": 1780834479.2212913,
+    "ast_hash": "2a0b2286575c31d2c5d04d7dda39ca8a",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/spec.md": {
+    "mtime": 1780834479.2243052,
+    "ast_hash": "e2f52addacb832dc9538d1e19ab55415",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/state.md": {
+    "mtime": 1780834479.2194405,
+    "ast_hash": "8a76c8f6846ad95083e62a0f7f98cf04",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/summary-complex.md": {
+    "mtime": 1780834479.2263029,
+    "ast_hash": "3d3fe4b6d8d69dd22fafdfad190cb68e",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/summary-minimal.md": {
+    "mtime": 1780834479.2219918,
+    "ast_hash": "cb56b997ba0a6c6b88830fb0b34e3835",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/summary-standard.md": {
+    "mtime": 1780834479.2199066,
+    "ast_hash": "a9282a79c26b7408ccc69f417f2c7bbc",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/summary.md": {
+    "mtime": 1780834479.217751,
+    "ast_hash": "4c4f04838cdad034aac358fbc6852704",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/user-profile.md": {
+    "mtime": 1780834479.2189612,
+    "ast_hash": "e02ba718f096a9c0391516d1088dc9e2",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/user-setup.md": {
+    "mtime": 1780834479.2166212,
+    "ast_hash": "205196fbfcf6203b571183369956e6c6",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/templates/verification-report.md": {
+    "mtime": 1780834479.2240372,
+    "ast_hash": "3bcca3a43e1debd931190d2d2328cde2",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/add-backlog.md": {
+    "mtime": 1780834554.4432971,
+    "ast_hash": "175f4c9db37c0f7027a53c4029d393cc",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/add-phase.md": {
+    "mtime": 1780834554.4433649,
+    "ast_hash": "d26fc5dd8fe0a63e316cbdb34521f99f",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/add-tests.md": {
+    "mtime": 1780834554.4434536,
+    "ast_hash": "5fef01cf156b76b2efa78ccf37395920",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/add-todo.md": {
+    "mtime": 1780834554.4435453,
+    "ast_hash": "03ba93d97c254ae80196f436e212e00c",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/ai-integration-phase.md": {
+    "mtime": 1780834554.4436605,
+    "ast_hash": "6f14fbb89c43f37e447f91a6d0f49f3a",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/analyze-dependencies.md": {
+    "mtime": 1780834479.1997378,
+    "ast_hash": "7ddf39005a6b41518d302954abcbaca6",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/audit-fix.md": {
+    "mtime": 1780834554.4437869,
+    "ast_hash": "d5a9ad8250257af860282fcd9bf0bdf3",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/audit-milestone.md": {
+    "mtime": 1780834554.443897,
+    "ast_hash": "e8281863ce2a38bbef79cb2f569bef1b",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/audit-uat.md": {
+    "mtime": 1780834554.4439793,
+    "ast_hash": "398fa057493d95cc1752ff958f4d67c9",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/autonomous.md": {
+    "mtime": 1780834554.4441216,
+    "ast_hash": "ce3bf3bf8adc01abe91b188bf355335d",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/check-todos.md": {
+    "mtime": 1780834554.444221,
+    "ast_hash": "147a28f1f63e9f1cbb181334a6a3764f",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/cleanup.md": {
+    "mtime": 1780834554.4443119,
+    "ast_hash": "b3254ebf99dcf022e4fe6bc22f6a38eb",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/code-review-fix.md": {
+    "mtime": 1780834554.4444313,
+    "ast_hash": "952a6ef601401ba37a8609360474d643",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/code-review.md": {
+    "mtime": 1780834554.4445486,
+    "ast_hash": "0deac6171d4181d29c73e077050976d1",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/complete-milestone.md": {
+    "mtime": 1780834554.4446797,
+    "ast_hash": "844be81adece2bb372d66b48cee357aa",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/debug.md": {
+    "mtime": 1780834554.4447775,
+    "ast_hash": "bd02d5ebc576cbe0add50c832dbcee67",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/diagnose-issues.md": {
+    "mtime": 1780834554.4448788,
+    "ast_hash": "fecd91d322e6ca79ec3b013e1154d087",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/discovery-phase.md": {
+    "mtime": 1780834554.4449759,
+    "ast_hash": "59a2704a8f5dccab902d5253a6b4ef13",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/discuss-phase-assumptions.md": {
+    "mtime": 1780834554.4458363,
+    "ast_hash": "e1e13ed30ca34ef540406e7583541f43",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/discuss-phase-power.md": {
+    "mtime": 1780834479.2012858,
+    "ast_hash": "d80e69725f1e49108468395ee7e4745b",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/discuss-phase.md": {
+    "mtime": 1780834554.446016,
+    "ast_hash": "bca5575452b79dc520d1c7ee02115d27",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/discuss-phase/modes/advisor.md": {
+    "mtime": 1780834554.445176,
+    "ast_hash": "cd44b54d06796db18721ca4053f0b571",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/discuss-phase/modes/all.md": {
+    "mtime": 1780834479.208615,
+    "ast_hash": "58686d73707ba14cf03302269f268e55",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/discuss-phase/modes/analyze.md": {
+    "mtime": 1780834479.2083857,
+    "ast_hash": "c354fe0b79cfc0c594064822dfd45f84",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/discuss-phase/modes/auto.md": {
+    "mtime": 1780834554.4453316,
+    "ast_hash": "23ab4f8b2cf0bd3027b18676ffb8c7b8",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/discuss-phase/modes/batch.md": {
+    "mtime": 1780834479.2094495,
+    "ast_hash": "9619f56f69b80dcd0b67d6d9b9b22779",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/discuss-phase/modes/chain.md": {
+    "mtime": 1780834554.4454484,
+    "ast_hash": "6817dcecba88eaf3df4e1d1c72971b18",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/discuss-phase/modes/default.md": {
+    "mtime": 1780834479.207667,
+    "ast_hash": "105d7577aed66fb53054a9e89742c1bb",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/discuss-phase/modes/power.md": {
+    "mtime": 1780834554.4455652,
+    "ast_hash": "6e2ca4199f604f130f8a3ceacdb7acce",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/discuss-phase/modes/text.md": {
+    "mtime": 1780834479.2073789,
+    "ast_hash": "8cac747362f39bc926516bca2591f5e5",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/discuss-phase/templates/context.md": {
+    "mtime": 1780834479.2100368,
+    "ast_hash": "31c5df6ba48623d4e2ba6701870265c2",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/discuss-phase/templates/discussion-log.md": {
+    "mtime": 1780834479.2102714,
+    "ast_hash": "7057f9ca6f0ec1118794c764189ce98e",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/do.md": {
+    "mtime": 1780834554.4465444,
+    "ast_hash": "3aab6b203ea6d5ad02c219a8920bce80",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/docs-update.md": {
+    "mtime": 1780834554.447511,
+    "ast_hash": "63842117754454d6b4d6a292870ade89",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/edit-phase.md": {
+    "mtime": 1780834554.4477925,
+    "ast_hash": "efdc318353eacbcb73bce171e22503a1",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/eval-review.md": {
+    "mtime": 1780834554.4485836,
+    "ast_hash": "b6d624c29ec93c347e95bbe8b381f9a4",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/execute-phase.md": {
+    "mtime": 1780834554.4491804,
+    "ast_hash": "5e5f71079d6fe0b56fd10d470a1af4b4",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/execute-phase/steps/codebase-drift-gate.md": {
+    "mtime": 1780834554.4487443,
+    "ast_hash": "9b02fbebd361a302f83d433c7854eb4f",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/execute-phase/steps/per-plan-worktree-gate.md": {
+    "mtime": 1780834479.200449,
+    "ast_hash": "bec00ae8e1b77458c6871cc156cb1b2b",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/execute-phase/steps/post-merge-gate.md": {
+    "mtime": 1780834554.44885,
+    "ast_hash": "10942db24d0bc764340d9007882dfab1",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/execute-plan.md": {
+    "mtime": 1780834554.4493332,
+    "ast_hash": "7e27d67055435be103405d7a57dfcff8",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/explore.md": {
+    "mtime": 1780834554.449426,
+    "ast_hash": "9fceb4e577faa82784eca84316247891",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/extract-learnings.md": {
+    "mtime": 1780834554.4495296,
+    "ast_hash": "24ad4cd77d8e38b7e3f0c68ec53ae676",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/fast.md": {
+    "mtime": 1780834479.2068121,
+    "ast_hash": "e74fc3efc11ce48030cd979582a1d3e3",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/forensics.md": {
+    "mtime": 1780834554.4496589,
+    "ast_hash": "6931afd22d96851b68db8f5c7e2efa88",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/graduation.md": {
+    "mtime": 1780834554.4498389,
+    "ast_hash": "5f94bfad033f46c4e0b65049bce7a76a",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/health.md": {
+    "mtime": 1780834554.449922,
+    "ast_hash": "f9111276aab542f4b29eb0107b39e15a",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/help.md": {
+    "mtime": 1780834479.1975312,
+    "ast_hash": "adc0d00e200748fd529a21814f4e9563",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/help/modes/brief.md": {
+    "mtime": 1780834479.2131174,
+    "ast_hash": "5853a19e6872ef201f5b94673fd0df71",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/help/modes/default.md": {
+    "mtime": 1780834479.2125947,
+    "ast_hash": "aed0cd03c3ad38f898e10548e54d09e7",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/help/modes/full.md": {
+    "mtime": 1780834554.450195,
+    "ast_hash": "f174fb113b37ead349c72fb482fe6724",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/help/modes/topic.md": {
+    "mtime": 1780834479.2123497,
+    "ast_hash": "b12a28efd39f2f3931e33f88abe1b333",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/import.md": {
+    "mtime": 1780834554.4503262,
+    "ast_hash": "826cd70421392cb52fe3a4098477807d",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/inbox.md": {
+    "mtime": 1780834479.1887877,
+    "ast_hash": "2106f004c2b467abca652a3857db8b77",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/ingest-docs.md": {
+    "mtime": 1780834554.4504619,
+    "ast_hash": "828dad4f98ed27f3054474dfad37d501",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/insert-phase.md": {
+    "mtime": 1780834554.4505374,
+    "ast_hash": "15eecd066a469e7fc608380a81aa530f",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/list-phase-assumptions.md": {
+    "mtime": 1780834479.1836052,
+    "ast_hash": "4efbeca60feede1c824f96b3cfa0e5a9",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/list-workspaces.md": {
+    "mtime": 1780834554.4506285,
+    "ast_hash": "9260846a6eccaf29da001a9980c00a90",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/manager.md": {
+    "mtime": 1780834554.4507315,
+    "ast_hash": "6e63d51614488b58965e18fcf3b03502",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/map-codebase.md": {
+    "mtime": 1780834554.4508436,
+    "ast_hash": "0ecaed087b18969a00217bc1572f17c4",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/milestone-summary.md": {
+    "mtime": 1780834554.4509263,
+    "ast_hash": "627db2723ced197dc0e5786c896d40d5",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/mvp-phase.md": {
+    "mtime": 1780834554.4510238,
+    "ast_hash": "1d7cb87fb550973259de4e6a4530674a",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/new-milestone.md": {
+    "mtime": 1780834554.451154,
+    "ast_hash": "30ce777ab781b678a71241144524af7b",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/new-project.md": {
+    "mtime": 1780834554.451333,
+    "ast_hash": "b4075892e7489c072eb74489af55dfcd",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/new-workspace.md": {
+    "mtime": 1780834554.4514425,
+    "ast_hash": "0b7e811ae7d7b51481d87aeb35d400e3",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/next.md": {
+    "mtime": 1780834554.4516006,
+    "ast_hash": "2bd4956cf53f8876aa6242d247a7f157",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/node-repair.md": {
+    "mtime": 1780834479.204394,
+    "ast_hash": "ff57b22997713ab01860c09a975c304c",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/note.md": {
+    "mtime": 1780834554.4517145,
+    "ast_hash": "b5640a4f72d681c5578a64a80666ccec",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/pause-work.md": {
+    "mtime": 1780834554.4518006,
+    "ast_hash": "664463b0da0c2d0f211085ed45e0287c",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/plan-milestone-gaps.md": {
+    "mtime": 1780834554.4518871,
+    "ast_hash": "241437c4011ce4bdfbdabbae9ea6d937",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/plan-phase.md": {
+    "mtime": 1780834554.452202,
+    "ast_hash": "e0d03d4adece962eb1633be751f236a5",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/plan-review-convergence.md": {
+    "mtime": 1780834554.4523075,
+    "ast_hash": "f6ecc2d8572f3051a1de6f47a2ecfed9",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/plant-seed.md": {
+    "mtime": 1780834554.4524186,
+    "ast_hash": "5e1befe711f3656813d513b5299ea70b",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/pr-branch.md": {
+    "mtime": 1780834479.2145193,
+    "ast_hash": "91c1ba46264eeec8eb8b4ca6ce447182",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/profile-user.md": {
+    "mtime": 1780834554.4525585,
+    "ast_hash": "5a8a895e22d39a7689b0985c49f9e2a5",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/progress.md": {
+    "mtime": 1780834554.4526854,
+    "ast_hash": "b0de683b1d605fc6ee74879e5e26e001",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/quick.md": {
+    "mtime": 1780834554.4528308,
+    "ast_hash": "2241da69bcf59fb9e80f8be46e105b8c",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/reapply-patches.md": {
+    "mtime": 1780834554.4529288,
+    "ast_hash": "2c926d97e4e6cc34b1f67649d830d136",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/remove-phase.md": {
+    "mtime": 1780834554.4529998,
+    "ast_hash": "d8a7d0fafe50924fa8eb8c32454d250d",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/remove-workspace.md": {
+    "mtime": 1780834554.4530745,
+    "ast_hash": "9eba9b414e0b638c230a260797d551cc",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/resume-project.md": {
+    "mtime": 1780834554.4531598,
+    "ast_hash": "098a1ecd9f08c1219e3a303d197ce054",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/review.md": {
+    "mtime": 1780834554.453303,
+    "ast_hash": "d5c77faa954772a6ce5ecee083acc012",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/scan.md": {
+    "mtime": 1780834554.4533694,
+    "ast_hash": "775b32975623d6e8d6ff92f485698c18",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/secure-phase.md": {
+    "mtime": 1780834554.4534562,
+    "ast_hash": "98af8181e6e98d850615a813c987fd6d",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/session-report.md": {
+    "mtime": 1780834479.1949978,
+    "ast_hash": "300bfb8076a443a90d712871c31dff09",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/settings-advanced.md": {
+    "mtime": 1780834554.4537153,
+    "ast_hash": "f1509637049a5fdd0f8918cbca40ef9a",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/settings-integrations.md": {
+    "mtime": 1780834554.4537945,
+    "ast_hash": "a29b950e3be76699067f696110a49304",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/settings.md": {
+    "mtime": 1780834554.4539123,
+    "ast_hash": "07606a79f97f48396418f54eaf004869",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/ship.md": {
+    "mtime": 1780834554.454002,
+    "ast_hash": "9ddd2a8e7215af847bf4f1418740a489",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/sketch-wrap-up.md": {
+    "mtime": 1780834554.454092,
+    "ast_hash": "6087464315d6ddbdf28ffd4c3cae3055",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/sketch.md": {
+    "mtime": 1780834554.4542105,
+    "ast_hash": "3d37dd37e19ab1fa804c1adb45bd5ce4",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/spec-phase.md": {
+    "mtime": 1780834554.4542992,
+    "ast_hash": "8dd0b79481dfb31ef62fbc78d84b2f64",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/spike-wrap-up.md": {
+    "mtime": 1780834554.45441,
+    "ast_hash": "589f09eb491ea759d1c6372d5dbeb064",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/spike.md": {
+    "mtime": 1780834554.4545283,
+    "ast_hash": "7f1524b4fa5d54a4376b5c92bc763356",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/stats.md": {
+    "mtime": 1780834554.4545956,
+    "ast_hash": "10a4dc699c1c34d43d17058abe37db82",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/sync-skills.md": {
+    "mtime": 1780834554.4546666,
+    "ast_hash": "78941ea4bcfe5e6b986b49cdbd98031c",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/thread.md": {
+    "mtime": 1780834554.4547462,
+    "ast_hash": "951d069bb893982c0167644ccdd29982",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/transition.md": {
+    "mtime": 1780834554.4548557,
+    "ast_hash": "c8a34663492582324df858c071ef06fb",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/ui-phase.md": {
+    "mtime": 1780834554.4549322,
+    "ast_hash": "1d71f89ba7c8f4276ec08a68bce103ac",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/ui-review.md": {
+    "mtime": 1780834554.4550185,
+    "ast_hash": "1efc4799ba28e8eaace2b3ce6e75277a",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/ultraplan-phase.md": {
+    "mtime": 1780834554.455098,
+    "ast_hash": "7a08b54a38e0128c26aceae06b48be0e",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/undo.md": {
+    "mtime": 1780834554.4551795,
+    "ast_hash": "a096b013c5fac786e8159f9826a3379a",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/update.md": {
+    "mtime": 1780834554.4553506,
+    "ast_hash": "5df1d661940fe99888c657b1c52cbf50",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/validate-phase.md": {
+    "mtime": 1780834554.4554212,
+    "ast_hash": "f957840e919162ce40d3a709e2d54b39",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/verify-phase.md": {
+    "mtime": 1780834554.4555364,
+    "ast_hash": "2a1cb3289a125c1b3a0c6ad71ee2acea",
+    "semantic_hash": ""
+  },
+  ".opencode/gsd-core/workflows/verify-work.md": {
+    "mtime": 1780834554.4556487,
+    "ast_hash": "4380869429e146e80f80ef11232b531f",
+    "semantic_hash": ""
+  },
+  ".planning/phases/01-monorepo-local-infrastructure/01-01-PLAN.md": {
+    "mtime": 1780873128.2580552,
+    "ast_hash": "dd5c0f043e7072d795e82da25e79e8d4",
+    "semantic_hash": ""
+  },
+  ".planning/phases/01-monorepo-local-infrastructure/01-01-SUMMARY.md": {
+    "mtime": 1780874018.9164126,
+    "ast_hash": "42a047fbba83c7fb0d5b9f90408ab79c",
+    "semantic_hash": ""
+  },
+  ".planning/phases/01-monorepo-local-infrastructure/01-02-PLAN.md": {
+    "mtime": 1780873229.6489997,
+    "ast_hash": "92143554a10b3844cf55472f406d098d",
+    "semantic_hash": ""
+  },
+  ".planning/phases/01-monorepo-local-infrastructure/01-02-SUMMARY.md": {
+    "mtime": 1780875615.8102374,
+    "ast_hash": "5a297383c134e4eda7d9efaec17a6c9f",
+    "semantic_hash": ""
+  },
+  ".planning/phases/01-monorepo-local-infrastructure/01-CONTEXT.md": {
+    "mtime": 1780835225.6430936,
+    "ast_hash": "7b61c69ce58decf3b03ed9d7c76f5843",
+    "semantic_hash": ""
+  },
+  ".planning/phases/01-monorepo-local-infrastructure/01-DISCUSSION-LOG.md": {
+    "mtime": 1780835229.996717,
+    "ast_hash": "7b3e9f202baf1af0c7d5428fb679e5d3",
+    "semantic_hash": ""
+  },
+  ".planning/phases/01-monorepo-local-infrastructure/01-PATTERNS.md": {
+    "mtime": 1780835885.183027,
+    "ast_hash": "5cfc808fa50a2e4cf03e46b58a2454e5",
+    "semantic_hash": ""
+  },
+  ".planning/phases/01-monorepo-local-infrastructure/01-RESEARCH.md": {
+    "mtime": 1780835543.8542879,
+    "ast_hash": "e2775a9dd2cf3434dc8a0222983ad1c4",
+    "semantic_hash": ""
+  },
+  ".planning/phases/01-monorepo-local-infrastructure/01-VALIDATION.md": {
+    "mtime": 1780873141.0599403,
+    "ast_hash": "faf9556abc4f1ccd686dc7483bef8e7b",
+    "semantic_hash": ""
+  },
+  ".planning/phases/01-monorepo-local-infrastructure/01-VERIFICATION.md": {
+    "mtime": 1780999480.162474,
+    "ast_hash": "f1cd53bdec1aa989fd88e427f8f2dcd8",
+    "semantic_hash": ""
+  },
+  ".planning/phases/02-domain-schema-provider-adapters/02-CONTEXT.md": {
+    "mtime": 1781005470.9746637,
+    "ast_hash": "a782dd7c291a0f122deb6b3bde9de640",
+    "semantic_hash": ""
+  },
+  ".planning/phases/02-domain-schema-provider-adapters/02-DISCUSSION-LOG.md": {
+    "mtime": 1781005614.7390218,
+    "ast_hash": "b3373a3b50278db543a7a9145bdc07e3",
+    "semantic_hash": ""
+  },
+  ".planning/phases/02-domain-schema-provider-adapters/02-RESEARCH.md": {
+    "mtime": 1781006172.3419344,
+    "ast_hash": "3217f59776d36d94614e8a10b8ee278c",
+    "semantic_hash": ""
+  },
+  ".planning/phases/02-domain-schema-provider-adapters/02-01-PLAN.md": {
+    "mtime": 1781007010.649053,
+    "ast_hash": "35fdd519a95697ce50ba739e0d79e71b",
+    "semantic_hash": ""
+  },
+  ".planning/phases/02-domain-schema-provider-adapters/02-02-PLAN.md": {
+    "mtime": 1781007013.186157,
+    "ast_hash": "22d3f3855a4e76739924d886ef817b98",
+    "semantic_hash": ""
+  },
+  ".planning/phases/02-domain-schema-provider-adapters/02-03-PLAN.md": {
+    "mtime": 1781007015.95101,
+    "ast_hash": "6dc3b3906de96a3649909b506aaf73f1",
+    "semantic_hash": ""
+  },
+  ".planning/phases/02-domain-schema-provider-adapters/02-PATTERNS.md": {
+    "mtime": 1781006710.4271464,
+    "ast_hash": "7ff3a7a1e014c6c67cf8c093f906b438",
+    "semantic_hash": ""
+  },
+  ".planning/phases/02-domain-schema-provider-adapters/02-VALIDATION.md": {
+    "mtime": 1781006653.1499848,
+    "ast_hash": "3f06183dab711703a113b22e5775de86",
     "semantic_hash": ""
   }
 }

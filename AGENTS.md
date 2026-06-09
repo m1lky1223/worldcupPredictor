@@ -74,9 +74,11 @@ worldcupPredictor/
     *   *Dependency Inversion (DIP):* Rely on normalized domain types, isolating the core business logic from external API shifts via the Anti-Corruption Layer.
 *   **DRY (Don't Repeat Yourself):** Share types in `packages/domain` and reuse calculation functions. Reuse GraphQL fragments on the frontend instead of repeating identical fields.
 *   **KISS (Keep It Simple, Stupid):** Write straightforward, readable TypeScript math for rating calculations. Avoid complex generic types unless absolutely necessary.
+*   **YAGNI (You Aren't Gonna Need It):** Do not write code or add features/dependencies until they are actually needed. Avoid speculative development or implementing structures for hypothetical future requirements.
 *   **CQRS (Command Query Responsibility Segregation):**
     *   Separate write operations (background workers syncing data and recalculating predictions in Postgres) from read operations (GraphQL querying database indices).
     *   The web application serves read-only queries and triggers jobs asynchronously; it never executes direct database writes.
+
 
 ### Components & React Best Practices
 

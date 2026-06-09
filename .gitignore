@@ -51,6 +51,9 @@ coverage/
 *.tsbuildinfo
 next-env.d.ts
 
+# Graphify cache (regenerated on demand)
+graphify-out/cache/
+
 # Beads / Dolt files (added by bd init)
 .dolt/
 .beads-credential-key
