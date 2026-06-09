@@ -4,10 +4,53 @@ import { join } from "path";
 import pg from "pg";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { migrate } from "drizzle-orm/node-postgres/migrator";
-import * as schema from "../packages/domain/src/db/schema.js";
+import * as schemaModule from "../packages/domain/src/db/schema.js";
 import { teams, matches } from "../packages/domain/src/db/schema.js";
 
 const { Pool } = pg;
+
+// Tables that must be append-only (immutable snapshots)
+const IMMUTABLE_TABLES = [
+  "predictions",
+  "ratings_snapshots",
+  "prediction_input_snapshots",
+  "provider_logs",
+  "model_metrics",
+];
+
+async function installImmutableTriggers(pool: pg.Pool) {
+  // Create the trigger function (IF NOT EXISTS for idempotency)
+  await pool.query(`
+    CREATE OR REPLACE FUNCTION prevent_snapshot_mutation()
+    RETURNS TRIGGER AS $$
+    BEGIN
+      RAISE EXCEPTION 'Table % is append-only. UPDATE and DELETE are not permitted.', TG_TABLE_NAME
+        USING HINT = 'Only INSERT operations are allowed on snapshot/audit tables.';
+    END;
+    $$ LANGUAGE plpgsql;
+  `);
+
+  // Install triggers on each immutable table
+  for (const tableName of IMMUTABLE_TABLES) {
+    await pool.query(`
+      DO $$
+      BEGIN
+        IF NOT EXISTS (
+          SELECT 1 FROM pg_trigger
+          WHERE tgname = 'prevent_mutation_${tableName}'
+          AND tgrelid = '${tableName}'::regclass
+        ) THEN
+          CREATE TRIGGER prevent_mutation_${tableName}
+            BEFORE UPDATE OR DELETE ON ${tableName}
+            FOR EACH ROW
+            EXECUTE FUNCTION prevent_snapshot_mutation();
+        END IF;
+      END;
+      $$;
+    `);
+    console.log(`  ✓ Immutability trigger installed on ${tableName}`);
+  }
+}
 
 async function init() {
   console.log("🚀 Starting database migrations and conditional seeding...");
@@ -37,7 +80,7 @@ async function init() {
   const pool = new Pool({
     connectionString: databaseUrl,
   });
-  const db = drizzle(pool, { schema });
+  const db = drizzle(pool, { schema: schemaModule });
 
   // 2. Run migrations
   try {
@@ -46,6 +89,17 @@ async function init() {
     console.log("Migrations applied successfully.");
   } catch (err) {
     console.error("❌ Failed to apply migrations:", err);
+    await pool.end();
+    process.exit(1);
+  }
+
+  // 2b. Install snapshot immutability triggers
+  try {
+    console.log("Installing snapshot immutability triggers...");
+    await installImmutableTriggers(pool);
+    console.log("Immutability triggers installed successfully.");
+  } catch (err) {
+    console.error("❌ Failed to install immutability triggers:", err);
     await pool.end();
     process.exit(1);
   }
