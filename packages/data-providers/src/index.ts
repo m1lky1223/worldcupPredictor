@@ -4,6 +4,11 @@ import { NormalizedMatch, NormalizedTeam, NormalizedPlayer, NormalizedMatchStats
 export * from "./types.js";
 export * from "./base-client.js";
 export * from "./mock/mock-provider.js";
+export * from "./thestatsapi/client.js";
+export * from "./thestatsapi/mapper.js";
+export * from "./thestatsapi/fixtures.js";
+export * from "./thestatsapi/teams.js";
+export * from "./thestatsapi/stats.js";
 
 // ────────── SyncProvider Interface ──────────
 
