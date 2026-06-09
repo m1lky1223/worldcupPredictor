@@ -6,6 +6,17 @@ import { db, providerLogs } from "@worldcup/domain";
 // exponential backoff + jitter, and asynchronous logging
 // of raw responses to the database (provider_logs).
 
+/**
+ * Error class for non-retryable HTTP responses (4xx except 429).
+ * These are thrown immediately without retry attempts.
+ */
+class NonRetryableHttpError extends Error {
+  constructor(status: number, statusText: string) {
+    super(`[TheStatsApiClient] HTTP Error: ${status} ${statusText}`);
+    this.name = "NonRetryableHttpError";
+  }
+}
+
 export class TheStatsApiClient {
   protected apiKey: string;
   protected baseUrl: string;
@@ -68,11 +79,9 @@ export class TheStatsApiClient {
           continue;
         }
 
-        // ── Other HTTP errors ──
+        // ── Other HTTP errors (non-retryable) ──
         if (!response.ok) {
-          throw new Error(
-            `[TheStatsApiClient] HTTP Error: ${response.status} ${response.statusText}`,
-          );
+          throw new NonRetryableHttpError(response.status, response.statusText);
         }
 
         const data = (await response.json()) as T;
@@ -84,6 +93,10 @@ export class TheStatsApiClient {
 
         return data;
       } catch (error) {
+        // Non-retryable HTTP errors (4xx except 429) throw immediately
+        if (error instanceof NonRetryableHttpError) {
+          throw error;
+        }
         attempts++;
         if (attempts >= maxRetries) {
           throw error;
