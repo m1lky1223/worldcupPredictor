@@ -23,16 +23,15 @@ Give football fans clear, explainable predictions for every World Cup match — 
 
 ### Validated
 
-(None yet — greenfield, ship to validate)
+- Monorepo scaffolded with `apps/` and `packages/` structure (Validated in Phase 1: Monorepo & Local Infrastructure)
+- Docker Compose runs all services locally (web, api, worker, postgres, redis, and mcp) (Validated in Phase 1: Monorepo & Local Infrastructure)
+- Migrations and seed data run from cold checkout (Validated in Phase 1: Monorepo & Local Infrastructure)
+- Mock provider mode for local development without paid API keys (Validated in Phase 1: Monorepo & Local Infrastructure)
 
 ### Active
 
 **Core Data & Infrastructure**
-- [ ] Monorepo scaffolded with `apps/` and `packages/` structure
-- [ ] Docker Compose runs all services locally (web, api, worker, postgres, redis)
 - [ ] Database schema covers all domain entities (Team, Player, Match, Prediction, etc.)
-- [ ] Migrations and seed data run from cold checkout
-- [ ] Mock provider mode for local development without paid API keys
 
 **Data Ingestion**
 - [ ] Fixture sync from at least one provider
@@ -132,4 +131,4 @@ This document evolves at phase transitions and milestone boundaries.
 5. "What This Is" still accurate? → Update if drifted
 
 ---
-*Last updated: 2026-06-07 after initialization*
+*Last updated: 2026-06-09 after Phase 1 completion*
