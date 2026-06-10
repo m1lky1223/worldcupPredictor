@@ -8,7 +8,8 @@ const config: CodegenConfig = {
       plugins: ["typescript", "typescript-resolvers"],
       config: {
         useIndexSignature: true,
-        contextType: "any"
+        useTypeImports: true,
+        contextType: "@worldcup/domain#GraphQLContext"
       }
     }
   }
