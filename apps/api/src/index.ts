@@ -1,12 +1,12 @@
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
 import type { GraphQLContext } from "@worldcup/domain";
-import { mergedTypeDefs, mergedResolvers } from "./schema/index.js";
+import { apolloSchema } from "./schema/index.js";
 import { createContext } from "./context.js";
 
 const server = new ApolloServer<GraphQLContext>({
-  typeDefs: mergedTypeDefs,
-  resolvers: mergedResolvers,
+  typeDefs: apolloSchema.typeDefsList,
+  resolvers: apolloSchema.resolversList,
   formatError: (formattedError) => {
     return {
       message: formattedError.message,

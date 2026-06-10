@@ -116,7 +116,7 @@ export const resolvers = {
 
   Match: {
     homeTeam: async (
-      parent: { homeTeamId: string | null },
+      parent: { homeTeamId?: string | null; [key: string]: unknown },
       _args: unknown,
       context: GraphQLContext,
     ) => {
@@ -125,7 +125,7 @@ export const resolvers = {
     },
 
     awayTeam: async (
-      parent: { awayTeamId: string | null },
+      parent: { awayTeamId?: string | null; [key: string]: unknown },
       _args: unknown,
       context: GraphQLContext,
     ) => {
@@ -134,7 +134,7 @@ export const resolvers = {
     },
 
     prediction: async (
-      parent: { id: number },
+      parent: { id: number; [key: string]: unknown },
       _args: unknown,
       context: GraphQLContext,
     ) => {
@@ -148,7 +148,7 @@ export const resolvers = {
     },
 
     odds: async (
-      parent: { id: number },
+      parent: { id: number; [key: string]: unknown },
       _args: unknown,
       context: GraphQLContext,
     ) => {

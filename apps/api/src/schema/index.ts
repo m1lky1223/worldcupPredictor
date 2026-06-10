@@ -59,37 +59,34 @@ const JSONScalar = new GraphQLScalarType({
  * Base type declaration — other files extend via `extend type Query`.
  */
 export const typeDefs = `#graphql
-  scalar JSON
-
   type Query
 `;
 
-/**
- * Merged typeDefs array for Apollo Server.
- */
-export const mergedTypeDefs = [
-  typeDefs,
-  teamTypeDefs,
-  playerTypeDefs,
-  matchTypeDefs,
-  predictionTypeDefs,
-  groupTypeDefs,
-  modelMetricsTypeDefs,
-  venueTypeDefs,
-];
+// Apollo Server configuration — not imported by codegen
+const apolloSchema = {
+  typeDefsList: [
+    typeDefs,
+    teamTypeDefs,
+    playerTypeDefs,
+    matchTypeDefs,
+    predictionTypeDefs,
+    groupTypeDefs,
+    modelMetricsTypeDefs,
+    venueTypeDefs,
+  ] as const,
 
-/**
- * Merged resolvers object for Apollo Server.
- */
-export const mergedResolvers = [
-  {
-    JSON: JSONScalar,
-  },
-  teamResolvers,
-  playerResolvers,
-  matchResolvers,
-  predictionResolvers,
-  groupResolvers,
-  modelMetricsResolvers,
-  venueResolvers,
-];
+  resolversList: [
+    {
+      JSON: JSONScalar,
+    },
+    teamResolvers,
+    playerResolvers,
+    matchResolvers,
+    predictionResolvers,
+    groupResolvers,
+    modelMetricsResolvers,
+    venueResolvers,
+  ] as const,
+};
+
+export { apolloSchema };

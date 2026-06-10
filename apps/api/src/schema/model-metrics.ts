@@ -3,6 +3,8 @@ import { schemas } from "@worldcup/domain";
 import type { GraphQLContext } from "@worldcup/domain";
 
 export const typeDefs = `#graphql
+  scalar JSON
+
   type ModelMetrics {
     accuracy: Float!
     brierScore: Float!
