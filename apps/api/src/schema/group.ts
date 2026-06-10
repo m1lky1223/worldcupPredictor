@@ -161,6 +161,34 @@ export function getHeadToHeadGD(
 }
 
 /**
+ * Returns the goal difference for `team` in the head-to-head match
+ * against `opponent`. Positive means `team` scored more.
+ */
+function h2hGDForTeam(
+  team: string,
+  opponent: string,
+  matches: Array<{
+    homeTeamId: string | null;
+    awayTeamId: string | null;
+    homeScore: number | null;
+    awayScore: number | null;
+  }>,
+): number {
+  for (const match of matches) {
+    if (match.homeScore === null || match.awayScore === null) continue;
+    if (
+      (match.homeTeamId === team && match.awayTeamId === opponent) ||
+      (match.homeTeamId === opponent && match.awayTeamId === team)
+    ) {
+      return match.homeTeamId === team
+        ? match.homeScore - match.awayScore
+        : match.awayScore - match.homeScore;
+    }
+  }
+  return 0;
+}
+
+/**
  * Sorts standings entries according to FIFA tiebreaker rules:
  * 1. Points (desc)
  * 2. Goal difference (desc)
@@ -184,8 +212,6 @@ export function sortStandings(
     awayScore: number | null;
   }>,
 ): string[] {
-  const h2hLookup = buildHeadToHeadLookup(matches);
-
   return entries
     .slice()
     .sort((a, b) => {
@@ -199,19 +225,19 @@ export function sortStandings(
       // 3. Goals scored
       if (a.goalsFor !== b.goalsFor) return b.goalsFor - a.goalsFor;
 
-      // 4-6. Head-to-head (only meaningful for 2-team ties)
+      // 4-6. Head-to-head for two-team ties
       const aTied = a.teamIdsTied ?? [];
       const bTied = b.teamIdsTied ?? [];
 
-      if (aTied.length === 1 && bTied.length === 1 && aTied[0] !== bTied[0]) {
-        // Two-team tie — check direct match
-        const gdA = getHeadToHeadGD(a.teamId, aTied[0], h2hLookup);
-        const gdB = getHeadToHeadGD(b.teamId, bTied[0], h2hLookup);
+      const isTwoTeamTie =
+        aTied.length === 1 &&
+        bTied.length === 1 &&
+        (aTied[0] === b.teamId || bTied[0] === a.teamId);
 
-        // If both teams played each other, compare GD in that match
-        if (aTied[0] === b.teamId || bTied[0] === a.teamId) {
-          if (gdA !== gdB) return gdB - gdA;
-        }
+      if (isTwoTeamTie) {
+        const gdA = h2hGDForTeam(a.teamId, aTied[0], matches);
+        const gdB = -gdA; // zero-sum: B's GD is the negative of A's
+        if (gdA !== gdB) return gdB - gdA;
       }
 
       return 0;
