@@ -1,6 +1,19 @@
+import type { IncomingMessage } from "http";
 import type { GraphQLContext, ContextUser } from "@worldcup/domain";
 import { db } from "@worldcup/domain";
 import { createDataLoaders } from "./dataloaders.js";
+
+/**
+ * Extract a header value from IncomingMessage.headers (may be string | string[] | undefined).
+ */
+function getHeaderValue(
+  headers: IncomingMessage["headers"],
+  name: string,
+): string | undefined {
+  const v = headers[name];
+  if (Array.isArray(v)) return v[0];
+  return v;
+}
 
 /**
  * Extracts a stub user identity from the incoming request.
@@ -8,10 +21,8 @@ import { createDataLoaders } from "./dataloaders.js";
  * Phase 3 uses a dev-mode header (x-user-id) or defaults to an anonymous session.
  * Phase 8 will replace this with real Google OAuth session parsing.
  */
-function resolveUser(request: { headers: Record<string, string | string[]> }): ContextUser {
-  const userId = Array.isArray(request.headers["x-user-id"])
-    ? request.headers["x-user-id"][0]
-    : request.headers["x-user-id"];
+function resolveUser(req: IncomingMessage): ContextUser {
+  const userId = getHeaderValue(req.headers, "x-user-id");
 
   if (typeof userId === "string" && userId.length > 0) {
     return {
@@ -41,7 +52,7 @@ function resolveUser(request: { headers: Record<string, string | string[]> }): C
 export function createContext({
   req,
 }: {
-  req: { headers: Record<string, string | string[]> };
+  req: IncomingMessage;
 }): GraphQLContext {
   return {
     db,

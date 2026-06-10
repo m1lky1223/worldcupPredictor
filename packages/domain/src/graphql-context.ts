@@ -8,7 +8,7 @@ import type * as schema from "./db/schema.js";
  */
 export interface DataLoaderProxy<K, V> {
   load(key: K): Promise<V>;
-  loadMany(keys: K[]): Promise<V[]>;
+  loadMany(keys: K[]): Promise<(V | Error)[]>;
 }
 
 /**

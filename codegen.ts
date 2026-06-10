@@ -9,7 +9,7 @@ const config: CodegenConfig = {
       config: {
         useIndexSignature: true,
         useTypeImports: true,
-        contextType: "@worldcup/domain#GraphQLContext"
+        contextType: "../graphql-context.js#GraphQLContext"
       }
     }
   }

@@ -42,11 +42,6 @@ interface RawTeamStats {
   goalsAgainst: number;
 }
 
-interface HeadToHeadKey {
-  homeTeamId: string;
-  awayTeamId: string;
-}
-
 /**
  * Computes raw team statistics from a list of completed matches.
  */
@@ -320,25 +315,27 @@ export const resolvers = {
         if (teamIds.length === 0) continue;
 
         // Get all group-stage matches and filter by team IDs in this group
-      const allGroupMatches = await context.db
-        .select()
-        .from(schemas.matches)
-        .where(eq(schemas.matches.stage, "Group"));
+        const allGroupMatches = await context.db
+          .select()
+          .from(schemas.matches)
+          .where(eq(schemas.matches.stage, "Group"));
 
-      const groupMatches = allGroupMatches.filter(
-        (m) =>
-          m.homeTeamId !== null &&
-          m.awayTeamId !== null &&
-          teamIds.includes(m.homeTeamId) &&
-          teamIds.includes(m.awayTeamId),
-      );
+        const groupMatches = allGroupMatches.filter((match) => {
+          const m = match as { homeTeamId: string | null; awayTeamId: string | null };
+          return (
+            m.homeTeamId !== null &&
+            m.awayTeamId !== null &&
+            teamIds.includes(m.homeTeamId) &&
+            teamIds.includes(m.awayTeamId)
+          );
+        });
 
-      const completedMatches = groupMatches.filter(
-        (m) =>
-          m.status === "Completed" &&
-          m.homeScore !== null &&
-          m.awayScore !== null,
-      );
+        const completedMatches = groupMatches.filter(
+          (match) => {
+            const m = match as { status: string; homeScore: number | null; awayScore: number | null };
+            return m.status === "Completed" && m.homeScore !== null && m.awayScore !== null;
+          },
+        );
 
         // Compute stats
         const stats = computeTeamStats(

@@ -73,7 +73,7 @@ const apolloSchema = {
     groupTypeDefs,
     modelMetricsTypeDefs,
     venueTypeDefs,
-  ] as const,
+  ],
 
   resolversList: [
     {
@@ -86,7 +86,7 @@ const apolloSchema = {
     groupResolvers,
     modelMetricsResolvers,
     venueResolvers,
-  ] as const,
+  ],
 };
 
 export { apolloSchema };
