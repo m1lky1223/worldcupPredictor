@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { gql, useQuery } from "@apollo/client";
 import {
   Box,
@@ -10,6 +10,7 @@ import {
   InputLabel,
   MenuItem,
   Select,
+  SelectChangeEvent,
   Stack,
   Typography,
   Skeleton,
@@ -151,7 +152,7 @@ function MatchListItem({ match }: { match: any }) {
           </Stack>
         </Stack>
 
-        {match.prediction && match.status === "Scheduled" && (
+        {match.prediction && match.status === "Scheduled" && winnerProb !== null && (
           <Stack direction="row" alignItems="center" spacing={1} sx={{ mt: 1 }}>
             <Typography variant="caption" color="text.secondary">
               Predicted: {isHomeFav ? match.homeTeam?.name : match.awayTeam?.name} favored
@@ -172,7 +173,6 @@ function MatchListItem({ match }: { match: any }) {
 
 export default function MatchList() {
   const [stage, setStage] = useState("");
-  const navigate = useNavigate();
   const { loading, error, data } = useQuery(MATCHES_QUERY, {
     variables: { stage: stage || undefined, limit: 300, offset: 0 },
   });
@@ -206,7 +206,7 @@ export default function MatchList() {
           <Select
             value={stage}
             label="Stage"
-            onChange={(e) => setStage(e.target.value)}
+            onChange={(e: SelectChangeEvent) => setStage(e.target.value)}
           >
             {stageOptions.map((opt) => (
               <MenuItem key={opt.value} value={opt.value}>
