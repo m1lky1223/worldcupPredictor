@@ -16,4 +16,5 @@ export interface PredictionPayload {
   confidence: number;
   factors: Factor[];
   timestamp: string;
+  modelVersion: string;
 }
