@@ -9,5 +9,8 @@
   },
   "dependencies": {
     "@worldcup/domain": "workspace:*"
+  },
+  "devDependencies": {
+    "dotenv": "^16.6.1"
   }
 }

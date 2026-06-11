@@ -8,6 +8,7 @@ import { typeDefs as predictionTypeDefs, resolvers as predictionResolvers } from
 import { typeDefs as groupTypeDefs, resolvers as groupResolvers } from "./group.js";
 import { typeDefs as modelMetricsTypeDefs, resolvers as modelMetricsResolvers } from "./model-metrics.js";
 import { typeDefs as venueTypeDefs, resolvers as venueResolvers } from "./venue.js";
+import { typeDefs as oddsTypeDefs, resolvers as oddsResolvers } from "./odds.js";
 
 /**
  * Parses a GraphQL literal AST node into a JavaScript value.
@@ -73,6 +74,7 @@ const apolloSchema = {
     groupTypeDefs,
     modelMetricsTypeDefs,
     venueTypeDefs,
+    oddsTypeDefs,
   ],
 
   resolversList: [
@@ -86,6 +88,7 @@ const apolloSchema = {
     groupResolvers,
     modelMetricsResolvers,
     venueResolvers,
+    oddsResolvers,
   ],
 };
 

@@ -9,6 +9,8 @@ export * from "./thestatsapi/mapper.js";
 export * from "./thestatsapi/fixtures.js";
 export * from "./thestatsapi/teams.js";
 export * from "./thestatsapi/stats.js";
+export * from "./real-sync-provider.js";
+export * from "./odds/index.js";
 
 // ────────── SyncProvider Interface ──────────
 

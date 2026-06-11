@@ -16,8 +16,8 @@ Given("the API service is running", async function () {
   // Handled transitively
 });
 
-When("I query the GraphQL endpoint for hello", async function () {
-  const query = JSON.stringify({ query: "{ hello }" });
+When("I query the GraphQL endpoint for teams", async function () {
+  const query = JSON.stringify({ query: "{ teams { id name } }" });
   const res = await fetch(apiUrl, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -26,9 +26,10 @@ When("I query the GraphQL endpoint for hello", async function () {
   graphqlResponse = await res.json();
 });
 
-Then("the response should contain {string}", function (expected: string) {
+Then("the response should contain teams data", function () {
   assert.ok(graphqlResponse, "No GraphQL response received");
-  assert.equal(graphqlResponse.data?.hello, expected);
+  assert.ok(Array.isArray(graphqlResponse.data?.teams), "Response does not contain teams array");
+  assert.ok(graphqlResponse.data.teams.length > 0, "Teams array is empty");
 });
 
 Given("the web service is running", async function () {
@@ -36,7 +37,7 @@ Given("the web service is running", async function () {
 });
 
 When("I request the home page of the web service", async function () {
-  const url = `${webUrl}/html/main/index.html`;
+  const url = `${webUrl}/`;
   console.log(`[TEST] Fetching webUrl: ${url}`);
   try {
     const res = await fetch(url, {

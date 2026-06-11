@@ -1,9 +1,9 @@
 Feature: Service Health Check
 
-  Scenario: GraphQL API returns hello world
+  Scenario: GraphQL API returns teams
     Given the API service is running
-    When I query the GraphQL endpoint for hello
-    Then the response should contain "world"
+    When I query the GraphQL endpoint for teams
+    Then the response should contain teams data
 
   Scenario: Frontend Web Dashboard loads
     Given the web service is running

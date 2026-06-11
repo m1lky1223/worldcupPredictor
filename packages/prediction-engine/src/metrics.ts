@@ -169,8 +169,8 @@ export class ModelMetricsService {
     const binSize = 0.1;
 
     for (let i = 0; i < 10; i++) {
-      const lower = i * binSize;
-      const upper = lower + binSize;
+      const lower = Number((i * binSize).toFixed(2));
+      const upper = Number((lower + binSize).toFixed(2));
       const binLabel = `${lower.toFixed(1)}-${upper.toFixed(1)}`;
 
       const inBin = data.filter(

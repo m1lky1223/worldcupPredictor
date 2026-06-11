@@ -221,7 +221,18 @@ export class MockSyncProvider {
           id: team.id,
           name: team.name,
           groupName,
-          flagUrl: `https://flags.fm/${team.id.toLowerCase()}.png`,
+          flagUrl: (() => {
+            const mapping: Record<string, string> = {
+              MEX: "mx", USA: "us", CAN: "ca", PAN: "pa", ARG: "ar", BRA: "br", URU: "uy", COL: "co",
+              FRA: "fr", ENG: "gb-eng", GER: "de", ESP: "es", POR: "pt", ITA: "it", BEL: "be", NED: "nl",
+              CRO: "hr", MAR: "ma", SEN: "sn", JPN: "jp", KOR: "kr", AUS: "au", KSA: "sa", IRN: "ir",
+              SUI: "ch", DEN: "dk", SRB: "rs", CMR: "cm", GHA: "gh", EGY: "eg", NGA: "ng", ALG: "dz",
+              TUN: "tn", CIV: "ci", SWE: "se", NOR: "no", UKR: "ua", POL: "pl", CZE: "cz", AUT: "at",
+              CRC: "cr", HON: "hn", JAM: "jm", SLV: "sv", ECU: "ec", PER: "pe", CHI: "cl", PAR: "py"
+            };
+            const code = mapping[team.id];
+            return code ? `https://flagcdn.com/w160/${code}.png` : "";
+          })(),
           eloRating: TEAM_ELO_RATINGS[team.id] ?? 1500,
           providerId: `p-${team.id.toLowerCase()}`,
         });

@@ -1,16 +1,16 @@
-# Graph Report - worldcupPredictor  (2026-06-09)
+# Graph Report - worldcupPredictor  (2026-06-11)
 
 ## Corpus Check
-- 442 files · ~420,445 words
+- 497 files · ~452,531 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4302 nodes · 3984 edges · 516 communities (456 shown, 60 thin omitted)
+- 5111 nodes · 4952 edges · 569 communities (510 shown, 59 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `85c5a5bf`
+- Built from commit: `1fee3570`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -77,7 +77,9 @@
 - [[_COMMUNITY_Community 59|Community 59]]
 - [[_COMMUNITY_Community 60|Community 60]]
 - [[_COMMUNITY_Community 61|Community 61]]
+- [[_COMMUNITY_Community 62|Community 62]]
 - [[_COMMUNITY_Community 63|Community 63]]
+- [[_COMMUNITY_Community 64|Community 64]]
 - [[_COMMUNITY_Community 72|Community 72]]
 - [[_COMMUNITY_Community 73|Community 73]]
 - [[_COMMUNITY_Community 74|Community 74]]
@@ -399,31 +401,91 @@
 - [[_COMMUNITY_Community 513|Community 513]]
 - [[_COMMUNITY_Community 514|Community 514]]
 - [[_COMMUNITY_Community 515|Community 515]]
+- [[_COMMUNITY_Community 516|Community 516]]
+- [[_COMMUNITY_Community 517|Community 517]]
+- [[_COMMUNITY_Community 518|Community 518]]
+- [[_COMMUNITY_Community 519|Community 519]]
+- [[_COMMUNITY_Community 520|Community 520]]
+- [[_COMMUNITY_Community 521|Community 521]]
+- [[_COMMUNITY_Community 522|Community 522]]
+- [[_COMMUNITY_Community 523|Community 523]]
+- [[_COMMUNITY_Community 524|Community 524]]
+- [[_COMMUNITY_Community 525|Community 525]]
+- [[_COMMUNITY_Community 526|Community 526]]
+- [[_COMMUNITY_Community 527|Community 527]]
+- [[_COMMUNITY_Community 528|Community 528]]
+- [[_COMMUNITY_Community 529|Community 529]]
+- [[_COMMUNITY_Community 530|Community 530]]
+- [[_COMMUNITY_Community 531|Community 531]]
+- [[_COMMUNITY_Community 532|Community 532]]
+- [[_COMMUNITY_Community 533|Community 533]]
+- [[_COMMUNITY_Community 534|Community 534]]
+- [[_COMMUNITY_Community 535|Community 535]]
+- [[_COMMUNITY_Community 536|Community 536]]
+- [[_COMMUNITY_Community 537|Community 537]]
+- [[_COMMUNITY_Community 538|Community 538]]
+- [[_COMMUNITY_Community 539|Community 539]]
+- [[_COMMUNITY_Community 540|Community 540]]
+- [[_COMMUNITY_Community 541|Community 541]]
+- [[_COMMUNITY_Community 542|Community 542]]
+- [[_COMMUNITY_Community 543|Community 543]]
+- [[_COMMUNITY_Community 544|Community 544]]
+- [[_COMMUNITY_Community 545|Community 545]]
+- [[_COMMUNITY_Community 546|Community 546]]
+- [[_COMMUNITY_Community 547|Community 547]]
+- [[_COMMUNITY_Community 548|Community 548]]
+- [[_COMMUNITY_Community 549|Community 549]]
+- [[_COMMUNITY_Community 550|Community 550]]
+- [[_COMMUNITY_Community 551|Community 551]]
+- [[_COMMUNITY_Community 552|Community 552]]
+- [[_COMMUNITY_Community 553|Community 553]]
+- [[_COMMUNITY_Community 554|Community 554]]
+- [[_COMMUNITY_Community 555|Community 555]]
+- [[_COMMUNITY_Community 556|Community 556]]
+- [[_COMMUNITY_Community 557|Community 557]]
+- [[_COMMUNITY_Community 558|Community 558]]
+- [[_COMMUNITY_Community 559|Community 559]]
+- [[_COMMUNITY_Community 560|Community 560]]
+- [[_COMMUNITY_Community 561|Community 561]]
+- [[_COMMUNITY_Community 562|Community 562]]
+- [[_COMMUNITY_Community 564|Community 564]]
+- [[_COMMUNITY_Community 565|Community 565]]
+- [[_COMMUNITY_Community 566|Community 566]]
+- [[_COMMUNITY_Community 568|Community 568]]
+- [[_COMMUNITY_Community 569|Community 569]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `files` - 436 edges
 2. `agents` - 34 edges
 3. `workflow` - 33 edges
 4. `RFC 0001: Application Architecture` - 24 edges
-5. `compilerOptions` - 21 edges
-6. `Phase 1: Monorepo & Local Infrastructure - Research` - 19 edges
-7. `workflow` - 18 edges
-8. `Core Workflow` - 18 edges
-9. `2026 World Cup Predictor - Product Requirements` - 18 edges
-10. `runtimeTierDefaults` - 16 edges
+5. `columns` - 21 edges
+6. `compilerOptions` - 21 edges
+7. `Phase 1: Monorepo & Local Infrastructure - Research` - 19 edges
+8. `workflow` - 18 edges
+9. `Core Workflow` - 18 edges
+10. `2026 World Cup Predictor - Product Requirements` - 18 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `forceGitAddCwds()` --calls--> `tokenize()`  [EXTRACTED]
   .opencode/hooks/gsd-workflow-guard.js → .opencode/hooks/lib/git-cmd.js
+- `createContext()` --calls--> `createDataLoaders()`  [EXTRACTED]
+  apps/api/src/context.ts → apps/api/src/dataloaders.ts
+- `ConcreteTheStatsApiClient` --inherits--> `TheStatsApiClient`  [EXTRACTED]
+  packages/data-providers/src/thestatsapi/client.ts → packages/data-providers/src/base-client.ts
+- `FixturesAdapter` --references--> `ConcreteTheStatsApiClient`  [EXTRACTED]
+  packages/data-providers/src/thestatsapi/fixtures.ts → packages/data-providers/src/thestatsapi/client.ts
+- `StatsAdapter` --references--> `ConcreteTheStatsApiClient`  [EXTRACTED]
+  packages/data-providers/src/thestatsapi/stats.ts → packages/data-providers/src/thestatsapi/client.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (516 total, 60 thin omitted)
+## Communities (569 total, 59 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.05
-Nodes (36): Phase 10 — Observability & Operational Hardening, Phase 11 — Pre-Launch QA & Data Seeding, Phase 1: Monorepo & Local Infrastructure, Phase 2 — Domain Schema & Provider Adapters, Phase 3 — GraphQL API Core, Phase 4 — Web UI Foundation, Phase 5 — Prediction Engine, Phase 6 — Worker: Polling, Finalization & Rating Updates (+28 more)
+Cohesion: 0.06
+Nodes (40): Milestones, Phase 10: Observability & Operational Hardening, Phase 11: Pre-Launch QA & Data Seeding, Phase 1: Monorepo & Local Infrastructure, Phase 2: Domain Schema & Provider Adapters, Phase 3: GraphQL API Core, Phase 4: Web UI Foundation, Phase 5: Prediction Engine (+32 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.07
@@ -438,8 +500,8 @@ Cohesion: 0.07
 Nodes (26): 10. Odds and Market Comparison, 11. Authentication, 12. Data Expectations, 13. UX Principles, 14. Success Metrics, 15. Risks, 16. Open Product Decisions, 17. Launch Criteria (+18 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.12
-Nodes (15): commit_docs, granularity, mode, model_profile, parallelization, plan_review, source_grounding, ship (+7 more)
+Cohesion: 0.11
+Nodes (17): commit_docs, granularity, mode, model_profile, parallelization, phase_id_convention, plan_review, source_grounding (+9 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.13
@@ -466,20 +528,20 @@ Cohesion: 0.22
 Nodes (8): Beads - AI-Native Issue Tracking, Essential Commands, Get Started with Beads, Learn More, Quick Start, What is Beads?, Why Beads?, Working with Issues
 
 ### Community 11 - "Community 11"
-Cohesion: 0.40
-Nodes (5): name, notNull, primaryKey, type, away_team_id
+Cohesion: 0.12
+Nodes (16): Dashboard (/) — `Dashboard.tsx`, Deviations from Plan, Groups (/groups) — `Groups.tsx`, Match Detail (/matches/:id) — `MatchDetail.tsx`, Match List (/matches) — `MatchList.tsx`, Model Tracker (/model) — `ModelTracker.tsx`, One-liner, Pages Built (+8 more)
 
 ### Community 12 - "Community 12"
-Cohesion: 0.22
-Nodes (8): Active Blockers, Current Phase, Last Action, Notes, Phase History, Session Continuity, STATE.md — 2026 World Cup Predictor, Status
+Cohesion: 0.18
+Nodes (10): Active Blockers, Current Phase, Last Action, Notes, Phase History, Plan Summary (Phase 2), Plan Summary (Phase 4), Session Continuity (+2 more)
 
 ### Community 13 - "Community 13"
 Cohesion: 0.29
 Nodes (6): Beads, Core CLI Workflow, First Step, Preferred Route, Rules, What Belongs In Beads
 
 ### Community 14 - "Community 14"
-Cohesion: 0.25
-Nodes (8): predictions_match_id_matches_id_fk, columnsFrom, columnsTo, name, onDelete, onUpdate, tableFrom, tableTo
+Cohesion: 0.22
+Nodes (9): predictions_match_id_matches_id_fk, foreignKeys, columnsFrom, columnsTo, name, onDelete, onUpdate, tableFrom (+1 more)
 
 ### Community 15 - "Community 15"
 Cohesion: 0.33
@@ -491,19 +553,19 @@ Nodes (5): hooks, PostCompact, PreCompact, SessionStart, UserPromptSubmit
 
 ### Community 17 - "Community 17"
 Cohesion: 0.12
-Nodes (16): name, notNull, primaryKey, type, name, notNull, primaryKey, type (+8 more)
+Nodes (16): name, notNull, primaryKey, type, away_odds, draw_odds, home_odds, name (+8 more)
 
 ### Community 18 - "Community 18"
-Cohesion: 0.50
-Nodes (3): npx, mui-mcp, @mui/mcp
+Cohesion: 0.38
+Nodes (6): npx, chrome-devtools, mui-mcp, playwright, @mui/mcp, @playwright/mcp
 
 ### Community 23 - "Community 23"
-Cohesion: 0.09
-Nodes (22): dependencies, @apollo/server, cors, dotenv, drizzle-orm, express, graphql, pg (+14 more)
+Cohesion: 0.08
+Nodes (23): dependencies, @apollo/server, cors, dataloader, dotenv, drizzle-orm, express, graphql (+15 more)
 
 ### Community 24 - "Community 24"
-Cohesion: 0.25
-Nodes (8): ratings_snapshots_player_id_players_id_fk, columnsFrom, columnsTo, name, onDelete, onUpdate, tableFrom, tableTo
+Cohesion: 0.12
+Nodes (15): dialect, id, compositePrimaryKeys, foreignKeys, indexes, name, schema, uniqueConstraints (+7 more)
 
 ### Community 25 - "Community 25"
 Cohesion: 0.06
@@ -514,16 +576,16 @@ Cohesion: 0.09
 Nodes (21): compilerOptions, alwaysStrict, composite, declaration, esModuleInterop, forceConsistentCasingInFileNames, lib, module (+13 more)
 
 ### Community 27 - "Community 27"
-Cohesion: 0.10
-Nodes (19): dependencies, @apollo/client, graphql, @modern-js/runtime, react, react-dom, @worldcup/domain, @worldcup/ui (+11 more)
+Cohesion: 0.08
+Nodes (24): dependencies, @apollo/client, @emotion/react, @emotion/styled, graphql, @modern-js/runtime, @mui/icons-material, @mui/material (+16 more)
 
 ### Community 28 - "Community 28"
 Cohesion: 0.11
 Nodes (17): dependencies, @emotion/react, @emotion/styled, @mui/material, react, react-dom, @worldcup/domain, devDependencies (+9 more)
 
 ### Community 29 - "Community 29"
-Cohesion: 0.18
-Nodes (11): compositePrimaryKeys, foreignKeys, indexes, columns, name, nullsNotDistinct, name, schema (+3 more)
+Cohesion: 0.11
+Nodes (19): matches_away_team_id_teams_id_fk, columnsFrom, columnsTo, name, onDelete, onUpdate, tableFrom, tableTo (+11 more)
 
 ### Community 30 - "Community 30"
 Cohesion: 0.12
@@ -534,24 +596,24 @@ Cohesion: 0.12
 Nodes (16): dependencies, drizzle-orm, graphql, pg, devDependencies, drizzle-kit, @types/pg, main (+8 more)
 
 ### Community 32 - "Community 32"
-Cohesion: 0.29
-Nodes (4): db, pool, Factor, PredictionPayload
+Cohesion: 0.25
+Nodes (8): ratings_snapshots_team_id_teams_id_fk, columnsFrom, columnsTo, name, onDelete, onUpdate, tableFrom, tableTo
 
 ### Community 33 - "Community 33"
-Cohesion: 0.22
-Nodes (9): odds_history_match_id_matches_id_fk, foreignKeys, columnsFrom, columnsTo, name, onDelete, onUpdate, tableFrom (+1 more)
+Cohesion: 0.13
+Nodes (15): odds_history_match_id_matches_id_fk, compositePrimaryKeys, foreignKeys, indexes, columnsFrom, columnsTo, name, onDelete (+7 more)
 
 ### Community 34 - "Community 34"
-Cohesion: 0.25
-Nodes (8): players_team_id_teams_id_fk, columnsFrom, columnsTo, name, onDelete, onUpdate, tableFrom, tableTo
+Cohesion: 0.13
+Nodes (15): players_team_id_teams_id_fk, compositePrimaryKeys, foreignKeys, indexes, name, schema, columnsFrom, columnsTo (+7 more)
 
 ### Community 35 - "Community 35"
 Cohesion: 0.20
 Nodes (9): dependencies, @worldcup/domain, main, name, private, scripts, build, types (+1 more)
 
 ### Community 36 - "Community 36"
-Cohesion: 0.20
-Nodes (9): dependencies, @worldcup/domain, main, name, private, scripts, build, types (+1 more)
+Cohesion: 0.17
+Nodes (11): dependencies, @worldcup/domain, devDependencies, dotenv, main, name, private, scripts (+3 more)
 
 ### Community 37 - "Community 37"
 Cohesion: 0.10
@@ -598,20 +660,20 @@ Cohesion: 0.33
 Nodes (5): compilerOptions, outDir, rootDir, extends, include
 
 ### Community 48 - "Community 48"
-Cohesion: 0.18
-Nodes (11): flag_url, group_name, name, notNull, primaryKey, type, name, notNull (+3 more)
+Cohesion: 0.12
+Nodes (17): elo_rating, flag_url, group_name, default, name, notNull, primaryKey, type (+9 more)
 
 ### Community 49 - "Community 49"
 Cohesion: 0.00
 Nodes (436): files, agents/gsd-advisor-researcher.md, agents/gsd-ai-researcher.md, agents/gsd-assumptions-analyzer.md, agents/gsd-code-fixer.md, agents/gsd-code-reviewer.md, agents/gsd-codebase-mapper.md, agents/gsd-debug-session-manager.md (+428 more)
 
 ### Community 50 - "Community 50"
-Cohesion: 0.33
-Nodes (6): influence_score, default, name, notNull, primaryKey, type
-
-### Community 51 - "Community 51"
 Cohesion: 0.18
 Nodes (11): player_id, team_id, name, notNull, primaryKey, type, columns, name (+3 more)
+
+### Community 51 - "Community 51"
+Cohesion: 0.12
+Nodes (16): name, notNull, primaryKey, type, name, notNull, primaryKey, type (+8 more)
 
 ### Community 52 - "Community 52"
 Cohesion: 0.18
@@ -622,8 +684,8 @@ Cohesion: 0.03
 Nodes (57): After Checkpoint, Balance Research and Reasoning, Binary Search / Divide and Conquer, Checkpoint Format, CHECKPOINT REACHED, Checkpoint Types, Combining Techniques, Comment Out Everything (+49 more)
 
 ### Community 54 - "Community 54"
-Cohesion: 0.40
-Nodes (5): id, name, notNull, primaryKey, type
+Cohesion: 0.06
+Nodes (32): buildHeadToHeadLookup(), buildStandingsEntries(), computeTeamStats(), findTiedTeams(), getHeadToHeadGD(), GroupStandingsArgs, HeadToHeadKey, RawTeamStats (+24 more)
 
 ### Community 55 - "Community 55"
 Cohesion: 0.04
@@ -633,13 +695,29 @@ Nodes (47): 0. Git Branch Invariant, 10. Spawn gsd-plan-checker Agent, 11. Handl
 Cohesion: 0.05
 Nodes (43): Anti-Patterns and Extended Examples, Authentication Gates, Building the Dependency Graph, Checkpoint Reached / Revision Complete, Checkpoint Types, Chunked Mode Returns, Context Budget for TDD, Context Budget Rules (+35 more)
 
+### Community 57 - "Community 57"
+Cohesion: 0.05
+Nodes (31): COUNTRY_NAME_TEMPLATES, FALLBACK_NAMES, GROUP_TEAMS, MOCK_FIXTURES, MockSyncProvider, TEAM_ELO_RATINGS, NonRetryableHttpError, TheStatsApiClient (+23 more)
+
 ### Community 58 - "Community 58"
 Cohesion: 0.50
 Nodes (3): dialect, entries, version
 
+### Community 59 - "Community 59"
+Cohesion: 0.40
+Nodes (5): draw, name, notNull, primaryKey, type
+
+### Community 62 - "Community 62"
+Cohesion: 0.10
+Nodes (6): EloRating, MatchProbabilities, PredictionGenerator, CalibrationBin, ModelMetricsService, RatingService
+
+### Community 64 - "Community 64"
+Cohesion: 0.05
+Nodes (15): DASHBOARD_QUERY, GROUPS_QUERY, MATCH_DETAIL_QUERY, formatKickoff(), MATCHES_QUERY, MatchListItem(), stageOptions, MODEL_METRICS_QUERY (+7 more)
+
 ### Community 72 - "Community 72"
-Cohesion: 0.33
-Nodes (6): created_at, default, name, notNull, primaryKey, type
+Cohesion: 0.12
+Nodes (17): name, notNull, primaryKey, type, default, name, notNull, primaryKey (+9 more)
 
 ### Community 73 - "Community 73"
 Cohesion: 0.05
@@ -679,11 +757,11 @@ Nodes (31): 1. System Classification, 1b. Domain Context, 2. Framework Decision,
 
 ### Community 82 - "Community 82"
 Cohesion: 0.09
-Nodes (31): haiku, opus, sonnet, haiku, opus, sonnet, haiku, opus (+23 more)
+Nodes (30): haiku, opus, sonnet, haiku, opus, sonnet, haiku, opus (+22 more)
 
 ### Community 83 - "Community 83"
-Cohesion: 0.07
-Nodes (29): DirectiveResolverFn, Exact, Incremental, InputMaybe, IsTypeOfResolverFn, MakeEmpty, MakeMaybe, MakeOptional (+21 more)
+Cohesion: 0.03
+Nodes (67): DirectiveResolverFn, Exact, Factor, FactorResolvers, GroupStandingEntry, GroupStandingEntryResolvers, GroupStandings, GroupStandingsResolvers (+59 more)
 
 ### Community 84 - "Community 84"
 Cohesion: 0.07
@@ -694,8 +772,8 @@ Cohesion: 0.07
 Nodes (27): API Route Stubs, Create VERIFICATION.md, Final Artifact Status, MVP Mode Verification, Pattern: API → Database, Pattern: Component → API, Pattern: Form → Handler, Pattern: State → Render (+19 more)
 
 ### Community 86 - "Community 86"
-Cohesion: 0.14
-Nodes (28): haiku, opus, haiku, opus, haiku, opus, high, low (+20 more)
+Cohesion: 0.15
+Nodes (29): haiku, opus, haiku, opus, haiku, opus, high, low (+21 more)
 
 ### Community 87 - "Community 87"
 Cohesion: 0.07
@@ -782,8 +860,8 @@ Cohesion: 0.12
 Nodes (16): Gate Prompt Patterns, Pattern: action-routing, Pattern: approve-revise-abort, Pattern: context-handling, Pattern: depth-select, Pattern: gray-area-option, Pattern: multi-option-escalation, Pattern: multi-option-failure (+8 more)
 
 ### Community 108 - "Community 108"
-Cohesion: 0.18
-Nodes (11): name, notNull, primaryKey, type, away_win, confidence, name, notNull (+3 more)
+Cohesion: 0.12
+Nodes (16): name, notNull, primaryKey, type, away_win, home_win, match_id, name (+8 more)
 
 ### Community 109 - "Community 109"
 Cohesion: 0.12
@@ -822,8 +900,8 @@ Cohesion: 0.14
 Nodes (13): complete, create, /gsd-workstreams, list, progress, resume, status, Step 1: Parse Subcommand (+5 more)
 
 ### Community 118 - "Community 118"
-Cohesion: 0.29
-Nodes (7): teams, compositePrimaryKeys, foreignKeys, indexes, name, schema, uniqueConstraints
+Cohesion: 0.09
+Nodes (21): API Data Scope, Auth Boundary, Bracket Projection, Canonical References, DataLoader & N+1 Prevention, Deferred Ideas, Error Handling, Established Patterns (+13 more)
 
 ### Community 119 - "Community 119"
 Cohesion: 0.14
@@ -878,8 +956,8 @@ Cohesion: 0.15
 Nodes (12): 10. Present Final Status, 11. Commit (if configured), 12. Update State, 1. Initialize, 2. Parse and Validate Phase, 3. Check Prerequisites, 4. Check Existing UI-SPEC, 5. Spawn gsd-ui-researcher (+4 more)
 
 ### Community 132 - "Community 132"
-Cohesion: 0.21
-Nodes (6): matches, oddsHistory, players, predictions, ratingsSnapshots, teams
+Cohesion: 0.40
+Nodes (5): factors, name, notNull, primaryKey, type
 
 ### Community 133 - "Community 133"
 Cohesion: 0.17
@@ -1514,16 +1592,16 @@ Cohesion: 0.25
 Nodes (7): Manual-Only Verifications, Per-Task Verification Map, Phase 02 — Domain Schema & Provider Adapters — Validation Strategy, Sampling Rate, Test Infrastructure, Validation Sign-Off, Wave 0 Requirements
 
 ### Community 291 - "Community 291"
-Cohesion: 0.40
-Nodes (5): draw, name, notNull, primaryKey, type
+Cohesion: 0.10
+Nodes (21): name, notNull, primaryKey, type, name, notNull, primaryKey, type (+13 more)
 
 ### Community 292 - "Community 292"
-Cohesion: 0.40
-Nodes (5): factors, name, notNull, primaryKey, type
+Cohesion: 0.10
+Nodes (21): detail, extra_time_minute, minute, player_id, name, notNull, primaryKey, type (+13 more)
 
 ### Community 293 - "Community 293"
-Cohesion: 0.40
-Nodes (5): home_score, name, notNull, primaryKey, type
+Cohesion: 0.14
+Nodes (14): compositePrimaryKeys, indexes, name, schema, uniqueConstraints, tables, predictions, teams (+6 more)
 
 ### Community 294 - "Community 294"
 Cohesion: 0.40
@@ -1534,8 +1612,8 @@ Cohesion: 0.10
 Nodes (19): Canonical References, Deferred Ideas, Established Patterns, Existing Code, Existing Code Insights, Implementation Decisions, Integration Points, Phase 2: Domain Schema & Provider Adapters - Context (+11 more)
 
 ### Community 296 - "Community 296"
-Cohesion: 0.40
-Nodes (5): match_number, name, notNull, primaryKey, type
+Cohesion: 0.33
+Nodes (6): created_at, default, name, notNull, primaryKey, type
 
 ### Community 297 - "Community 297"
 Cohesion: 0.40
@@ -1626,8 +1704,8 @@ Cohesion: 0.50
 Nodes (3): dependencies, @opencode-ai/plugin, type
 
 ### Community 320 - "Community 320"
-Cohesion: 0.50
-Nodes (4): haiku, opus, sonnet, augment
+Cohesion: 0.11
+Nodes (18): Accomplishments, Auto-fixed Issues, Created, Decisions Made, Dependency graph, Deviations from Plan, Files Created/Modified, Issues Encountered (+10 more)
 
 ### Community 321 - "Community 321"
 Cohesion: 0.50
@@ -1666,75 +1744,279 @@ Cohesion: 0.22
 Nodes (8): Deferred Ideas, Phase 2: Domain Schema & Provider Adapters - Discussion Log, Player/Squad Seed Data, Provider Adapter Interface, Provider ID Mapping, Schema Expansion Approach, the agent's Discretion, TheStatsAPI Normalization Layer
 
 ### Community 500 - "Community 500"
-Cohesion: 0.25
-Nodes (8): matches_away_team_id_teams_id_fk, columnsFrom, columnsTo, name, onDelete, onUpdate, tableFrom, tableTo
+Cohesion: 0.40
+Nodes (5): home_score, name, notNull, primaryKey, type
 
 ### Community 501 - "Community 501"
-Cohesion: 0.33
-Nodes (6): name, notNull, primaryKey, type, away_score, columns
+Cohesion: 0.12
+Nodes (16): name, notNull, primaryKey, type, name, notNull, primaryKey, type (+8 more)
 
 ### Community 502 - "Community 502"
 Cohesion: 0.40
-Nodes (5): stage, name, notNull, primaryKey, type
+Nodes (5): match_number, name, notNull, primaryKey, type
 
 ### Community 503 - "Community 503"
-Cohesion: 0.25
-Nodes (8): ratings_snapshots_team_id_teams_id_fk, columnsFrom, columnsTo, name, onDelete, onUpdate, tableFrom, tableTo
+Cohesion: 0.13
+Nodes (15): ratings_snapshots_player_id_players_id_fk, compositePrimaryKeys, foreignKeys, indexes, name, columnsFrom, columnsTo, name (+7 more)
 
 ### Community 504 - "Community 504"
-Cohesion: 0.29
-Nodes (7): compositePrimaryKeys, indexes, name, schema, uniqueConstraints, tables, odds_history
+Cohesion: 0.12
+Nodes (16): goals_conceded, passes_attempted, shots, name, notNull, primaryKey, type, name (+8 more)
 
 ### Community 505 - "Community 505"
-Cohesion: 0.29
-Nodes (7): compositePrimaryKeys, foreignKeys, indexes, name, schema, uniqueConstraints, players
+Cohesion: 0.12
+Nodes (16): name, position, provider_id, name, notNull, primaryKey, type, columns (+8 more)
 
 ### Community 506 - "Community 506"
-Cohesion: 0.29
-Nodes (7): compositePrimaryKeys, foreignKeys, indexes, name, schema, uniqueConstraints, predictions
+Cohesion: 0.13
+Nodes (14): Accomplishments, Decisions Made, Dependency graph, Deviations from Plan, Files Created/Modified, Issues Encountered, Metrics, Next Phase Readiness (+6 more)
 
 ### Community 507 - "Community 507"
-Cohesion: 0.29
-Nodes (7): compositePrimaryKeys, foreignKeys, indexes, name, schema, uniqueConstraints, ratings_snapshots
+Cohesion: 0.13
+Nodes (15): odds_history_match_id_matches_id_fk, compositePrimaryKeys, foreignKeys, indexes, columnsFrom, columnsTo, name, onDelete (+7 more)
 
 ### Community 508 - "Community 508"
-Cohesion: 0.33
-Nodes (6): elo_rating, default, name, notNull, primaryKey, type
+Cohesion: 0.40
+Nodes (5): name, notNull, primaryKey, type, brier_score
 
 ### Community 509 - "Community 509"
-Cohesion: 0.40
-Nodes (5): home_odds, name, notNull, primaryKey, type
+Cohesion: 0.15
+Nodes (12): Accomplishments, Auto-fixed Issues, Decisions Made, Deviations from Plan, Files Created/Modified, Issues Encountered, Next Phase Readiness, Performance (+4 more)
 
 ### Community 510 - "Community 510"
 Cohesion: 0.40
-Nodes (5): home_win, name, notNull, primaryKey, type
+Nodes (5): name, notNull, primaryKey, type, calibration
 
 ### Community 511 - "Community 511"
 Cohesion: 0.40
 Nodes (5): kickoff_time, name, notNull, primaryKey, type
 
 ### Community 512 - "Community 512"
+Cohesion: 0.10
+Nodes (18): db, pool, matches, matchEvents, modelMetrics, oddsHistory, playerMatchPerformances, players (+10 more)
+
+### Community 516 - "Community 516"
+Cohesion: 0.18
+Nodes (11): players_provider_idx, compositePrimaryKeys, foreignKeys, indexes, name, columns, isUnique, name (+3 more)
+
+### Community 517 - "Community 517"
+Cohesion: 0.20
+Nodes (9): 1. Cold Start Smoke Test, 2. Retrieve Normalized Domain Entities, 3. Database Migration and Seeding, 4. Snapshot Immutability Triggers, 5. Data Ingestion & Retry Logic, Current Test, Gaps, Summary (+1 more)
+
+### Community 518 - "Community 518"
+Cohesion: 0.20
+Nodes (10): matches_provider_idx, compositePrimaryKeys, foreignKeys, indexes, name, columns, isUnique, name (+2 more)
+
+### Community 519 - "Community 519"
+Cohesion: 0.25
+Nodes (7): API Data Scope, Auth Boundary, Bracket Projection, Deferred Ideas, Pagination Defaults, Phase 3: GraphQL API Core - Discussion Log, the agent's Discretion
+
+### Community 520 - "Community 520"
+Cohesion: 0.25
+Nodes (8): match_events_match_id_matches_id_fk, columnsFrom, columnsTo, name, onDelete, onUpdate, tableFrom, tableTo
+
+### Community 521 - "Community 521"
+Cohesion: 0.25
+Nodes (8): match_events_player_id_players_id_fk, columnsFrom, columnsTo, name, onDelete, onUpdate, tableFrom, tableTo
+
+### Community 522 - "Community 522"
+Cohesion: 0.13
+Nodes (15): match_events_team_id_teams_id_fk, compositePrimaryKeys, foreignKeys, indexes, name, schema, columnsFrom, columnsTo (+7 more)
+
+### Community 523 - "Community 523"
+Cohesion: 0.25
+Nodes (8): matches_away_team_id_teams_id_fk, columnsFrom, columnsTo, name, onDelete, onUpdate, tableFrom, tableTo
+
+### Community 524 - "Community 524"
+Cohesion: 0.25
+Nodes (8): matches_home_team_id_teams_id_fk, columnsFrom, columnsTo, name, onDelete, onUpdate, tableFrom, tableTo
+
+### Community 525 - "Community 525"
+Cohesion: 0.06
+Nodes (31): player_match_performances_match_id_matches_id_fk, player_match_performances_player_id_players_id_fk, player_match_performances_team_id_teams_id_fk, compositePrimaryKeys, foreignKeys, indexes, columnsFrom, columnsTo (+23 more)
+
+### Community 526 - "Community 526"
+Cohesion: 0.33
+Nodes (6): influence_score, default, name, notNull, primaryKey, type
+
+### Community 527 - "Community 527"
+Cohesion: 0.40
+Nodes (5): name, notNull, primaryKey, type, bookmaker
+
+### Community 528 - "Community 528"
+Cohesion: 0.25
+Nodes (8): players_team_id_teams_id_fk, columnsFrom, columnsTo, name, onDelete, onUpdate, tableFrom, tableTo
+
+### Community 529 - "Community 529"
+Cohesion: 0.25
+Nodes (6): ContextUser, DataLoaderProxy, DataLoaders, GraphQLContext, Factor, PredictionPayload
+
+### Community 530 - "Community 530"
+Cohesion: 0.40
+Nodes (5): confidence, name, notNull, primaryKey, type
+
+### Community 531 - "Community 531"
+Cohesion: 0.40
+Nodes (5): model_version, name, notNull, primaryKey, type
+
+### Community 532 - "Community 532"
+Cohesion: 0.33
+Nodes (6): default, name, notNull, primaryKey, type, assists
+
+### Community 533 - "Community 533"
+Cohesion: 0.33
+Nodes (6): name, notNull, primaryKey, type, away_score, columns
+
+### Community 534 - "Community 534"
+Cohesion: 0.33
+Nodes (6): created_at, default, name, notNull, primaryKey, type
+
+### Community 535 - "Community 535"
+Cohesion: 0.33
+Nodes (6): goals, default, name, notNull, primaryKey, type
+
+### Community 536 - "Community 536"
+Cohesion: 0.33
+Nodes (6): influence_score, default, name, notNull, primaryKey, type
+
+### Community 537 - "Community 537"
+Cohesion: 0.33
+Nodes (6): minutes_played, default, name, notNull, primaryKey, type
+
+### Community 538 - "Community 538"
+Cohesion: 0.33
+Nodes (6): red_cards, default, name, notNull, primaryKey, type
+
+### Community 539 - "Community 539"
+Cohesion: 0.33
+Nodes (6): status, default, name, notNull, primaryKey, type
+
+### Community 540 - "Community 540"
+Cohesion: 0.33
+Nodes (6): yellow_cards, default, name, notNull, primaryKey, type
+
+### Community 541 - "Community 541"
+Cohesion: 0.33
+Nodes (5): 1. Design & Aesthetic Guidelines, 2. Playwright E2E Setup Protocol, 3. E2E Test Creation Requirements, 4. Test Validation & MCP Verification Protocol, UI Work & E2E Test Validation Skill
+
+### Community 542 - "Community 542"
+Cohesion: 0.40
+Nodes (5): name, notNull, primaryKey, type, away_team_id
+
+### Community 543 - "Community 543"
+Cohesion: 0.40
+Nodes (5): name, notNull, primaryKey, type, clean_sheet
+
+### Community 544 - "Community 544"
+Cohesion: 0.40
+Nodes (5): event_type, name, notNull, primaryKey, type
+
+### Community 545 - "Community 545"
+Cohesion: 0.40
+Nodes (5): home_score, name, notNull, primaryKey, type
+
+### Community 546 - "Community 546"
+Cohesion: 0.40
+Nodes (5): home_team_id, name, notNull, primaryKey, type
+
+### Community 547 - "Community 547"
+Cohesion: 0.40
+Nodes (5): id, name, notNull, primaryKey, type
+
+### Community 548 - "Community 548"
+Cohesion: 0.40
+Nodes (5): interceptions, name, notNull, primaryKey, type
+
+### Community 549 - "Community 549"
+Cohesion: 0.40
+Nodes (5): kickoff_time, name, notNull, primaryKey, type
+
+### Community 550 - "Community 550"
 Cohesion: 0.40
 Nodes (5): match_id, name, notNull, primaryKey, type
 
+### Community 551 - "Community 551"
+Cohesion: 0.40
+Nodes (5): match_number, name, notNull, primaryKey, type
+
+### Community 552 - "Community 552"
+Cohesion: 0.40
+Nodes (5): passes_completed, name, notNull, primaryKey, type
+
+### Community 553 - "Community 553"
+Cohesion: 0.40
+Nodes (5): rating, name, notNull, primaryKey, type
+
+### Community 554 - "Community 554"
+Cohesion: 0.40
+Nodes (5): saves, name, notNull, primaryKey, type
+
+### Community 555 - "Community 555"
+Cohesion: 0.40
+Nodes (5): shots_on_target, name, notNull, primaryKey, type
+
+### Community 556 - "Community 556"
+Cohesion: 0.40
+Nodes (5): stage, name, notNull, primaryKey, type
+
+### Community 557 - "Community 557"
+Cohesion: 0.40
+Nodes (5): tackles, name, notNull, primaryKey, type
+
+### Community 558 - "Community 558"
+Cohesion: 0.40
+Nodes (5): team_id, name, notNull, primaryKey, type
+
+### Community 559 - "Community 559"
+Cohesion: 0.40
+Nodes (5): columns, name, nullsNotDistinct, uniqueConstraints, matches_match_number_unique
+
+### Community 560 - "Community 560"
+Cohesion: 0.40
+Nodes (5): id, name, notNull, primaryKey, type
+
+### Community 561 - "Community 561"
+Cohesion: 0.40
+Nodes (5): prediction_id, name, notNull, primaryKey, type
+
+### Community 564 - "Community 564"
+Cohesion: 0.40
+Nodes (5): name, notNull, primaryKey, type, away_tournament_form
+
+### Community 565 - "Community 565"
+Cohesion: 0.40
+Nodes (5): home_player_availability, name, notNull, primaryKey, type
+
+### Community 566 - "Community 566"
+Cohesion: 0.40
+Nodes (5): home_squad_rating, name, notNull, primaryKey, type
+
+### Community 568 - "Community 568"
+Cohesion: 0.40
+Nodes (5): home_tournament_form, name, notNull, primaryKey, type
+
+### Community 569 - "Community 569"
+Cohesion: 0.50
+Nodes (4): haiku, opus, sonnet, augment
+
 ## Knowledge Gaps
-- **3275 isolated node(s):** `last_dolt_commit`, `timestamp`, `database`, `backend`, `dolt_mode` (+3270 more)
+- **3796 isolated node(s):** `last_dolt_commit`, `timestamp`, `database`, `backend`, `dolt_mode` (+3791 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **60 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **59 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `files` connect `Community 49` to `Community 318`?**
-  _High betweenness centrality (0.016) - this node is a cross-community bridge._
-- **Why does `agents` connect `Community 202` to `Community 256`, `Community 257`, `Community 258`, `Community 259`, `Community 260`, `Community 261`, `Community 262`, `Community 263`, `Community 264`, `Community 265`, `Community 266`, `Community 267`, `Community 268`, `Community 269`, `Community 270`, `Community 271`, `Community 272`, `Community 273`, `Community 274`, `Community 275`, `Community 276`, `Community 277`, `Community 278`, `Community 279`, `Community 247`, `Community 248`, `Community 249`, `Community 250`, `Community 251`, `Community 252`, `Community 253`, `Community 254`, `Community 255`?**
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
+- **Why does `id` connect `Community 547` to `Community 291`, `Community 292`, `Community 72`, `Community 51`, `Community 533`, `Community 504`, `Community 505`?**
   _High betweenness centrality (0.005) - this node is a cross-community bridge._
-- **Why does `columns` connect `Community 501` to `Community 293`, `Community 294`, `Community 296`, `Community 11`, `Community 235`, `Community 54`, `Community 502`, `Community 29`, `Community 511`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `columns` connect `Community 504` to `Community 547`, `Community 548`, `Community 292`, `Community 550`, `Community 552`, `Community 553`, `Community 554`, `Community 555`, `Community 557`, `Community 558`, `Community 525`, `Community 532`, `Community 534`, `Community 535`, `Community 537`, `Community 538`, `Community 540`, `Community 543`?**
+  _High betweenness centrality (0.005) - this node is a cross-community bridge._
 - **What connects `last_dolt_commit`, `timestamp`, `database` to the rest of the system?**
-  _3275 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _3796 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.05405405405405406 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06219512195121951 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**

@@ -15,6 +15,7 @@ export const typeDefs = `#graphql
     RoundOf16
     Quarterfinals
     Semifinals
+    ThirdPlace
     Final
   }
 
@@ -52,14 +53,41 @@ export const typeDefs = `#graphql
   }
 `;
 
-interface MatchArgs {
+export interface MatchArgs {
   id: string;
 }
 
-interface MatchesArgs {
+export interface MatchesArgs {
   stage?: string | null;
   limit?: number | null;
   offset?: number | null;
+}
+const stageGqlToDbMap: Record<string, string> = {
+  Group: "Group",
+  RoundOf32: "Round of 32",
+  RoundOf16: "Round of 16",
+  Quarterfinals: "Quarterfinals",
+  Semifinals: "Semifinals",
+  ThirdPlace: "Third Place",
+  Final: "Final",
+};
+
+const stageDbToGqlMap: Record<string, string> = {
+  "Group": "Group",
+  "Round of 32": "RoundOf32",
+  "Round of 16": "RoundOf16",
+  "Quarterfinals": "Quarterfinals",
+  "Semifinals": "Semifinals",
+  "Third Place": "ThirdPlace",
+  "Final": "Final",
+};
+
+function mapStageDbToGql(dbStage: string): string {
+  return stageDbToGqlMap[dbStage] ?? dbStage;
+}
+
+function mapStageGqlToDb(gqlStage: string): string {
+  return stageGqlToDbMap[gqlStage] ?? gqlStage;
 }
 
 export const resolvers = {
@@ -88,7 +116,7 @@ export const resolvers = {
 
       const conditions = [];
       if (args.stage) {
-        conditions.push(eq(schemas.matches.stage, args.stage));
+        conditions.push(eq(schemas.matches.stage, mapStageGqlToDb(args.stage)));
       }
 
       const whereClause = conditions.length > 0 ? and(...conditions) : undefined;
@@ -115,6 +143,10 @@ export const resolvers = {
   },
 
   Match: {
+    stage: (parent: { stage: string }) => {
+      return mapStageDbToGql(parent.stage);
+    },
+
     homeTeam: async (
       parent: { homeTeamId?: string | null; [key: string]: unknown },
       _args: unknown,
@@ -123,6 +155,7 @@ export const resolvers = {
       if (!parent.homeTeamId) return null;
       return context.loaders.team.load(parent.homeTeamId);
     },
+
 
     awayTeam: async (
       parent: { awayTeamId?: string | null; [key: string]: unknown },
@@ -147,6 +180,16 @@ export const resolvers = {
       return pred ?? null;
     },
 
+    kickoffTime: (parent: { kickoffTime: Date | string | number }) => {
+      if (!parent.kickoffTime) return "";
+      const val = parent.kickoffTime;
+      if (typeof val === "string" && /^\d+$/.test(val)) {
+        return new Date(Number(val)).toISOString();
+      }
+      const d = new Date(val);
+      return isNaN(d.getTime()) ? "" : d.toISOString();
+    },
+
     odds: async (
       parent: { id: number; [key: string]: unknown },
       _args: unknown,
@@ -157,6 +200,18 @@ export const resolvers = {
         .from(schemas.oddsHistory)
         .where(eq(schemas.oddsHistory.matchId, parent.id))
         .orderBy(desc(schemas.oddsHistory.createdAt));
+    },
+  },
+
+  OddsEntry: {
+    updatedAt: (parent: { createdAt: Date | string | number }) => {
+      const val = parent.createdAt;
+      if (!val) return "";
+      if (typeof val === "string" && /^\d+$/.test(val)) {
+        return new Date(Number(val)).toISOString();
+      }
+      const d = new Date(val);
+      return isNaN(d.getTime()) ? "" : d.toISOString();
     },
   },
 };

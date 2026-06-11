@@ -1,61 +1,338 @@
 [
-  { "id": "MEX", "name": "Mexico", "groupName": "A", "flagUrl": "https://flags.fm/mex.png", "eloRating": 1650 },
-  { "id": "USA", "name": "United States", "groupName": "A", "flagUrl": "https://flags.fm/usa.png", "eloRating": 1720 },
-  { "id": "CAN", "name": "Canada", "groupName": "A", "flagUrl": "https://flags.fm/can.png", "eloRating": 1600 },
-  { "id": "PAN", "name": "Panama", "groupName": "A", "flagUrl": "https://flags.fm/pan.png", "eloRating": 1500 },
-
-  { "id": "ARG", "name": "Argentina", "groupName": "B", "flagUrl": "https://flags.fm/arg.png", "eloRating": 2100 },
-  { "id": "BRA", "name": "Brazil", "groupName": "B", "flagUrl": "https://flags.fm/bra.png", "eloRating": 2050 },
-  { "id": "URU", "name": "Uruguay", "groupName": "B", "flagUrl": "https://flags.fm/uru.png", "eloRating": 1900 },
-  { "id": "COL", "name": "Colombia", "groupName": "B", "flagUrl": "https://flags.fm/col.png", "eloRating": 1850 },
-
-  { "id": "FRA", "name": "France", "groupName": "C", "flagUrl": "https://flags.fm/fra.png", "eloRating": 2080 },
-  { "id": "ENG", "name": "England", "groupName": "C", "flagUrl": "https://flags.fm/eng.png", "eloRating": 2000 },
-  { "id": "GER", "name": "Germany", "groupName": "C", "flagUrl": "https://flags.fm/ger.png", "eloRating": 1920 },
-  { "id": "ESP", "name": "Spain", "groupName": "C", "flagUrl": "https://flags.fm/esp.png", "eloRating": 1980 },
-
-  { "id": "POR", "name": "Portugal", "groupName": "D", "flagUrl": "https://flags.fm/por.png", "eloRating": 1960 },
-  { "id": "ITA", "name": "Italy", "groupName": "D", "flagUrl": "https://flags.fm/ita.png", "eloRating": 1930 },
-  { "id": "BEL", "name": "Belgium", "groupName": "D", "flagUrl": "https://flags.fm/bel.png", "eloRating": 1880 },
-  { "id": "NED", "name": "Netherlands", "groupName": "D", "flagUrl": "https://flags.fm/ned.png", "eloRating": 1940 },
-
-  { "id": "CRO", "name": "Croatia", "groupName": "E", "flagUrl": "https://flags.fm/cro.png", "eloRating": 1890 },
-  { "id": "MAR", "name": "Morocco", "groupName": "E", "flagUrl": "https://flags.fm/mar.png", "eloRating": 1870 },
-  { "id": "SEN", "name": "Senegal", "groupName": "E", "flagUrl": "https://flags.fm/sen.png", "eloRating": 1680 },
-  { "id": "JPN", "name": "Japan", "groupName": "E", "flagUrl": "https://flags.fm/jpn.png", "eloRating": 1800 },
-
-  { "id": "KOR", "name": "South Korea", "groupName": "F", "flagUrl": "https://flags.fm/kor.png", "eloRating": 1720 },
-  { "id": "AUS", "name": "Australia", "groupName": "F", "flagUrl": "https://flags.fm/aus.png", "eloRating": 1670 },
-  { "id": "KSA", "name": "Saudi Arabia", "groupName": "F", "flagUrl": "https://flags.fm/ksa.png", "eloRating": 1550 },
-  { "id": "IRN", "name": "Iran", "groupName": "F", "flagUrl": "https://flags.fm/irn.png", "eloRating": 1660 },
-
-  { "id": "SUI", "name": "Switzerland", "groupName": "G", "flagUrl": "https://flags.fm/sui.png", "eloRating": 1780 },
-  { "id": "DEN", "name": "Denmark", "groupName": "G", "flagUrl": "https://flags.fm/den.png", "eloRating": 1790 },
-  { "id": "SRB", "name": "Serbia", "groupName": "G", "flagUrl": "https://flags.fm/srb.png", "eloRating": 1700 },
-  { "id": "CMR", "name": "Cameroon", "groupName": "G", "flagUrl": "https://flags.fm/cmr.png", "eloRating": 1580 },
-
-  { "id": "GHA", "name": "Ghana", "groupName": "H", "flagUrl": "https://flags.fm/gha.png", "eloRating": 1560 },
-  { "id": "EGY", "name": "Egypt", "groupName": "H", "flagUrl": "https://flags.fm/egy.png", "eloRating": 1640 },
-  { "id": "NGA", "name": "Nigeria", "groupName": "H", "flagUrl": "https://flags.fm/nga.png", "eloRating": 1690 },
-  { "id": "ALG", "name": "Algeria", "groupName": "H", "flagUrl": "https://flags.fm/alg.png", "eloRating": 1630 },
-
-  { "id": "TUN", "name": "Tunisia", "groupName": "I", "flagUrl": "https://flags.fm/tun.png", "eloRating": 1610 },
-  { "id": "CIV", "name": "Ivory Coast", "groupName": "I", "flagUrl": "https://flags.fm/civ.png", "eloRating": 1650 },
-  { "id": "SWE", "name": "Sweden", "groupName": "I", "flagUrl": "https://flags.fm/swe.png", "eloRating": 1820 },
-  { "id": "NOR", "name": "Norway", "groupName": "I", "flagUrl": "https://flags.fm/nor.png", "eloRating": 1790 },
-
-  { "id": "UKR", "name": "Ukraine", "groupName": "J", "flagUrl": "https://flags.fm/ukr.png", "eloRating": 1760 },
-  { "id": "POL", "name": "Poland", "groupName": "J", "flagUrl": "https://flags.fm/pol.png", "eloRating": 1740 },
-  { "id": "CZE", "name": "Czech Republic", "groupName": "J", "flagUrl": "https://flags.fm/cze.png", "eloRating": 1730 },
-  { "id": "AUT", "name": "Austria", "groupName": "J", "flagUrl": "https://flags.fm/aut.png", "eloRating": 1770 },
-
-  { "id": "CRC", "name": "Costa Rica", "groupName": "K", "flagUrl": "https://flags.fm/crc.png", "eloRating": 1620 },
-  { "id": "HON", "name": "Honduras", "groupName": "K", "flagUrl": "https://flags.fm/hon.png", "eloRating": 1540 },
-  { "id": "JAM", "name": "Jamaica", "groupName": "K", "flagUrl": "https://flags.fm/jam.png", "eloRating": 1580 },
-  { "id": "SLV", "name": "El Salvador", "groupName": "K", "flagUrl": "https://flags.fm/slv.png", "eloRating": 1500 },
-
-  { "id": "ECU", "name": "Ecuador", "groupName": "L", "flagUrl": "https://flags.fm/ecu.png", "eloRating": 1810 },
-  { "id": "PER", "name": "Peru", "groupName": "L", "flagUrl": "https://flags.fm/per.png", "eloRating": 1780 },
-  { "id": "CHI", "name": "Chile", "groupName": "L", "flagUrl": "https://flags.fm/chi.png", "eloRating": 1720 },
-  { "id": "PAR", "name": "Paraguay", "groupName": "L", "flagUrl": "https://flags.fm/par.png", "eloRating": 1690 }
+  {
+    "id": "MEX",
+    "name": "Mexico",
+    "groupName": "A",
+    "flagUrl": "https://flagcdn.com/w160/mx.png",
+    "eloRating": 1650
+  },
+  {
+    "id": "USA",
+    "name": "United States",
+    "groupName": "A",
+    "flagUrl": "https://flagcdn.com/w160/us.png",
+    "eloRating": 1720
+  },
+  {
+    "id": "CAN",
+    "name": "Canada",
+    "groupName": "A",
+    "flagUrl": "https://flagcdn.com/w160/ca.png",
+    "eloRating": 1600
+  },
+  {
+    "id": "PAN",
+    "name": "Panama",
+    "groupName": "A",
+    "flagUrl": "https://flagcdn.com/w160/pa.png",
+    "eloRating": 1500
+  },
+  {
+    "id": "ARG",
+    "name": "Argentina",
+    "groupName": "B",
+    "flagUrl": "https://flagcdn.com/w160/ar.png",
+    "eloRating": 2100
+  },
+  {
+    "id": "BRA",
+    "name": "Brazil",
+    "groupName": "B",
+    "flagUrl": "https://flagcdn.com/w160/br.png",
+    "eloRating": 2050
+  },
+  {
+    "id": "URU",
+    "name": "Uruguay",
+    "groupName": "B",
+    "flagUrl": "https://flagcdn.com/w160/uy.png",
+    "eloRating": 1900
+  },
+  {
+    "id": "COL",
+    "name": "Colombia",
+    "groupName": "B",
+    "flagUrl": "https://flagcdn.com/w160/co.png",
+    "eloRating": 1850
+  },
+  {
+    "id": "FRA",
+    "name": "France",
+    "groupName": "C",
+    "flagUrl": "https://flagcdn.com/w160/fr.png",
+    "eloRating": 2080
+  },
+  {
+    "id": "ENG",
+    "name": "England",
+    "groupName": "C",
+    "flagUrl": "https://flagcdn.com/w160/gb-eng.png",
+    "eloRating": 2000
+  },
+  {
+    "id": "GER",
+    "name": "Germany",
+    "groupName": "C",
+    "flagUrl": "https://flagcdn.com/w160/de.png",
+    "eloRating": 1920
+  },
+  {
+    "id": "ESP",
+    "name": "Spain",
+    "groupName": "C",
+    "flagUrl": "https://flagcdn.com/w160/es.png",
+    "eloRating": 1980
+  },
+  {
+    "id": "POR",
+    "name": "Portugal",
+    "groupName": "D",
+    "flagUrl": "https://flagcdn.com/w160/pt.png",
+    "eloRating": 1960
+  },
+  {
+    "id": "ITA",
+    "name": "Italy",
+    "groupName": "D",
+    "flagUrl": "https://flagcdn.com/w160/it.png",
+    "eloRating": 1930
+  },
+  {
+    "id": "BEL",
+    "name": "Belgium",
+    "groupName": "D",
+    "flagUrl": "https://flagcdn.com/w160/be.png",
+    "eloRating": 1880
+  },
+  {
+    "id": "NED",
+    "name": "Netherlands",
+    "groupName": "D",
+    "flagUrl": "https://flagcdn.com/w160/nl.png",
+    "eloRating": 1940
+  },
+  {
+    "id": "CRO",
+    "name": "Croatia",
+    "groupName": "E",
+    "flagUrl": "https://flagcdn.com/w160/hr.png",
+    "eloRating": 1890
+  },
+  {
+    "id": "MAR",
+    "name": "Morocco",
+    "groupName": "E",
+    "flagUrl": "https://flagcdn.com/w160/ma.png",
+    "eloRating": 1870
+  },
+  {
+    "id": "SEN",
+    "name": "Senegal",
+    "groupName": "E",
+    "flagUrl": "https://flagcdn.com/w160/sn.png",
+    "eloRating": 1680
+  },
+  {
+    "id": "JPN",
+    "name": "Japan",
+    "groupName": "E",
+    "flagUrl": "https://flagcdn.com/w160/jp.png",
+    "eloRating": 1800
+  },
+  {
+    "id": "KOR",
+    "name": "South Korea",
+    "groupName": "F",
+    "flagUrl": "https://flagcdn.com/w160/kr.png",
+    "eloRating": 1720
+  },
+  {
+    "id": "AUS",
+    "name": "Australia",
+    "groupName": "F",
+    "flagUrl": "https://flagcdn.com/w160/au.png",
+    "eloRating": 1670
+  },
+  {
+    "id": "KSA",
+    "name": "Saudi Arabia",
+    "groupName": "F",
+    "flagUrl": "https://flagcdn.com/w160/sa.png",
+    "eloRating": 1550
+  },
+  {
+    "id": "IRN",
+    "name": "Iran",
+    "groupName": "F",
+    "flagUrl": "https://flagcdn.com/w160/ir.png",
+    "eloRating": 1660
+  },
+  {
+    "id": "SUI",
+    "name": "Switzerland",
+    "groupName": "G",
+    "flagUrl": "https://flagcdn.com/w160/ch.png",
+    "eloRating": 1780
+  },
+  {
+    "id": "DEN",
+    "name": "Denmark",
+    "groupName": "G",
+    "flagUrl": "https://flagcdn.com/w160/dk.png",
+    "eloRating": 1790
+  },
+  {
+    "id": "SRB",
+    "name": "Serbia",
+    "groupName": "G",
+    "flagUrl": "https://flagcdn.com/w160/rs.png",
+    "eloRating": 1700
+  },
+  {
+    "id": "CMR",
+    "name": "Cameroon",
+    "groupName": "G",
+    "flagUrl": "https://flagcdn.com/w160/cm.png",
+    "eloRating": 1580
+  },
+  {
+    "id": "GHA",
+    "name": "Ghana",
+    "groupName": "H",
+    "flagUrl": "https://flagcdn.com/w160/gh.png",
+    "eloRating": 1560
+  },
+  {
+    "id": "EGY",
+    "name": "Egypt",
+    "groupName": "H",
+    "flagUrl": "https://flagcdn.com/w160/eg.png",
+    "eloRating": 1640
+  },
+  {
+    "id": "NGA",
+    "name": "Nigeria",
+    "groupName": "H",
+    "flagUrl": "https://flagcdn.com/w160/ng.png",
+    "eloRating": 1690
+  },
+  {
+    "id": "ALG",
+    "name": "Algeria",
+    "groupName": "H",
+    "flagUrl": "https://flagcdn.com/w160/dz.png",
+    "eloRating": 1630
+  },
+  {
+    "id": "TUN",
+    "name": "Tunisia",
+    "groupName": "I",
+    "flagUrl": "https://flagcdn.com/w160/tn.png",
+    "eloRating": 1610
+  },
+  {
+    "id": "CIV",
+    "name": "Ivory Coast",
+    "groupName": "I",
+    "flagUrl": "https://flagcdn.com/w160/ci.png",
+    "eloRating": 1650
+  },
+  {
+    "id": "SWE",
+    "name": "Sweden",
+    "groupName": "I",
+    "flagUrl": "https://flagcdn.com/w160/se.png",
+    "eloRating": 1820
+  },
+  {
+    "id": "NOR",
+    "name": "Norway",
+    "groupName": "I",
+    "flagUrl": "https://flagcdn.com/w160/no.png",
+    "eloRating": 1790
+  },
+  {
+    "id": "UKR",
+    "name": "Ukraine",
+    "groupName": "J",
+    "flagUrl": "https://flagcdn.com/w160/ua.png",
+    "eloRating": 1760
+  },
+  {
+    "id": "POL",
+    "name": "Poland",
+    "groupName": "J",
+    "flagUrl": "https://flagcdn.com/w160/pl.png",
+    "eloRating": 1740
+  },
+  {
+    "id": "CZE",
+    "name": "Czech Republic",
+    "groupName": "J",
+    "flagUrl": "https://flagcdn.com/w160/cz.png",
+    "eloRating": 1730
+  },
+  {
+    "id": "AUT",
+    "name": "Austria",
+    "groupName": "J",
+    "flagUrl": "https://flagcdn.com/w160/at.png",
+    "eloRating": 1770
+  },
+  {
+    "id": "CRC",
+    "name": "Costa Rica",
+    "groupName": "K",
+    "flagUrl": "https://flagcdn.com/w160/cr.png",
+    "eloRating": 1620
+  },
+  {
+    "id": "HON",
+    "name": "Honduras",
+    "groupName": "K",
+    "flagUrl": "https://flagcdn.com/w160/hn.png",
+    "eloRating": 1540
+  },
+  {
+    "id": "JAM",
+    "name": "Jamaica",
+    "groupName": "K",
+    "flagUrl": "https://flagcdn.com/w160/jm.png",
+    "eloRating": 1580
+  },
+  {
+    "id": "SLV",
+    "name": "El Salvador",
+    "groupName": "K",
+    "flagUrl": "https://flagcdn.com/w160/sv.png",
+    "eloRating": 1500
+  },
+  {
+    "id": "ECU",
+    "name": "Ecuador",
+    "groupName": "L",
+    "flagUrl": "https://flagcdn.com/w160/ec.png",
+    "eloRating": 1810
+  },
+  {
+    "id": "PER",
+    "name": "Peru",
+    "groupName": "L",
+    "flagUrl": "https://flagcdn.com/w160/pe.png",
+    "eloRating": 1780
+  },
+  {
+    "id": "CHI",
+    "name": "Chile",
+    "groupName": "L",
+    "flagUrl": "https://flagcdn.com/w160/cl.png",
+    "eloRating": 1720
+  },
+  {
+    "id": "PAR",
+    "name": "Paraguay",
+    "groupName": "L",
+    "flagUrl": "https://flagcdn.com/w160/py.png",
+    "eloRating": 1690
+  }
 ]

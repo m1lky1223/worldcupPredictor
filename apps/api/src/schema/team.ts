@@ -17,7 +17,7 @@ export const typeDefs = `#graphql
   }
 `;
 
-interface TeamArgs {
+export interface TeamArgs {
   id: string;
 }
 

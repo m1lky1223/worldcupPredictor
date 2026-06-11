@@ -50,7 +50,7 @@ export default function Layout() {
         variant="h6"
         sx={{ px: 2, mb: 2, color: "primary.main", fontWeight: 700 }}
       >
-        World Cup Predictor
+        World Cup Tracker
       </Typography>
       <List>
         {navItems.map((item) => (
@@ -89,7 +89,7 @@ export default function Layout() {
             sx={{ fontWeight: 700, cursor: "pointer" }}
             onClick={() => navigate("/")}
           >
-            2026 World Cup Predictor
+            2026 World Cup Tracker
           </Typography>
           {!isMobile && (
             <Box sx={{ ml: 4, display: "flex", gap: 1 }}>
@@ -139,7 +139,7 @@ export default function Layout() {
           borderColor: "divider",
         }}
       >
-        2026 FIFA World Cup Predictor &mdash; Powered by Elo Ratings
+        2026 FIFA World Cup Tracker &mdash; Powered by Elo Ratings
       </Box>
     </Box>
   );

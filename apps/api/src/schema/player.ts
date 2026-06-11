@@ -35,11 +35,11 @@ export const typeDefs = `#graphql
   }
 `;
 
-interface PlayerArgs {
+export interface PlayerArgs {
   id: string;
 }
 
-interface PlayersArgs {
+export interface PlayersArgs {
   limit?: number | null;
   offset?: number | null;
 }

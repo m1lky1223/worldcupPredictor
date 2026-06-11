@@ -28,7 +28,7 @@ export const typeDefs = `#graphql
   }
 `;
 
-interface GroupStandingsArgs {
+export interface GroupStandingsArgs {
   groupName?: string | null;
 }
 
@@ -52,8 +52,23 @@ export function computeTeamStats(
     homeScore: number | null;
     awayScore: number | null;
   }>,
+  teamIds?: string[],
 ): RawTeamStats[] {
   const statsMap = new Map<string, RawTeamStats>();
+
+  if (teamIds) {
+    for (const teamId of teamIds) {
+      statsMap.set(teamId, {
+        teamId,
+        played: 0,
+        won: 0,
+        drawn: 0,
+        lost: 0,
+        goalsFor: 0,
+        goalsAgainst: 0,
+      });
+    }
+  }
 
   function ensureStats(teamId: string): RawTeamStats {
     let stats = statsMap.get(teamId);
@@ -235,6 +250,10 @@ export function sortStandings(
         if (gdA !== gdB) return gdB - gdA;
       }
 
+      // 7. Fallback alphabetical sort by teamId to ensure stable ordering
+      if (a.teamId < b.teamId) return -1;
+      if (a.teamId > b.teamId) return 1;
+
       return 0;
     })
     .map((e) => e.teamId);
@@ -345,6 +364,7 @@ export const resolvers = {
             homeScore: number | null;
             awayScore: number | null;
           }>,
+          teamIds,
         );
 
         // Find tie groups and compute standings

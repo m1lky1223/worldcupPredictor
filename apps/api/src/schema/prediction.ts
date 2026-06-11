@@ -14,4 +14,16 @@ export const typeDefs = `#graphql
   }
 `;
 
-export const resolvers = {};
+export const resolvers = {
+  Prediction: {
+    createdAt: (parent: { createdAt: Date | string | number }) => {
+      const val = parent.createdAt;
+      if (!val) return "";
+      if (typeof val === "string" && /^\d+$/.test(val)) {
+        return new Date(Number(val)).toISOString();
+      }
+      const d = new Date(val);
+      return isNaN(d.getTime()) ? "" : d.toISOString();
+    },
+  },
+};

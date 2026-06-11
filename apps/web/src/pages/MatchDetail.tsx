@@ -62,6 +62,12 @@ const MATCH_DETAIL_QUERY = gql`
         drawOdds
         awayOdds
         updatedAt
+        implied {
+          homeWin
+          draw
+          awayWin
+          margin
+        }
       }
     }
   }
@@ -392,6 +398,9 @@ export default function MatchDetail() {
                     <TableCell align="right">Home</TableCell>
                     <TableCell align="right">Draw</TableCell>
                     <TableCell align="right">Away</TableCell>
+                    <TableCell align="right">Home Implied</TableCell>
+                    <TableCell align="right">Draw Implied</TableCell>
+                    <TableCell align="right">Away Implied</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -405,6 +414,15 @@ export default function MatchDetail() {
                       <TableCell align="right">{odds.homeOdds.toFixed(2)}</TableCell>
                       <TableCell align="right">{odds.drawOdds.toFixed(2)}</TableCell>
                       <TableCell align="right">{odds.awayOdds.toFixed(2)}</TableCell>
+                      <TableCell align="right">
+                        {odds.implied ? `${(odds.implied.homeWin * 100).toFixed(0)}%` : "-"}
+                      </TableCell>
+                      <TableCell align="right">
+                        {odds.implied ? `${(odds.implied.draw * 100).toFixed(0)}%` : "-"}
+                      </TableCell>
+                      <TableCell align="right">
+                        {odds.implied ? `${(odds.implied.awayWin * 100).toFixed(0)}%` : "-"}
+                      </TableCell>
                     </TableRow>
                   ))}
                 </TableBody>

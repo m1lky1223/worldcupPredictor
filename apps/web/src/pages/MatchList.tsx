@@ -58,8 +58,10 @@ const stageOptions = [
   { value: "RoundOf16", label: "Round of 16" },
   { value: "Quarterfinals", label: "Quarterfinals" },
   { value: "Semifinals", label: "Semifinals" },
+  { value: "ThirdPlace", label: "Third Place Playoff" },
   { value: "Final", label: "Final" },
 ];
+
 
 function formatKickoff(kickoffTime: string) {
   return new Date(kickoffTime).toLocaleDateString("en-US", {

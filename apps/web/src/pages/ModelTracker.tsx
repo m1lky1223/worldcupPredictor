@@ -5,8 +5,16 @@ import {
   Grid,
   LinearProgress,
   Stack,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
   Typography,
   Skeleton,
+  Chip,
+  Paper,
 } from "@mui/material";
 
 const MODEL_METRICS_QUERY = gql`
@@ -18,6 +26,16 @@ const MODEL_METRICS_QUERY = gql`
       calibration
       modelVersion
       calculatedAt
+    }
+    marketVsModel {
+      matchId
+      matchNumber
+      homeTeam { id name flagUrl }
+      awayTeam { id name flagUrl }
+      market { homeWin draw awayWin margin }
+      model { homeWin draw awayWin }
+      diff { homeWin draw awayWin }
+      value { homeWin draw awayWin }
     }
   }
 `;
@@ -200,6 +218,82 @@ export default function ModelTracker() {
           Model version: {metrics.modelVersion} &middot; Last calculated:{" "}
           {new Date(metrics.calculatedAt).toLocaleString()}
         </Typography>
+      )}
+
+      {data?.marketVsModel && data.marketVsModel.length > 0 && (
+        <Card>
+          <CardContent>
+            <Typography variant="h6" fontWeight={700} sx={{ mb: 2 }}>
+              Market vs Model
+            </Typography>
+            <TableContainer component={Paper} variant="outlined">
+              <Table size="small">
+                <TableHead>
+                  <TableRow>
+                    <TableCell>Match</TableCell>
+                    <TableCell align="right">Model H</TableCell>
+                    <TableCell align="right">Model D</TableCell>
+                    <TableCell align="right">Model A</TableCell>
+                    <TableCell align="right">Market H</TableCell>
+                    <TableCell align="right">Market D</TableCell>
+                    <TableCell align="right">Market A</TableCell>
+                    <TableCell align="right">Value</TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {data.marketVsModel.map((item: any) => {
+                    const bestValue = Math.max(
+                      item.value.homeWin,
+                      item.value.draw,
+                      item.value.awayWin,
+                    );
+                    return (
+                      <TableRow key={item.matchId}>
+                        <TableCell>
+                          <Typography variant="body2" fontWeight={600}>
+                            {item.homeTeam.id} vs {item.awayTeam.id}
+                          </Typography>
+                          <Typography variant="caption" color="text.secondary">
+                            Match #{item.matchNumber}
+                          </Typography>
+                        </TableCell>
+                        <TableCell align="right">
+                          {(item.model.homeWin * 100).toFixed(0)}%
+                        </TableCell>
+                        <TableCell align="right">
+                          {(item.model.draw * 100).toFixed(0)}%
+                        </TableCell>
+                        <TableCell align="right">
+                          {(item.model.awayWin * 100).toFixed(0)}%
+                        </TableCell>
+                        <TableCell align="right">
+                          {(item.market.homeWin * 100).toFixed(0)}%
+                        </TableCell>
+                        <TableCell align="right">
+                          {(item.market.draw * 100).toFixed(0)}%
+                        </TableCell>
+                        <TableCell align="right">
+                          {(item.market.awayWin * 100).toFixed(0)}%
+                        </TableCell>
+                        <TableCell align="right">
+                          <Chip
+                            size="small"
+                            label={`${(bestValue * 100).toFixed(0)}%`}
+                            color={bestValue > 0.1 ? "success" : "default"}
+                            variant="outlined"
+                          />
+                        </TableCell>
+                      </TableRow>
+                    );
+                  })}
+                </TableBody>
+              </Table>
+            </TableContainer>
+            <Typography variant="caption" color="text.secondary" sx={{ mt: 1, display: "block" }}>
+              Value = model probability vs market-implied probability. Positive values indicate the model sees more value than the market.
+            </Typography>
+          </CardContent>
+        </Card>
       )}
     </Stack>
   );

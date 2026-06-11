@@ -61,7 +61,7 @@ services:
     volumes:
       - .:/app
       - /app/node_modules
-    command: npx tsx watch apps/api/src/index.ts
+    command: pnpm --filter @worldcup/api dev
     depends_on:
       db-migrate:
         condition: service_completed_successfully
@@ -85,6 +85,8 @@ services:
       GRAPHQL_URL: http://api:4000/graphql
       WEB_PORT: 3000
       PORT: 3000
+      NODE_ENV: development
+
     volumes:
       - .:/app
       - /app/node_modules
@@ -112,7 +114,7 @@ services:
     volumes:
       - .:/app
       - /app/node_modules
-    command: npx tsx watch apps/worker/src/index.ts
+    command: pnpm --filter @worldcup/worker dev
     depends_on:
       db-migrate:
         condition: service_completed_successfully
@@ -133,7 +135,7 @@ services:
     volumes:
       - .:/app
       - /app/node_modules
-    command: npx tsx watch apps/mcp/src/index.ts
+    command: pnpm --filter @worldcup/mcp dev
     depends_on:
       db-migrate:
         condition: service_completed_successfully

@@ -113,15 +113,15 @@ Plans:
 **Plans:** 9 plans
 
 Plans:
-- [ ] **06-01**: BullMQ setup with Redis, job registry, adaptive polling scheduler
-- [ ] **06-02**: `sync-fixtures`, `sync-teams`, `sync-squads` jobs
-- [ ] **06-03**: `sync-match-statuses` + `sync-live-match` polling jobs
-- [ ] **06-04**: `finalize-match` job (idempotent, locked, immutable snapshot)
-- [ ] **06-05**: `update-team-ratings` + `update-player-ratings` jobs
-- [ ] **06-06**: `recalculate-predictions` job (triggered by finalize-match, ≤5 min SLA)
-- [ ] **06-07**: `calculate-model-metrics` job
-- [ ] **06-08**: Provider freshness tracking across all jobs
-- [ ] **06-09**: Local mock-provider mode: replay match status transitions end-to-end
+- [x] **06-01**: BullMQ setup with Redis, job registry, adaptive polling scheduler
+- [x] **06-02**: `sync-fixtures`, `sync-teams`, `sync-squads` jobs
+- [x] **06-03**: `sync-match-statuses` + `sync-live-match` polling jobs
+- [x] **06-04**: `finalize-match` job (idempotent, locked, immutable snapshot)
+- [x] **06-05**: `update-team-ratings` + `update-player-ratings` jobs
+- [x] **06-06**: `recalculate-predictions` job (triggered by finalize-match, ≤5 min SLA)
+- [x] **06-07**: `calculate-model-metrics` job
+- [x] **06-08**: Provider freshness tracking across all jobs
+- [x] **06-09**: Local mock-provider mode: replay match status transitions end-to-end
 
 **Exit criteria:** End-to-end test: mock match finalized → ratings updated → predictions recalculated within 5 min.
 
@@ -134,12 +134,12 @@ Plans:
 **Plans:** 6 plans
 
 Plans:
-- [ ] **07-01**: Odds sync adapter (The Odds API)
-- [ ] **07-02**: `sync-odds` worker job
-- [ ] **07-03**: MarketOddsSnapshot storage
-- [ ] **07-04**: GraphQL: odds + implied probability queries, market vs model diff
-- [ ] **07-05**: UI: odds comparison in match detail (display only, neutral language)
-- [ ] **07-06**: UI: market vs model section in model tracker
+- [x] **07-01**: Odds sync adapter (The Odds API)
+- [x] **07-02**: `sync-odds` worker job
+- [x] **07-03**: MarketOddsSnapshot storage (used existing oddsHistory table)
+- [x] **07-04**: GraphQL: odds + implied probability queries, market vs model diff
+- [x] **07-05**: UI: odds comparison in match detail (display only, neutral language)
+- [x] **07-06**: UI: market vs model section in model tracker
 
 **Exit criteria:** Odds visible in match detail; implied probabilities computed; model vs market diff shown.
 
@@ -147,30 +147,13 @@ Plans:
 
 ### 📋 v1.1 (Planned)
 
-**Milestone Goal:** Auth, MCP, observability, pre-launch QA, and deployment.
+**Milestone Goal:** MCP server, observability, pre-launch QA, and deployment.
 
-#### Phase 8: Authentication & Authorization
-
-**Goal:** Google OAuth works in production. Dev-mode identity works locally. MCP tokens scoped.
-
-**Depends on:** Phase 2 (can run in parallel with Phases 3–7)
-
-**Plans:** 5 plans
-
-Plans:
-- [ ] **08-01**: Google OAuth 2.0 / OIDC — browser login, HTTP-only cookie sessions
-- [ ] **08-02**: Dev-mode seeded identity for local Docker (no Google creds needed)
-- [ ] **08-03**: Role system: anonymous, user, admin, service_agent
-- [ ] **08-04**: MCP bearer token issuance + scoped access
-- [ ] **08-05**: Admin-only GraphQL mutations
-
-**Exit criteria:** Google login works; dev-mode login works; unauthenticated users can read all public data; admin routes protected.
-
-#### Phase 9: Remote MCP Server
+#### Phase 8: Remote MCP Server
 
 **Goal:** Remote MCP server accessible at `/mcp` with all read-only tools and resources.
 
-**Depends on:** Phase 8
+**Depends on:** Phase 2
 
 **Plans:** 7 plans
 
@@ -185,25 +168,7 @@ Plans:
 
 **Exit criteria:** All MCP tools return correct data; rate limiting enforced; token auth validated.
 
-#### Phase 10: Observability & Operational Hardening
-
-**Goal:** Operators can answer: are matches fresh? did finalization succeed? are predictions current?
-
-**Depends on:** Phase 6 (can start after Phase 6)
-
-**Plans:** 6 plans
-
-Plans:
-- [ ] **10-01**: Structured logging across all services
-- [ ] **10-02**: Provider health + freshness dashboards (operational, not user-facing)
-- [ ] **10-03**: Job failure tracking + alerting
-- [ ] **10-04**: GraphQL resolver + MCP tool latency tracking
-- [ ] **10-05**: Data freshness indicators in UI (user-facing)
-- [ ] **10-06**: Error boundaries and graceful degradation audit (hide sections vs. show errors)
-
-**Exit criteria:** Operational dashboards answer all questions from RFC observability section.
-
-#### Phase 11: Pre-Launch QA & Data Seeding
+#### Phase 9: Pre-Launch QA & Data Seeding
 
 **Goal:** Tournament data complete, all flows tested, product launched before June 11.
 
@@ -212,14 +177,14 @@ Plans:
 **Plans:** 8 plans
 
 Plans:
-- [ ] **11-01**: Full fixture + squad data loaded for all 48 teams
-- [ ] **11-02**: Baseline Elo ratings seeded for all 48 teams
-- [ ] **11-03**: Initial predictions generated for all group-stage fixtures
-- [ ] **11-04**: End-to-end smoke test: full match lifecycle (kickoff → live → final → updated predictions)
-- [ ] **11-05**: Mobile + desktop UI QA across all 8 pages
-- [ ] **11-06**: Content audit: no gambling language, all probability disclaimers present
-- [ ] **11-07**: Deployment to production (Vercel or equivalent)
-- [ ] **11-08**: Production smoke test
+- [ ] **10-01**: Full fixture + squad data loaded for all 48 teams
+- [ ] **10-02**: Baseline Elo ratings seeded for all 48 teams
+- [ ] **10-03**: Initial predictions generated for all group-stage fixtures
+- [ ] **10-04**: End-to-end smoke test: full match lifecycle (kickoff → live → final → updated predictions)
+- [ ] **10-05**: Mobile + desktop UI QA across all 8 pages
+- [ ] **10-06**: Content audit: no gambling language, all probability disclaimers present
+- [ ] **10-07**: Deployment to production (Vercel or equivalent)
+- [ ] **10-08**: Production smoke test
 
 **Exit criteria:** All launch criteria from PRD §16 met. App live before June 11.
 
@@ -235,10 +200,8 @@ Phase 1 (infra)
         ├── Phase 5 (Prediction Engine)  ← parallel with Phase 3
         │     └── Phase 6 (Worker)
         │           └── Phase 7 (Odds)
-        └── Phase 8 (Auth)               ← parallel with Phase 3–7
-              └── Phase 9 (MCP)
-Phase 10 (Observability) ← can start after Phase 6
-Phase 11 (Pre-launch QA) ← depends on all prior phases
+        └── Phase 8 (MCP Server)
+Phase 9 (Pre-launch QA) ← depends on all prior phases
 ```
 
 ## Progress
@@ -249,13 +212,11 @@ Phase 11 (Pre-launch QA) ← depends on all prior phases
 | 2. Schema & Adapters | v1.0 | 3/3 | Complete | 2026-06-09 |
 | 3. GraphQL API Core | v1.0 | 0/6 | Not started | - |
 | 4. Web UI Foundation | v1.0 | 0/8 | Not started | - |
-| 5. Prediction Engine | v1.0 | 0/7 | Not started | - |
-| 6. Worker | v1.0 | 0/9 | Not started | - |
-| 7. Odds Integration | v1.0 | 0/6 | Not started | - |
-| 8. Auth | v1.1 | 0/5 | Not started | - |
-| 9. MCP Server | v1.1 | 0/7 | Not started | - |
-| 10. Observability | v1.1 | 0/6 | Not started | - |
-| 11. Pre-Launch QA | v1.1 | 0/8 | Not started | - |
+| 5. Prediction Engine | v1.0 | 7/7 | Complete | 2026-06-11 |
+| 6. Worker | v1.0 | 9/9 | Complete | 2026-06-11 |
+| 7. Odds Integration | v1.0 | 6/6 | Complete | 2026-06-11 |
+| 8. MCP Server | v1.1 | 0/7 | Not started | - |
+| 9. Pre-Launch QA | v1.1 | 0/8 | Not started | - |
 
 ## Post-MVP Backlog
 
@@ -266,3 +227,4 @@ Phase 11 (Pre-launch QA) ← depends on all prior phases
 - Module Federation
 - Admin MCP tools
 - Odds as model input (re-evaluate post-MVP)
+- Authentication & Authorization

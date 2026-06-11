@@ -16,7 +16,7 @@ export const typeDefs = `#graphql
   }
 `;
 
-interface VenueArgs {
+export interface VenueArgs {
   id: string;
 }
 
